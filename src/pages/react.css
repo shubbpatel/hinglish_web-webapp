@@ -1,0 +1,35 @@
+/* .structure{
+width: 60vw;
+margin: auto;
+
+} */
+.navbar{
+    margin-bottom: 1rem;
+    /* color: rgb(15, 14, 16); */
+    background-color: rgb(64, 190, 228);
+    border-radius: 5px;
+    padding: 20px;
+
+
+}
+.logotxt{
+    font-weight:bold;
+    font-size:large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(6, 6, 6);
+    /* color: rgb(250, 234, 22); */
+    text-decoration: none;
+    /* background-color: rgb(7, 12, 35); */
+    background-color: rgb(244, 220, 8);
+padding: 10px;
+    /* padding: 10px; */
+    border-radius: 15px;
+    font-size: 15px;
+}
+.dj{
+    text-align: left;
+    font-size: larger;
+    border: 1px solid rgb(64, 190, 228);
+    padding: 1rem;
+    border-radius: 7px;
+}
