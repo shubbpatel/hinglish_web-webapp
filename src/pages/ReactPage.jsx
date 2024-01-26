@@ -1385,35 +1385,44 @@ root.render(<Garage />);`}
         </p>
         <h2>Props</h2>
         <p>
-          React Props vaise hi jaise JavaScript mein function arguments aur HTML mein
-          attributes hote hain.
+          React Props vaise hi jaise JavaScript mein function arguments aur HTML
+          mein attributes hote hain.
         </p>
-        <p>Props ko ek component mein bhejne ke liye, HTML attributes ki tarah hi same syntax ka istemal karein:</p>
+        <p>
+          Props ko ek component mein bhejne ke liye, HTML attributes ki tarah hi
+          same syntax ka istemal karein:
+        </p>
         <h3>Example</h3>
         <p>Add karo "brand" attribute to the Truck element:</p>
         <p className="bgExample">
-{`const myElement = <Truck brand="TATA" />;`}
+          {`const myElement = <Truck brand="TATA" />;`}
         </p>
-        <p>Component argument ko <span className="crlRed">props</span> object ke roop mein recieve karta hai:</p>
-<h3>
-  Example
-</h3>
-<p>Component mein brand attribute ka istemal karein:</p>
-<p className="bgExample">
-  <pre>
- {`
+        <p>
+          Component argument ko <span className="crlRed">props</span> object ke
+          roop mein recieve karta hai:
+        </p>
+        <h3>Example</h3>
+        <p>Component mein brand attribute ka istemal karein:</p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Truck(props) {
   return <h2>I am a { props.brand }!</h2>;
-}`}   
-  </pre>
-</p>
-<h2>Press Data</h2>
-<p>Props are also how jisse aap data ko ek component se doosre component tak bhejte hain, parameters ki tarah.</p>
-<h3>Example</h3>
-<p>Garage component se 'brand' property Truck component mein bhejein:</p>
-<p className="bgExample">
- <pre>
- {`
+}`}
+          </pre>
+        </p>
+        <h2>Press Data</h2>
+        <p>
+          Props are also how jisse aap data ko ek component se doosre component
+          tak bhejte hain, parameters ki tarah.
+        </p>
+        <h3>Example</h3>
+        <p>
+          Garage component se 'brand' property Truck component mein bhejein:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Truck(props) {
   return <h2>I am a { props.brand }!</h2>;
 }
@@ -1429,14 +1438,23 @@ function Garage() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage />);
- `} </pre> 
-</p>
-<p>Agar aapke pass bhejne ke liye ek variable hai, upar diye gaye example ki tarah ek string nahi hai, toh aap bas variable name ko curly brackets ke andar daal dein:</p>
-<h3>Example</h3>
-<p><span className="clrRed">Truck</span> component ko bhejne ke liye ek variable banayein jiska naam <span className="clrRed">truckName</span> hai:</p>
-<p className="bgExample">
-  <pre>
- {`
+ `}{" "}
+          </pre>
+        </p>
+        <p>
+          Agar aapke pass bhejne ke liye ek variable hai, upar diye gaye example
+          ki tarah ek string nahi hai, toh aap bas variable name ko curly
+          brackets ke andar daal dein:
+        </p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">Truck</span> component ko bhejne ke liye ek
+          variable banayein jiska naam <span className="clrRed">truckName</span>{" "}
+          hai:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Truck(props) {
   return <h2>I am a { props.brand }!</h2>;
 }
@@ -1452,15 +1470,19 @@ function Garage() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);`}   
-  </pre>
-</p>
-<p>Ya agar yah ek object ho:</p>
-<h3>Example</h3>
-<p><span className="clrRed">Truck</span> component ko bhejne ke liye ek object banayein jiska naam <span className="clrRed">truckInfo</span> hai:</p>
-<p className="bgExample">
-  <pre>
- {`
+root.render(<Garage />);`}
+          </pre>
+        </p>
+        <p>Ya agar yah ek object ho:</p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">Truck</span> component ko bhejne ke liye ek
+          object banayein jiska naam <span className="clrRed">truckInfo</span>{" "}
+          hai:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Truck(props) {
   return <h2>I am a { props.brand.model }!</h2>;
 }
@@ -1476,54 +1498,69 @@ function Garage() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);`}   
-  </pre>
-</p>
-<br />
-<h2>
-React Events
-</h2>
-<p>Bilkul HTML DOM events ki tarah, React bhi actions perform kar sakta hai based on user event.</p>
-<p>React mein HTML ki tarah hi events hain: click, change, mouseover etc.</p>
-<h1>Adding Events</h1>
-<p>React events camelCase syntax mein likha jaata hai</p>
-<p><span className="crlRed">onClick</span> instead of <span className="clrRed">onclick</span>.</p>
-<p>React event handlers curly braces ke andar likhe jate hain:</p>
-<p>onClick={`{shoot}`}  instead of onclick="shoot()".
-</p>
-<h3>React</h3>
-<p className="bgExample">{`<button onClick={shoot}>Take the Shot!</button>`}</p>
-<h3>HTML</h3>
-<p className="bgExample">{`<button onclick="shoot()">Take the Shot!</button>`}</p>
-<br />
-<h2>React.JS Conditional Rendering</h2>
-<p>React mein, aap conditionally components ko render kar sakte hain.</p>
-<p>aisa karne ke multiple tareeqe hain.</p>
-<h2>
-  <span className="clrRed">if</span> Statement
-</h2>
-<p>Hum <span className="clrRed">if</span> JavaScript operator ka istemal kar sakte hain decide karne ke liye ke konsa component render karna hai</p>
-<h3>Example</h3>
-<p>We'll use these two components (hum in dono components ka istemaal karenge)</p>
-<p className="bgExample">
-  <pre>
- {`
+root.render(<Garage />);`}
+          </pre>
+        </p>
+        <br />
+        <h2>React Events</h2>
+        <p>
+          Bilkul HTML DOM events ki tarah, React bhi actions perform kar sakta
+          hai based on user event.
+        </p>
+        <p>
+          React mein HTML ki tarah hi events hain: click, change, mouseover etc.
+        </p>
+        <h1>Adding Events</h1>
+        <p>React events camelCase syntax mein likha jaata hai</p>
+        <p>
+          <span className="crlRed">onClick</span> instead of{" "}
+          <span className="clrRed">onclick</span>.
+        </p>
+        <p>React event handlers curly braces ke andar likhe jate hain:</p>
+        <p>onClick={`{shoot}`} instead of onclick="shoot()".</p>
+        <h3>React</h3>
+        <p className="bgExample">{`<button onClick={shoot}>Take the Shot!</button>`}</p>
+        <h3>HTML</h3>
+        <p className="bgExample">{`<button onclick="shoot()">Take the Shot!</button>`}</p>
+        <br />
+        <h2>React.JS Conditional Rendering</h2>
+        <p>
+          React mein, aap conditionally components ko render kar sakte hain.
+        </p>
+        <p>aisa karne ke multiple tareeqe hain.</p>
+        <h2>
+          <span className="clrRed">if</span> Statement
+        </h2>
+        <p>
+          Hum <span className="clrRed">if</span> JavaScript operator ka istemal
+          kar sakte hain decide karne ke liye ke konsa component render karna
+          hai
+        </p>
+        <h3>Example</h3>
+        <p>
+          We'll use these two components (hum in dono components ka istemaal
+          karenge)
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  function MissedGoal() {
   return <h1>MISSED!</h1>;
 }
 
 function MadeGoal() {
   return <h1>Goal!</h1>;
-}`}   
-  </pre>
-</p>
-<h3>
-Example
-</h3>
-<p>Ab, hum ek aur component banayenge jo choose karega ke konsa component render karna hai based on a condition:</p>
-<p className="bgExample">
-  <pre>
-  {`
+}`}
+          </pre>
+        </p>
+        <h3>Example</h3>
+        <p>
+          Ab, hum ek aur component banayenge jo choose karega ke konsa component
+          render karna hai based on a condition:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
   function Goal(props) {
     const isGoal = props.isGoal;
     if (isGoal) {
@@ -1533,28 +1570,34 @@ Example
   }
   
   const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<Goal isGoal={false} />);`}  
-  </pre>
-</p>
-<p>Koshish karein <span className="clrRed">isGoal</span> attribute ko <span className="clrRed">true</span> mein badalne ki:</p>
-<h3>Example</h3>
-<p className="bgExample">
-  <pre>
- {`
+  root.render(<Goal isGoal={false} />);`}
+          </pre>
+        </p>
+        <p>
+          Koshish karein <span className="clrRed">isGoal</span> attribute ko{" "}
+          <span className="clrRed">true</span> mein badalne ki:
+        </p>
+        <h3>Example</h3>
+        <p className="bgExample">
+          <pre>
+            {`
  const root = ReactDOM.createRoot(document.getElementById('root'));
- root.render(<Goal isGoal={true} />);`}   
-  </pre>
-</p>
-<h2>
-  Logical && Operator
-</h2>
-<p>React component ko conditionally render karne ka ek aur tareeka hai aur wo hai && operator ka istemal karna.</p>
-<h3>Example</h3>
-<p>
-Hum JSX mein JavaScript expressions ko curly braces ka istemal karke shamil kar sakte hain:</p>
-<p className="bgExample">
- <pre>
- {`
+ root.render(<Goal isGoal={true} />);`}
+          </pre>
+        </p>
+        <h2>Logical && Operator</h2>
+        <p>
+          React component ko conditionally render karne ka ek aur tareeka hai
+          aur wo hai && operator ka istemal karna.
+        </p>
+        <h3>Example</h3>
+        <p>
+          Hum JSX mein JavaScript expressions ko curly braces ka istemal karke
+          shamil kar sakte hain:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Garage(props) {
   const cars = props.cars;
   return (
@@ -1572,31 +1615,41 @@ Hum JSX mein JavaScript expressions ko curly braces ka istemal karke shamil kar 
 const cars = ['Ford', 'BMW', 'Audi'];
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage cars={cars} />);
- `} </pre> 
-</p>
-<p>Agar <span className="clrRed">cars.length {`>`} 0</span>  true ke barabar hai, to && ke baad ka expression render hoga.</p>
-<p>Koshish karein cars array ko empty karne ki:</p>
-<h3>Example</h3>
-<p className="bgExample">
-  <p>
- {`
+ `}{" "}
+          </pre>
+        </p>
+        <p>
+          Agar <span className="clrRed">cars.length {`>`} 0</span> true ke
+          barabar hai, to && ke baad ka expression render hoga.
+        </p>
+        <p>Koshish karein cars array ko empty karne ki:</p>
+        <h3>Example</h3>
+        <p className="bgExample">
+          <p>
+            {`
  const cars = [];
  const root = ReactDOM.createRoot(document.getElementById('root'));
- root.render(<Garage cars={cars} />);`}   
-  </p>
-</p>
+ root.render(<Garage cars={cars} />);`}
+          </p>
+        </p>
 
-<h2>Ternary Operator</h2>
-<p>Ek aur tareeka elements ko conditionally render karne ka hai ternary operator ka istemal karna</p>
-<p className="bgExample">{`condition ? true : false`}</p>
-<p>We will go back to the goal example.</p>
-<h3>Example</h3>
-<p>
-Agar <span className="clrRed">isGoal</span> true hai, to <span className="clrRed">MadeGoal</span> component ko wapas karein, warna <span className="clrRed">MissedGoal</span> component ko wapas karein:
-</p>
-<p className="bgExample">
-<pre>
- {`
+        <h2>Ternary Operator</h2>
+        <p>
+          Ek aur tareeka elements ko conditionally render karne ka hai ternary
+          operator ka istemal karna
+        </p>
+        <p className="bgExample">{`condition ? true : false`}</p>
+        <p>We will go back to the goal example.</p>
+        <h3>Example</h3>
+        <p>
+          Agar <span className="clrRed">isGoal</span> true hai, to{" "}
+          <span className="clrRed">MadeGoal</span> component ko wapas karein,
+          warna <span className="clrRed">MissedGoal</span> component ko wapas
+          karein:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Goal(props) {
   const isGoal = props.isGoal;
   return (
@@ -1607,21 +1660,20 @@ Agar <span className="clrRed">isGoal</span> true hai, to <span className="clrRed
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Goal isGoal={false} />);`} </pre>  
-</p>
-<br />
-<h2>
-  React Lists
-</h2>
-<p>React mein aap ek tarah ke loop ke saath lists ko render karenge."</p>
-<p>JavaScript map() array method generally preffered method hai.</p>
-<h3>
-  Example
-</h3>
-<p>chalo render kare all of the cars from our garage:</p>
-<p className="bgExample">
-  <pre>
- {`
+root.render(<Goal isGoal={false} />);`}{" "}
+          </pre>
+        </p>
+        <br />
+        <h2>React Lists</h2>
+        <p>
+          React mein aap ek tarah ke loop ke saath lists ko render karenge."
+        </p>
+        <p>JavaScript map() array method generally preffered method hai.</p>
+        <h3>Example</h3>
+        <p>chalo render kare all of the cars from our garage:</p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Car(props) {
   return <li>I am a { props.brand }</li>;
 }
@@ -1639,29 +1691,37 @@ function Garage() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);`}   
-  </pre>
-</p>
-<p>
-Jab aap is code ko apne <span className="clrRed">React App</span> mein chalayenge, to yeh kaam karega lekin aapko ek warning milegi ki list items ke liye 'key' nahi di gayi hai.
-</p>
-<h2>
-  Keys
-</h2>
-<p>
-Keys React ko elements ke track mein rakhne mein help karti hain. Is tarah, agar koi item update ya remove hota hai, to sirf woh item dubara render hoga poori ki poori list nahi.
-</p>
-<p>Keys ko har sibling ke liye unique hona chahiye. Lekin globally duplicate ho sakte hain.</p>
-<p className="bgYellow">
-Aam taur par, key ek unique ID honi chahiye jo har item ko assign ki gayi ho. Ant mein, aap array index ko bhi ek key ke roop mein istemal kar sakte hain.
-</p>
-<h3>Example</h3>
-<p>
-Chaliye hamara previous example ko keys shamil karne ke liye refactor karte hain:
-</p>
-<p className="bgExample">
- <pre>
- {`
+root.render(<Garage />);`}
+          </pre>
+        </p>
+        <p>
+          Jab aap is code ko apne <span className="clrRed">React App</span> mein
+          chalayenge, to yeh kaam karega lekin aapko ek warning milegi ki list
+          items ke liye 'key' nahi di gayi hai.
+        </p>
+        <h2>Keys</h2>
+        <p>
+          Keys React ko elements ke track mein rakhne mein help karti hain. Is
+          tarah, agar koi item update ya remove hota hai, to sirf woh item
+          dubara render hoga poori ki poori list nahi.
+        </p>
+        <p>
+          Keys ko har sibling ke liye unique hona chahiye. Lekin globally
+          duplicate ho sakte hain.
+        </p>
+        <p className="bgYellow">
+          Aam taur par, key ek unique ID honi chahiye jo har item ko assign ki
+          gayi ho. Ant mein, aap array index ko bhi ek key ke roop mein istemal
+          kar sakte hain.
+        </p>
+        <h3>Example</h3>
+        <p>
+          Chaliye hamara previous example ko keys shamil karne ke liye refactor
+          karte hain:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  function Car(props) {
   return <li>I am a { props.brand }</li>;
 }
@@ -1683,17 +1743,24 @@ function Garage() {
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);`} </pre> 
-</p>
-<br />
-<h2>React Forms</h2>
-<p>Jaise ki HTML mein hota hai, waise hi React bhi forms ka istemal karta hai jisse users web page ke saath interact kar sakein.</p>
-<h2>Adding Forms in react</h2>
-<p>Aap React mein form ko kisi bhi aur element ki tarah hi add karte hain</p>
-<h3>Example</h3>
-<p>ek form add karo jisme users apna naam likh sakte ho:</p>
-<p className="bgExample"><pre>
- {`
+root.render(<Garage />);`}{" "}
+          </pre>
+        </p>
+        <br />
+        <h2>React Forms</h2>
+        <p>
+          Jaise ki HTML mein hota hai, waise hi React bhi forms ka istemal karta
+          hai jisse users web page ke saath interact kar sakein.
+        </p>
+        <h2>Adding Forms in react</h2>
+        <p>
+          Aap React mein form ko kisi bhi aur element ki tarah hi add karte hain
+        </p>
+        <h3>Example</h3>
+        <p>ek form add karo jisme users apna naam likh sakte ho:</p>
+        <p className="bgExample">
+          <pre>
+            {`
  function MyForm() {
   return (
     <form>
@@ -1704,22 +1771,46 @@ root.render(<Garage />);`} </pre>
   )
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<MyForm />);`} 
-  </pre></p>
-  <p>Yeh normal kaam karega, form submit hoga aur page refresh hoga.</p>
-  <p>Lekin generally hum react mein aisa nahi chahte hain.</p>
-  <p>hum iss behaviour ko rokna chahte hain aur hum chahte hain React form control kare</p>
-  <h2>Handling Forms</h2>
-  <p>Forms ko handle karna yeh hai ki aap data kaise handle karte hain jab yeh value change hoti hai ya form submit hota hai.</p>
-  <p>HTML mein, usually form data DOM dwara handle hota hai.React mein, form data usually components dwara handle  hota hai.</p>
-  <p>Jab data components dwara sambhala jata hai, toh saara data component state mein stored hota hai.</p>
-  <p>Aap changes ko control karne ke liye <span className="clrRed">onChange</span> attribute mein event handlers add kar sakte hain.</p>
-  <p>Ham useState Hook ka istemal har input ke value ko track karne ke liye kar sakte hain aur poora application ke liye 'single source of truth' provide kar sakte hain."</p>
-  <h3>Example</h3>
-  <p><span className="clrRed">useState</span>hook ka istemaal karo input manage karne ke liye</p>
-  <p className="bgExample">
-   <pre>
-  {`
+root.render(<MyForm />);`}
+          </pre>
+        </p>
+        <p>Yeh normal kaam karega, form submit hoga aur page refresh hoga.</p>
+        <p>Lekin generally hum react mein aisa nahi chahte hain.</p>
+        <p>
+          hum iss behaviour ko rokna chahte hain aur hum chahte hain React form
+          control kare
+        </p>
+        <h2>Handling Forms</h2>
+        <p>
+          Forms ko handle karna yeh hai ki aap data kaise handle karte hain jab
+          yeh value change hoti hai ya form submit hota hai.
+        </p>
+        <p>
+          HTML mein, usually form data DOM dwara handle hota hai.React mein,
+          form data usually components dwara handle hota hai.
+        </p>
+        <p>
+          Jab data components dwara sambhala jata hai, toh saara data component
+          state mein stored hota hai.
+        </p>
+        <p>
+          Aap changes ko control karne ke liye{" "}
+          <span className="clrRed">onChange</span> attribute mein event handlers
+          add kar sakte hain.
+        </p>
+        <p>
+          Ham useState Hook ka istemal har input ke value ko track karne ke liye
+          kar sakte hain aur poora application ke liye 'single source of truth'
+          provide kar sakte hain."
+        </p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">useState</span>hook ka istemaal karo input
+          manage karne ke liye
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
   import { useState } from 'react';
   import ReactDOM from 'react-dom/client';
   
@@ -1740,22 +1831,371 @@ root.render(<MyForm />);`}
   }
   
   const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<MyForm />);`}  
-    </pre> 
-  </p>
-  <h2>
-    Submitting froms
-  </h2>
-  <p>Aap submit action ko control kar sakte hain <span className="clrRed">{`<form>`}</span>  ke <span className="clrRed">onSubmit</span> attribute mein ek event handler add karke:</p>
-  <p>
-  Ek submit button aur ek event handler <span className="clrRed">onSubmit</span> attribute mein add karo:
-  </p>
-  <p className="bgExample">
-  
-  
-            
-  </p>
+  root.render(<MyForm />);`}
+          </pre>
+        </p>
+        <h2>Submitting froms</h2>
+        <p>
+          Aap submit action ko control kar sakte hain{" "}
+          <span className="clrRed">{`<form>`}</span> ke{" "}
+          <span className="clrRed">onSubmit</span> attribute mein ek event
+          handler add karke:
+        </p>
+        <p>
+          Ek submit button aur ek event handler{" "}
+          <span className="clrRed">onSubmit</span> attribute mein add karo:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
+    
+    import { useState } from 'react';
+import ReactDOM from 'react-dom/client';
 
+function MyForm() {
+  const [name, setName] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(name)
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Enter your name:
+        <input 
+          type="text" 
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </label>
+      <input type="submit" />
+    </form>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<MyForm />);`}
+          </pre>
+        </p>
+        <h2>Multiple input fields</h2>
+        <p>
+          {" "}
+          each element mein <span className="clrRed">name</span> attribute add
+          karke aap ek se jada input fields ka value control kar sakte hain
+        </p>
+        <p>Ham apne state ko ek empty object se initialize karenge.</p>
+        <p>
+          Event handler mein fields ko access karne ke liye{" "}
+          <span className="clrRed">event.target.name</span> aur{" "}
+          <span className="clrRed">event.target.value</span> syntax ka istemal
+          karen.
+        </p>
+        <p>
+          State ko update karne ke liye, property name ke around sqaure brackets
+          [bracket notation] ka istemal karen.
+        </p>
+        <h3>Example</h3>
+        <p>two input fields wala ek form banaye</p>
+        <p className="bgExample">
+          <pre>
+            {`
+       import { useState } from 'react';
+       import ReactDOM from 'react-dom/client';
+       
+       function MyForm() {
+         const [inputs, setInputs] = useState({});
+       
+         const handleChange = (event) => {
+           const name = event.target.name;
+           const value = event.target.value;
+           setInputs(values => ({...values, [name]: value}))
+         }
+       
+         const handleSubmit = (event) => {
+           event.preventDefault();
+           alert(inputs);
+         }
+       
+         return (
+           <form onSubmit={handleSubmit}>
+             <label>Enter your name:
+             <input 
+               type="text" 
+               name="username" 
+               value={inputs.username || ""} 
+               onChange={handleChange}
+             />
+             </label>
+             <label>Enter your age:
+               <input 
+                 type="number" 
+                 name="age" 
+                 value={inputs.age || ""} 
+                 onChange={handleChange}
+               />
+               </label>
+               <input type="submit" />
+           </form>
+         )
+       }
+       
+       const root = ReactDOM.createRoot(document.getElementById('root'));
+       root.render(<MyForm />);`}
+          </pre>
+        </p>
+        <p>
+          Note that: Hum dono input fields ke liye ek hi event handler function
+          ka istemal kar rahe hain, hum har ek ke liye ek alag event handler
+          likh sakte hain, lekin yah hume jada clean code pradan karta hai aur
+          React mein yah preffered tareeka hai.
+        </p>
+        <h2>Textarea</h2>
+        <p>
+          The textarea element in React slightly different hai ordinary HTML se.
+        </p>
+        <p>
+          HTML mein, ek textarea ke value ko start tag{" "}
+          <span>{`<textarea>`}</span> aur end tag
+          <span className="clrRed">{`</textarea>`}</span> ke beech wala text
+          maana jaata tha
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
+  <textarea>
+   textarea ka content.
+</textarea>`}
+          </pre>
+        </p>
+        <p>
+          React mein, textarea ke value ko value attribute mein rakha jata hai.
+          Hum <span className="clrRed">useState</span> Hook ka istemal karenge
+          taki hum textarea ke value ko manage kar sakein:
+        </p>
+        <h3>Example</h3>
+        <p>A simple textarea kuch content ke sath:</p>
+        <p>
+          <pre>
+            {`
+ import { useState } from 'react';
+ import ReactDOM from 'react-dom/client';
+ 
+ function MyForm() {
+   const [textarea, setTextarea] = useState(
+     "The content of a textarea goes in the value attribute"
+   );
+ 
+   const handleChange = (event) => {
+     setTextarea(event.target.value)
+   }
+ 
+   return (
+     <form>
+       <textarea value={textarea} onChange={handleChange} />
+     </form>
+   )
+ }
+ 
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ root.render(<MyForm />);`}{" "}
+          </pre>
+        </p>
+        <h2>Select</h2>
+        <p>
+          Ek drop-down list, ya select box, React mein HTML se thoda alag hota
+          hai.
+        </p>
+        <p></p>
+        <p>
+          <b>HTML:</b>
+          <pre className="bgExample">
+            {`
+<select>
+<option value="Ford">Ford</option>
+<option value="Volvo" selected>Volvo</option>
+<option value="Fiat">Fiat</option>
+</select>`}
+          </pre>
+        </p>
+        <p>
+          React mein, selected value <span className="clrRed">select</span> tag
+          par <span className="clrRed">value</span> attribute ke saath define
+          hota hai:
+        </p>
+        <h3>Example</h3>
+        <p>
+          Ek simple select box, jahan selected value "Volvo" constructor mein
+          initialize ki gayi hai:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
+ function MyForm() {
+  const [myCar, setMyCar] = useState("Volvo");
+
+  const handleChange = (event) => {
+    setMyCar(event.target.value)
+  }
+
+  return (
+    <form>
+      <select value={myCar} onChange={handleChange}>
+        <option value="Ford">Ford</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Fiat">Fiat</option>
+      </select>
+    </form>
+  )
+}`}{" "}
+          </pre>
+        </p>
+
+        <p>
+          <span className="clrRed"> {`<textarea>`}</span> aur{" "}
+          <span className="clrRed">{`<select>`}</span> mein slight chnages
+          karke, React all input elements ko ek hi tareeke se handle kar sakta
+          hai.
+        </p>
+        <br />
+        <h2>React Router</h2>
+        <p>Create React App mein page routing included nahi rehta hai.</p>
+        <p>iske liye React Router most popular solution hai.</p>
+        <h2>Add React Router </h2>
+        <p>
+          React Router ko apne application mein include karne ke liye, terminal
+          mein yeh command run karen, application ke root directory se:
+        </p>
+        <p className="bgBlue">npm i -D react-router-dom</p>
+        <p className="bgYellow">
+          Note: Is tutorial mein React Router v6 ka istemal hota hai. Agar aap
+          v5 se upgrade kar rahe hain, toh aapko @latest flag ka istemal karna
+          hoga:
+        </p>
+        <p className="bgBlue">npm i -D react-router-dom@latest</p>
+        <h2>folder Structure</h2>
+        <p>
+          Multiple page routes wala ek application banane ke liye, sabse pehle
+          file structure banaye.
+        </p>
+        <p>
+          <span className="clrRed">src</span> folder ke andar, hum{" "}
+          <span className="clrRed">pages</span> naam ka ek folder banayenge
+          jisme kai saare files honge.
+        </p>
+        <p className="clrRed">
+          src\pages\:
+          <ul className="clrRed">
+            <li>Layout.js</li>
+            <li>Home.js</li>
+            <li>Blogs.js</li>
+            <li>Contact.js</li>
+            <li>NoPage.js</li>
+          </ul>
+        </p>
+        <p>
+          Har file ek bahut basic React component contain karegi. <br />
+          <br />
+        </p>
+        <p className="bgYellow">
+          Aap yaha par file extention <b className="clrRed">.js</b> ki jagah par <b className="clrRed">.jsx</b> bhi use
+          kar sakte hain now a days ye <span className="clrRed">.jsx</span> preffered tarika hai{" "}
+        </p>
+        <h2>Example Explained</h2>
+        <p>We wrap our content first with <span className="clrRed">{`<BrowserRouter>`}</span>.</p>
+        <p>Phir hum apne <span className="clrRed">{`<Routes>`}</span> ko define karte hain. Ek application mein multiple <span className="clrRed">{`<Routes>`}</span> ho sakte hain. Hamara basic example sirf ek ka istemal karta hai.</p>
+        <p><span className="clrRed">{`<Route>`}</span> ko nested rakha ja sakta hai. Pehle <span className="clrRed">{`<Route>`}</span> ka path <span className="clrRed">/</span> hai aur yeh Layout component ko render karta hai.</p>
+        <p>Nested <span className="clrRed">{`<Route>`}</span> s apne parent route se inherit karte hain aur usme add ho jate hain. Isliye, blogs ka path parent ke saath combine ho jata hai aur /blogs ban jata hai.</p>
+        <p>Home component route ka koi path nahi hai, lekin usme ek <span className="clrRed">index</span> attribute hai. Ye index attribute parent route ke liye default route ko specify karta hai, jo ki <span className="clrRed">/</span> hai.</p>
+ <p>
+ Path ko <span className="clrRed">*</span> par set karna kisi bhi undefined URL ke liye catch-all ki tarah kaam karega. Ye ek 404 error page ke liye achha hai.
+ </p>
+
+ <h2>Pages Components</h2>
+ <p>Layout component mein <span className="clrRed">{`<Outlet>`}</span> aur <span className="clrRed">{`<Link>`}</span> elements hain.</p>
+ <p>The <span className="clrRed">{`<Outlet>`}</span> current selected route render karta hai.</p>
+ <p><span className="clrRed">{`<Link>`}</span> URL set karne aur browsing history ko track karne ke liye istemal hota hai.</p>
+ <p>Ham kisi bhi samay kisi internal path ko link karne ke liye <span className="clrRed">{`<a href="">`}</span> ki bajaye <span className="clrRed">{`<Link> `}</span> ka istemal karenge</p>
+ <p>Layout route" ek aisa shared component hai jo sabhi pages par ek jaisa content daalta hai, jaise ki ek navigation menu.</p>
+ <p>
+  <span className="clrRed">Layout.js:</span>
+  <pre className="bgExample">
+  {`
+  import { Outlet, Link } from "react-router-dom";
+
+  const Layout = () => {
+    return (
+      <>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/blogs">Blogs</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </nav>
+  
+        <Outlet />
+      </>
+    )
+  };
+  
+  export default Layout;`}  
+  </pre>
+ </p>
+ <p>
+  <span className="clrRed">Home.js :</span>
+<pre className="bgExample">
+  {`
+  const Home = () => {
+    return <h1>Home</h1>;
+  };
+  
+  export default Home;
+  `}
+</pre>
+ </p>
+ <p>
+  <span className="clrRed">Blogs.js:</span>
+  <pre className="bgExample">
+  {`
+  const Blogs = () => {
+    return <h1>Blog Articles</h1>;
+  };
+  
+  export default Blogs;
+  `}  
+  </pre>
+ </p>
+ <p>
+  <span className="clrRed">Contact.js:</span>
+  <pre className="bgExample">
+  {`
+  const Contact = () => {
+    return <h1>Contact Me</h1>;
+  };
+  
+  export default Contact;
+  `}  
+  </pre>
+ </p>
+ <p>
+  <span className="clrRed">NoPage.js:</span>
+  <pre className="bgExample">
+{`
+const NoPage = () => {
+  return <h1>404</h1>;
+};
+
+export default NoPage;
+`}
+  </pre>
+ </p>
       </div>
     </div>
   );
