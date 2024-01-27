@@ -2098,29 +2098,70 @@ root.render(<MyForm />);`}
           <br />
         </p>
         <p className="bgYellow">
-          Aap yaha par file extention <b className="clrRed">.js</b> ki jagah par <b className="clrRed">.jsx</b> bhi use
-          kar sakte hain now a days ye <span className="clrRed">.jsx</span> preffered tarika hai{" "}
+          Aap yaha par file extention <b className="clrRed">.js</b> ki jagah par{" "}
+          <b className="clrRed">.jsx</b> bhi use kar sakte hain now a days ye{" "}
+          <span className="clrRed">.jsx</span> preffered tarika hai{" "}
         </p>
         <h2>Example Explained</h2>
-        <p>We wrap our content first with <span className="clrRed">{`<BrowserRouter>`}</span>.</p>
-        <p>Phir hum apne <span className="clrRed">{`<Routes>`}</span> ko define karte hain. Ek application mein multiple <span className="clrRed">{`<Routes>`}</span> ho sakte hain. Hamara basic example sirf ek ka istemal karta hai.</p>
-        <p><span className="clrRed">{`<Route>`}</span> ko nested rakha ja sakta hai. Pehle <span className="clrRed">{`<Route>`}</span> ka path <span className="clrRed">/</span> hai aur yeh Layout component ko render karta hai.</p>
-        <p>Nested <span className="clrRed">{`<Route>`}</span> s apne parent route se inherit karte hain aur usme add ho jate hain. Isliye, blogs ka path parent ke saath combine ho jata hai aur /blogs ban jata hai.</p>
-        <p>Home component route ka koi path nahi hai, lekin usme ek <span className="clrRed">index</span> attribute hai. Ye index attribute parent route ke liye default route ko specify karta hai, jo ki <span className="clrRed">/</span> hai.</p>
- <p>
- Path ko <span className="clrRed">*</span> par set karna kisi bhi undefined URL ke liye catch-all ki tarah kaam karega. Ye ek 404 error page ke liye achha hai.
- </p>
+        <p>
+          We wrap our content first with{" "}
+          <span className="clrRed">{`<BrowserRouter>`}</span>.
+        </p>
+        <p>
+          Phir hum apne <span className="clrRed">{`<Routes>`}</span> ko define
+          karte hain. Ek application mein multiple{" "}
+          <span className="clrRed">{`<Routes>`}</span> ho sakte hain. Hamara
+          basic example sirf ek ka istemal karta hai.
+        </p>
+        <p>
+          <span className="clrRed">{`<Route>`}</span> ko nested rakha ja sakta
+          hai. Pehle <span className="clrRed">{`<Route>`}</span> ka path{" "}
+          <span className="clrRed">/</span> hai aur yeh Layout component ko
+          render karta hai.
+        </p>
+        <p>
+          Nested <span className="clrRed">{`<Route>`}</span> s apne parent route
+          se inherit karte hain aur usme add ho jate hain. Isliye, blogs ka path
+          parent ke saath combine ho jata hai aur /blogs ban jata hai.
+        </p>
+        <p>
+          Home component route ka koi path nahi hai, lekin usme ek{" "}
+          <span className="clrRed">index</span> attribute hai. Ye index
+          attribute parent route ke liye default route ko specify karta hai, jo
+          ki <span className="clrRed">/</span> hai.
+        </p>
+        <p>
+          Path ko <span className="clrRed">*</span> par set karna kisi bhi
+          undefined URL ke liye catch-all ki tarah kaam karega. Ye ek 404 error
+          page ke liye achha hai.
+        </p>
 
- <h2>Pages Components</h2>
- <p>Layout component mein <span className="clrRed">{`<Outlet>`}</span> aur <span className="clrRed">{`<Link>`}</span> elements hain.</p>
- <p>The <span className="clrRed">{`<Outlet>`}</span> current selected route render karta hai.</p>
- <p><span className="clrRed">{`<Link>`}</span> URL set karne aur browsing history ko track karne ke liye istemal hota hai.</p>
- <p>Ham kisi bhi samay kisi internal path ko link karne ke liye <span className="clrRed">{`<a href="">`}</span> ki bajaye <span className="clrRed">{`<Link> `}</span> ka istemal karenge</p>
- <p>Layout route" ek aisa shared component hai jo sabhi pages par ek jaisa content daalta hai, jaise ki ek navigation menu.</p>
- <p>
-  <span className="clrRed">Layout.js:</span>
-  <pre className="bgExample">
-  {`
+        <h2>Pages Components</h2>
+        <p>
+          Layout component mein <span className="clrRed">{`<Outlet>`}</span> aur{" "}
+          <span className="clrRed">{`<Link>`}</span> elements hain.
+        </p>
+        <p>
+          The <span className="clrRed">{`<Outlet>`}</span> current selected
+          route render karta hai.
+        </p>
+        <p>
+          <span className="clrRed">{`<Link>`}</span> URL set karne aur browsing
+          history ko track karne ke liye istemal hota hai.
+        </p>
+        <p>
+          Ham kisi bhi samay kisi internal path ko link karne ke liye{" "}
+          <span className="clrRed">{`<a href="">`}</span> ki bajaye{" "}
+          <span className="clrRed">{`<Link> `}</span> ka istemal karenge
+        </p>
+        <p>
+          Layout route" ek aisa shared component hai jo sabhi pages par ek jaisa
+          content daalta hai, jaise ki ek navigation menu.
+        </p>
+        <p>
+          <span className="clrRed">Layout.js:</span>
+          <pre className="bgExample">
+            {`
   import { Outlet, Link } from "react-router-dom";
 
   const Layout = () => {
@@ -2145,58 +2186,436 @@ root.render(<MyForm />);`}
     )
   };
   
-  export default Layout;`}  
-  </pre>
- </p>
- <p>
-  <span className="clrRed">Home.js :</span>
-<pre className="bgExample">
-  {`
+  export default Layout;`}
+          </pre>
+        </p>
+        <p>
+          <span className="clrRed">Home.js :</span>
+          <pre className="bgExample">
+            {`
   const Home = () => {
     return <h1>Home</h1>;
   };
   
   export default Home;
   `}
-</pre>
- </p>
- <p>
-  <span className="clrRed">Blogs.js:</span>
-  <pre className="bgExample">
-  {`
+          </pre>
+        </p>
+        <p>
+          <span className="clrRed">Blogs.js:</span>
+          <pre className="bgExample">
+            {`
   const Blogs = () => {
     return <h1>Blog Articles</h1>;
   };
   
   export default Blogs;
-  `}  
-  </pre>
- </p>
- <p>
-  <span className="clrRed">Contact.js:</span>
-  <pre className="bgExample">
-  {`
+  `}
+          </pre>
+        </p>
+        <p>
+          <span className="clrRed">Contact.js:</span>
+          <pre className="bgExample">
+            {`
   const Contact = () => {
     return <h1>Contact Me</h1>;
   };
   
   export default Contact;
-  `}  
-  </pre>
- </p>
- <p>
-  <span className="clrRed">NoPage.js:</span>
-  <pre className="bgExample">
-{`
+  `}
+          </pre>
+        </p>
+        <p>
+          <span className="clrRed">NoPage.js:</span>
+          <pre className="bgExample">
+            {`
 const NoPage = () => {
   return <h1>404</h1>;
 };
 
 export default NoPage;
 `}
-  </pre>
- </p>
+          </pre>
+        </p>
+        <br />
+        <h2>React Memo</h2>
+
+        <p>
+          <span className="clrRed">Memo</span> ka istemal karne se React component ko skip kar dega agar uske
+          props mein koi change nahi hui hai.
+        </p>
+        <p>ye performance improve performance sakta hai.</p>
+        <h2>Problem</h2>
+        <p>
+          Is example mein, <span className="clrRed">Todos</span> component re-render hota hai, tab bhi jab todos
+          mein koi change nahi hua hai.
+        </p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">index.js</span>
+          <pre className="bgExample">
+            {`
+        import { useState } from "react";
+import ReactDOM from "react-dom/client";
+import Todos from "./Todos";
+
+const App = () => {
+  const [count, setCount] = useState(0);
+  const [todos, setTodos] = useState(["todo 1", "todo 2"]);
+
+  const increment = () => {
+    setCount((c) => c + 1);
+  };
+
+  return (
+    <>
+      <Todos todos={todos} />
+      <hr />
+      <div>
+        Count: {count}
+        <button onClick={increment}>+</button>
       </div>
+    </>
+  );
+};
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);`}
+          </pre>
+        </p>
+        <p>
+          <span className="clrRed">Todos.js</span>
+          <pre className="bgExample">
+            {`
+     const Todos = ({ todos }) => {
+      console.log("child render");
+      return (
+        <>
+          <h2>My Todos</h2>
+          {todos.map((todo, index) => {
+            return <p key={index}>{todo}</p>;
+          })}
+        </>
+      );
+    };
+    
+    export default Todos;`}{" "}
+          </pre>
+        </p>
+        <p>
+          Jab aap increment button par click karte hain, to <span className="clrRed">Todos</span> component
+          re-render hota hai.
+        </p>
+        <p>
+          Agar yah component complex hota, to yah performance issue kar sakta
+          tha.
+        </p>
+        <h2>Solution</h2>
+        <p>iss issue ko fix karne ke liye, we can use <span className="clrRed">memo</span>.</p>
+        <p>
+          <span className="clrRed">Memo</span> ka use karen, jisse <span className="clrRed">Todos</span> component ko needlessly re-render hone
+          se roka ja sake.
+        </p>
+        <p><span className="clrRed">Todos</span> component export ko <span className="clrRed">memo</span> ke inside wrap karein:</p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">index.js:</span>
+          <pre className="bgExample">
+            {`
+        import { useState } from "react";
+        import ReactDOM from "react-dom/client";
+        import Todos from "./Todos";
+        
+        const App = () => {
+          const [count, setCount] = useState(0);
+          const [todos, setTodos] = useState(["todo 1", "todo 2"]);
+        
+          const increment = () => {
+            setCount((c) => c + 1);
+          };
+        
+          return (
+            <>
+              <Todos todos={todos} />
+              <hr />
+              <div>
+                Count: {count}
+                <button onClick={increment}>+</button>
+              </div>
+            </>
+          );
+        };
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);`}
+          </pre>
+        </p>
+        <p>
+          <span className="clrRed">Todos.js:</span>
+          <pre className="bgExample">
+            {`
+       import { memo } from "react";
+
+       const Todos = ({ todos }) => {
+         console.log("child render");
+         return (
+           <>
+             <h2>My Todos</h2>
+             {todos.map((todo, index) => {
+               return <p key={index}>{todo}</p>;
+             })}
+           </>
+         );
+       };
+       
+       export default memo(Todos);`}
+          </pre>
+        </p>
+        <p>
+          Ab <span className="clrRed">Todos</span> component sirf tab re-render
+          hoga jab usko props ke through diye gaye{" "}
+          <span className="clrRed">todos</span> update honge.
+        </p>
+        <br />
+        <h2>
+          React Hooks
+        </h2>
+        <p>hooks react mein version 16.8 mein add hue the</p>
+        <p>Hooks function components ko state aur dusre React features ka access dene mein madad karte hain. Is wajah se, generally class components ki zarurat nahi hoti hai.</p>
+        <p className="bgYellow">Jabki Hooks generally class components ko replace karte hain, React mein classes ko hataane ki koi yojna nahi hai.</p>
+        <h2>What is hook ? (hook kya hai ?)</h2>
+        <p>Hooks humein React features mein "hook" karne me help karte hain, jaise ki state aur lifecycle methods.</p>
+        <h3>Example</h3>
+        <p className="bgExample"> 
+          <pre>
+        {`
+        import React, { useState } from "react";
+        import ReactDOM from "react-dom/client";
+        
+        function FavoriteColor() {
+          const [color, setColor] = useState("red");
+        
+          return (
+            <>
+              <h1>My favorite color is {color}!</h1>
+              <button
+                type="button"
+                onClick={() => setColor("blue")}
+              >Blue</button>
+              <button
+                type="button"
+                onClick={() => setColor("red")}
+              >Red</button>
+              <button
+                type="button"
+                onClick={() => setColor("pink")}
+              >Pink</button>
+              <button
+                type="button"
+                onClick={() => setColor("green")}
+              >Green</button>
+            </>
+          );
+        }
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<FavoriteColor />);`}    
+          </pre>
+        </p>
+        <p>aapko React se hooks import karna must hai.</p>
+        <p>Yahan hum useState Hook ka istemal kar rahe hain taki application state ka track rakh sakein.</p>
+        <p>state am generally un data ya property ko refer karti hai jo hamen track karna hai.</p>
+        <h2>Hooks rules</h2>
+        <p>Hooks ko sirf React function components ke andar hi call kiya ja sakta hai.</p>
+        <p>Hooks ko sirf component ke top level par hi call kiya ja sakta hai.</p>
+        <p>hooks conditional nahi ho sakte</p>
+        <p className="bgYellow"> Hooks React class components mein kaam nahi karenge</p>
+
+        <br />
+        <h2>React useState Hook</h2>
+        <p>React <span className="clrRed">useState</span> Hook hume function component mein state track karne me help karta hai.</p>
+        <p>"state" generally aise data ya properties ko refer karta hai jo kisi application mein track kiye jaane ki zarurat hai.</p>
+        <h2>import useState</h2>
+        <p>To use the <span className="clrRed">useState</span> Hook, we first need to import it into our component.</p>
+        <h3>Example:</h3>
+        <p>Apne component mein top mein useState Hook ko import karein.</p>
+        <p className="bgExample">
+          {`import { useState } from "react";`}
+        </p>
+        <p>Dekho ki hum <span className="clrRed">useState</span> Hook ko <span className="clrRed">react</span> se import karte waqt destructuring kar rahe hain, kyun ki yeh ek named export hai.</p>
+        <h2>
+          initialize useState
+        </h2>
+        <p>function component mein <span className="clrRed">useState</span> ko call karke state initialize karte hain.</p>
+        <p>useState ek initial state (shuruaati sthiti) ko accept karta hai aur do values return karta hai:</p>
+        <p>1. Current state</p>
+        <p>2. ek function jo state update kart hai</p>
+        <h3>Example :</h3>
+        <p>state Function component ke top mein initialize karen.</p>
+        <p>
+        <pre className="bgExample">
+         {`
+         import { useState } from "react";
+
+         function FavoriteColor() {
+           const [color, setColor] = useState("");
+         }`} </pre>  
+        </p>
+        <p>  Notice karo, ham <span className="clrRed">useState</span> se returned values ki destructuring kar rahe hain.</p>
+        <p>first value <span className="clrRed">color</span> current state hai.</p>
+        <p>Second value <span className="clrRed">setColor</span>, function hai jo state ko update karne ke liye istemal kiya jata hai.</p>
+        <p className="bgYellow">Yeh naam, `<span className="clrRed">color</span>` aur `<span className="clrRed">setColor</span>`, variables hain jinka aap  jo bhi chahe naam rakh sakte hain.</p>
+        <p>Lastly, hum ne initial state ko ek khali string par set kiya hai: `<span className="clrRed">useState("")</span>`.</p>
+        <h2>Read State</h2>
+        <p>Ab hum apne state ko apne component mein kahin bhi include kar sakte hain.</p>
+        <h3>Example</h3>
+        <p>Render kiye gaye component mein state variable ka istemal karen.</p>
+        <p className="bgExample"><pre>
+       {`
+       import { useState } from "react";
+       import ReactDOM from "react-dom/client";
+       
+       function FavoriteColor() {
+         const [color, setColor] = useState("red");
+       
+         return <h1>My favorite color is {color}!</h1>
+       }
+       
+       const root = ReactDOM.createRoot(document.getElementById('root'));
+       root.render(<FavoriteColor />);`}   </pre></p>
+       <h2>Update State</h2>
+       <p>Apne state ko update karne ke liye hum apne state updater function ka istemal karte hain.</p>
+       <p className="bgYellow">Hume kabhi bhi state ko seedhe update nahi karna chahiye. Jaise ki, `color = "red"` yeh allow nahi hai.</p>
+       <h3>Example</h3>
+       <p>Use a button to update the state:</p>
+       <p>
+        <pre>
+     {`
+     import { useState } from "react";
+     import ReactDOM from "react-dom/client";
+     
+     function FavoriteColor() {
+       const [color, setColor] = useState("red");
+     
+       return (
+         <>
+           <h1>My favorite color is {color}!</h1>
+           <button
+             type="button"
+             onClick={() => setColor("blue")}
+           >Blue</button>
+         </>
+       )
+     }
+     
+     const root = ReactDOM.createRoot(document.getElementById('root'));
+     root.render(<FavoriteColor />);`}     
+        </pre>
+       </p>
+       <h2>What Can State Hold</h2>
+       <p><span className="clrRed">useState</span> Hook ka istemal strings, numbers, booleans, arrays, objects, aur inmein se kisi bhi combination ko track karne ke liye kiya ja sakta hai!</p>
+       <p>Hum multiple state Hooks create kar sakte hain jisse individual values ko track kiya ja sake.</p>
+       <h3>Example:</h3>
+       <p>Create karo multiple state Hooks:</p>
+       <p className="bgExample"><pre>
+        {`
+        import { useState } from "react";
+        import ReactDOM from "react-dom/client";
+        
+        function Car() {
+          const [brand, setBrand] = useState("Ford");
+          const [model, setModel] = useState("Mustang");
+          const [year, setYear] = useState("1964");
+          const [color, setColor] = useState("red");
+        
+          return (
+            <>
+              <h1>My {brand}</h1>
+              <p>
+                It is a {color} {model} from {year}.
+              </p>
+            </>
+          )
+        }
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<Car />);`}</pre></p>
+        <p>Ya fir, hum ek state ka use karke ek object include kar sakte hain!</p>
+        <h3>Example</h3>
+        <p> ek Hook create karo jo ek object hold karta hai:</p>
+        <p>
+       <pre>
+       {`
+       import { useState } from "react";
+       import ReactDOM from "react-dom/client";
+       
+       function Car() {
+         const [car, setCar] = useState({
+           brand: "Ford",
+           model: "Mustang",
+           year: "1964",
+           color: "red"
+         });
+       
+         return (
+           <>
+             <h1>My {car.brand}</h1>
+             <p>
+               It is a {car.color} {car.model} from {car.year}.
+             </p>
+           </>
+         )
+       }
+       
+       const root = ReactDOM.createRoot(document.getElementById('root'));
+       root.render(<Car />);`} </pre>   
+        </p>
+        <p>Jab hum ab ek object ko track kar rahe hain, hamein ab us object ko reference karna hoga, phir us object ke property ko render karte waqt. (example: `car.brand`)</p>
+<h2>Updating Objects and Arrays in State</h2>   
+<p>Jab state update hota hai, toh poora state overwrite ho jata hai.</p>
+<p>Agar hum sirf apne car ke color ko update karna chahte hain?</p>
+<p>Agar hum sirf setCar({`color: "blue"`}) ko call karte hain, to yeh hamare state se brand, model, aur year ko hata dega.</p>
+<p>Hum JavaScript ke spread operator ka istemal karke ismein help le sakte hain.</p>
+<h3>Example</h3>
+<p>Use the JavaScript spread operator to update only the color of the car:</p>
+<p className="bgExample"><pre>
+ {`
+ import { useState } from "react";
+ import ReactDOM from "react-dom/client";
+ 
+ function Car() {
+   const [car, setCar] = useState({
+     brand: "Ford",
+     model: "Mustang",
+     year: "1964",
+     color: "red"
+   });
+ 
+   const updateColor = () => {
+     setCar(previousState => {
+       return { ...previousState, color: "blue" }
+     });
+   }
+ 
+   return (
+     <>
+       <h1>My {car.brand}</h1>
+       <p>
+         It is a {car.color} {car.model} from {car.year}.
+       </p>
+       <button
+         type="button"
+         onClick={updateColor}
+       >Blue</button>
+     </>
+   )
+ }
+ 
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ root.render(<Car />);`} </pre></p>
+ <p>Kyunki humein state ki current value ki zarurat hai, isliye hum ek function ko apne `<span className="clrRed">setCar</span>` function mein pass karte hain. Ye function previous value ko recieve karta hai.</p>
+ <p>Phir hum ek object return karte hain, previous state ko spread karte hain aur sirf <span className="clrRed">color</span> ko update karte hain.</p>
+   </div>
     </div>
   );
 }
