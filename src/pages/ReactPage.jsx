@@ -1975,7 +1975,7 @@ root.render(<MyForm />);`}
         </p>
         <h3>Example</h3>
         <p>A simple textarea kuch content ke sath:</p>
-        <p>
+        <p className="bgExample">
           <pre>
             {`
  import { useState } from 'react';
@@ -2241,14 +2241,15 @@ export default NoPage;
         <h2>React Memo</h2>
 
         <p>
-          <span className="clrRed">Memo</span> ka istemal karne se React component ko skip kar dega agar uske
-          props mein koi change nahi hui hai.
+          <span className="clrRed">Memo</span> ka istemal karne se React
+          component ko skip kar dega agar uske props mein koi change nahi hui
+          hai.
         </p>
         <p>ye performance improve performance sakta hai.</p>
         <h2>Problem</h2>
         <p>
-          Is example mein, <span className="clrRed">Todos</span> component re-render hota hai, tab bhi jab todos
-          mein koi change nahi hua hai.
+          Is example mein, <span className="clrRed">Todos</span> component
+          re-render hota hai, tab bhi jab todos mein koi change nahi hua hai.
         </p>
         <h3>Example</h3>
         <p>
@@ -2303,20 +2304,27 @@ root.render(<App />);`}
           </pre>
         </p>
         <p>
-          Jab aap increment button par click karte hain, to <span className="clrRed">Todos</span> component
-          re-render hota hai.
+          Jab aap increment button par click karte hain, to{" "}
+          <span className="clrRed">Todos</span> component re-render hota hai.
         </p>
         <p>
           Agar yah component complex hota, to yah performance issue kar sakta
           tha.
         </p>
         <h2>Solution</h2>
-        <p>iss issue ko fix karne ke liye, we can use <span className="clrRed">memo</span>.</p>
         <p>
-          <span className="clrRed">Memo</span> ka use karen, jisse <span className="clrRed">Todos</span> component ko needlessly re-render hone
-          se roka ja sake.
+          iss issue ko fix karne ke liye, we can use{" "}
+          <span className="clrRed">memo</span>.
         </p>
-        <p><span className="clrRed">Todos</span> component export ko <span className="clrRed">memo</span> ke inside wrap karein:</p>
+        <p>
+          <span className="clrRed">Memo</span> ka use karen, jisse{" "}
+          <span className="clrRed">Todos</span> component ko needlessly
+          re-render hone se roka ja sake.
+        </p>
+        <p>
+          <span className="clrRed">Todos</span> component export ko{" "}
+          <span className="clrRed">memo</span> ke inside wrap karein:
+        </p>
         <h3>Example</h3>
         <p>
           <span className="clrRed">index.js:</span>
@@ -2377,18 +2385,26 @@ root.render(<App />);`}
           <span className="clrRed">todos</span> update honge.
         </p>
         <br />
-        <h2>
-          React Hooks
-        </h2>
+        <h2>React Hooks</h2>
         <p>hooks react mein version 16.8 mein add hue the</p>
-        <p>Hooks function components ko state aur dusre React features ka access dene mein madad karte hain. Is wajah se, generally class components ki zarurat nahi hoti hai.</p>
-        <p className="bgYellow">Jabki Hooks generally class components ko replace karte hain, React mein classes ko hataane ki koi yojna nahi hai.</p>
+        <p>
+          Hooks function components ko state aur dusre React features ka access
+          dene mein madad karte hain. Is wajah se, generally class components ki
+          zarurat nahi hoti hai.
+        </p>
+        <p className="bgYellow">
+          Jabki Hooks generally class components ko replace karte hain, React
+          mein classes ko hataane ki koi yojna nahi hai.
+        </p>
         <h2>What is hook ? (hook kya hai ?)</h2>
-        <p>Hooks humein React features mein "hook" karne me help karte hain, jaise ki state aur lifecycle methods.</p>
+        <p>
+          Hooks humein React features mein "hook" karne me help karte hain,
+          jaise ki state aur lifecycle methods.
+        </p>
         <h3>Example</h3>
-        <p className="bgExample"> 
+        <p className="bgExample">
           <pre>
-        {`
+            {`
         import React, { useState } from "react";
         import ReactDOM from "react-dom/client";
         
@@ -2419,59 +2435,156 @@ root.render(<App />);`}
         }
         
         const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<FavoriteColor />);`}    
+        root.render(<FavoriteColor />);`}
           </pre>
         </p>
         <p>aapko React se hooks import karna must hai.</p>
-        <p>Yahan hum useState Hook ka istemal kar rahe hain taki application state ka track rakh sakein.</p>
-        <p>state am generally un data ya property ko refer karti hai jo hamen track karna hai.</p>
+        <p>
+          Yahan hum useState Hook ka istemal kar rahe hain taki application
+          state ka track rakh sakein.
+        </p>
+        <p>
+          state am generally un data ya property ko refer karti hai jo hamen
+          track karna hai.
+        </p>
         <h2>Hooks rules</h2>
-        <p>Hooks ko sirf React function components ke andar hi call kiya ja sakta hai.</p>
-        <p>Hooks ko sirf component ke top level par hi call kiya ja sakta hai.</p>
+        <p>
+          Hooks ko sirf React function components ke andar hi call kiya ja sakta
+          hai.
+        </p>
+        <p>
+          Hooks ko sirf component ke top level par hi call kiya ja sakta hai.
+        </p>
         <p>hooks conditional nahi ho sakte</p>
-        <p className="bgYellow"> Hooks React class components mein kaam nahi karenge</p>
+        <p className="bgYellow">
+          {" "}
+          Hooks React class components mein kaam nahi karenge
+        </p>
 
         <br />
         <h2>React useState Hook</h2>
-        <p>React <span className="clrRed">useState</span> Hook hume function component mein state track karne me help karta hai.</p>
-        <p>"state" generally aise data ya properties ko refer karta hai jo kisi application mein track kiye jaane ki zarurat hai.</p>
+        <p>
+          React <span className="clrRed">useState</span> Hook hume function
+          component mein state track karne me help karta hai.
+        </p>
+        <p>
+          "state" generally aise data ya properties ko refer karta hai jo kisi
+          application mein track kiye jaane ki zarurat hai.
+        </p>
+        <div className="bgYellow">
+          <h2>Real Life Example of useState Hook</h2>
+          <p>
+            State ek concept hai jo batata hai ki ek component ke andar kuch
+            data hai jo badal sakta hai. Agar hum ise simple shabdon mein
+            samjhein, toh state component ke "mood" ya "halat" ko darust rakhne
+            ka tareeka hai. <br /> 
+            <br />
+            
+            Imagine karo ki ek React component ek insan ki tarah
+            hai. Is insan ke mood ko hum state kehte hain. Kabhi khush, kabhi
+            gussa, aur kabhi udas. useState ka istemal is mood ya state ko
+            badalne ke liye hota hai. Jab aap apne component ke andar useState
+            ka istemal karte hain, toh aap ek variable ko state banate hain. Jab
+            aap us variable ki value badalte hain, toh React component re-render
+            hota hai aur naya mood ya state dikhta hai. Udaharan ke taur par, ek
+            button ke click se message badalna:
+          </p>
+          <p className="bgExample">
+         <pre>
+        {`
+        import React, { useState } from 'react';
+
+        const StateExample = () => {
+          // message variable ko state banaya gaya hai
+          const [message, setMessage] = useState('Hello, React!');
+        
+          // Jab button par click hota hai, message ki value badal jati hai
+          const handleClick = () => {
+            setMessage('Welcome to the world of React!');
+          };
+        
+          return (
+            <div>
+              <h2>{message}</h2>
+              <button onClick={handleClick}>Change Message</button>
+            </div>
+          );
+        };
+        
+        export default StateExample;
+        `}  </pre>   
+          </p>
+          <p>
+          Is example mein message variable state hai. Jab button par click hota hai, setMessage ke madhyam se message ki value badli jati hai aur component re-render hota hai, jisse naya message dikhega.
+          </p>
+        </div>
         <h2>import useState</h2>
-        <p>To use the <span className="clrRed">useState</span> Hook, we first need to import it into our component.</p>
+        <p>
+          To use the <span className="clrRed">useState</span> Hook, we first
+          need to import it into our component.
+        </p>
         <h3>Example:</h3>
         <p>Apne component mein top mein useState Hook ko import karein.</p>
-        <p className="bgExample">
-          {`import { useState } from "react";`}
+        <p className="bgExample">{`import { useState } from "react";`}</p>
+        <p>
+          Dekho ki hum <span className="clrRed">useState</span> Hook ko{" "}
+          <span className="clrRed">react</span> se import karte waqt
+          destructuring kar rahe hain, kyun ki yeh ek named export hai.
         </p>
-        <p>Dekho ki hum <span className="clrRed">useState</span> Hook ko <span className="clrRed">react</span> se import karte waqt destructuring kar rahe hain, kyun ki yeh ek named export hai.</p>
-        <h2>
-          initialize useState
-        </h2>
-        <p>function component mein <span className="clrRed">useState</span> ko call karke state initialize karte hain.</p>
-        <p>useState ek initial state (shuruaati sthiti) ko accept karta hai aur do values return karta hai:</p>
+        <h2>initialize useState</h2>
+        <p>
+          function component mein <span className="clrRed">useState</span> ko
+          call karke state initialize karte hain.
+        </p>
+        <p>
+          useState ek initial state (shuruaati sthiti) ko accept karta hai aur
+          do values return karta hai:
+        </p>
         <p>1. Current state</p>
         <p>2. ek function jo state update kart hai</p>
         <h3>Example :</h3>
         <p>state Function component ke top mein initialize karen.</p>
         <p>
-        <pre className="bgExample">
-         {`
+          <pre className="bgExample">
+            {`
          import { useState } from "react";
 
          function FavoriteColor() {
            const [color, setColor] = useState("");
-         }`} </pre>  
+         }`}{" "}
+          </pre>
         </p>
-        <p>  Notice karo, ham <span className="clrRed">useState</span> se returned values ki destructuring kar rahe hain.</p>
-        <p>first value <span className="clrRed">color</span> current state hai.</p>
-        <p>Second value <span className="clrRed">setColor</span>, function hai jo state ko update karne ke liye istemal kiya jata hai.</p>
-        <p className="bgYellow">Yeh naam, `<span className="clrRed">color</span>` aur `<span className="clrRed">setColor</span>`, variables hain jinka aap  jo bhi chahe naam rakh sakte hain.</p>
-        <p>Lastly, hum ne initial state ko ek khali string par set kiya hai: `<span className="clrRed">useState("")</span>`.</p>
+        <p>
+          {" "}
+          Notice karo, ham <span className="clrRed">useState</span> se returned
+          values ki destructuring kar rahe hain.
+        </p>
+        <p>
+          first value <span className="clrRed">color</span> current state hai.
+        </p>
+        <p>
+          Second value <span className="clrRed">setColor</span>, function hai jo
+          state ko update karne ke liye istemal kiya jata hai.
+        </p>
+        <p className="bgYellow">
+          Yeh naam, `<span className="clrRed">color</span>` aur `
+          <span className="clrRed">setColor</span>`, variables hain jinka aap jo
+          bhi chahe naam rakh sakte hain.
+        </p>
+        <p>
+          Lastly, hum ne initial state ko ek khali string par set kiya hai: `
+          <span className="clrRed">useState("")</span>`.
+        </p>
         <h2>Read State</h2>
-        <p>Ab hum apne state ko apne component mein kahin bhi include kar sakte hain.</p>
+        <p>
+          Ab hum apne state ko apne component mein kahin bhi include kar sakte
+          hain.
+        </p>
         <h3>Example</h3>
         <p>Render kiye gaye component mein state variable ka istemal karen.</p>
-        <p className="bgExample"><pre>
-       {`
+        <p className="bgExample">
+          <pre>
+            {`
        import { useState } from "react";
        import ReactDOM from "react-dom/client";
        
@@ -2482,15 +2595,23 @@ root.render(<App />);`}
        }
        
        const root = ReactDOM.createRoot(document.getElementById('root'));
-       root.render(<FavoriteColor />);`}   </pre></p>
-       <h2>Update State</h2>
-       <p>Apne state ko update karne ke liye hum apne state updater function ka istemal karte hain.</p>
-       <p className="bgYellow">Hume kabhi bhi state ko seedhe update nahi karna chahiye. Jaise ki, `color = "red"` yeh allow nahi hai.</p>
-       <h3>Example</h3>
-       <p>Use a button to update the state:</p>
-       <p>
-        <pre>
-     {`
+       root.render(<FavoriteColor />);`}{" "}
+          </pre>
+        </p>
+        <h2>Update State</h2>
+        <p>
+          Apne state ko update karne ke liye hum apne state updater function ka
+          istemal karte hain.
+        </p>
+        <p className="bgYellow">
+          Hume kabhi bhi state ko seedhe update nahi karna chahiye. Jaise ki,
+          `color = "red"` yeh allow nahi hai.
+        </p>
+        <h3>Example</h3>
+        <p>Use a button to update the state:</p>
+        <p className="bgExample">
+          <pre>
+            {`
      import { useState } from "react";
      import ReactDOM from "react-dom/client";
      
@@ -2509,16 +2630,24 @@ root.render(<App />);`}
      }
      
      const root = ReactDOM.createRoot(document.getElementById('root'));
-     root.render(<FavoriteColor />);`}     
-        </pre>
-       </p>
-       <h2>What Can State Hold</h2>
-       <p><span className="clrRed">useState</span> Hook ka istemal strings, numbers, booleans, arrays, objects, aur inmein se kisi bhi combination ko track karne ke liye kiya ja sakta hai!</p>
-       <p>Hum multiple state Hooks create kar sakte hain jisse individual values ko track kiya ja sake.</p>
-       <h3>Example:</h3>
-       <p>Create karo multiple state Hooks:</p>
-       <p className="bgExample"><pre>
-        {`
+     root.render(<FavoriteColor />);`}
+          </pre>
+        </p>
+        <h2>What Can State Hold</h2>
+        <p>
+          <span className="clrRed">useState</span> Hook ka istemal strings,
+          numbers, booleans, arrays, objects, aur inmein se kisi bhi combination
+          ko track karne ke liye kiya ja sakta hai!
+        </p>
+        <p>
+          Hum multiple state Hooks create kar sakte hain jisse individual values
+          ko track kiya ja sake.
+        </p>
+        <h3>Example:</h3>
+        <p>Create karo multiple state Hooks:</p>
+        <p className="bgExample">
+          <pre>
+            {`
         import { useState } from "react";
         import ReactDOM from "react-dom/client";
         
@@ -2539,13 +2668,17 @@ root.render(<App />);`}
         }
         
         const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<Car />);`}</pre></p>
-        <p>Ya fir, hum ek state ka use karke ek object include kar sakte hain!</p>
+        root.render(<Car />);`}
+          </pre>
+        </p>
+        <p>
+          Ya fir, hum ek state ka use karke ek object include kar sakte hain!
+        </p>
         <h3>Example</h3>
         <p> ek Hook create karo jo ek object hold karta hai:</p>
-        <p>
-       <pre>
-       {`
+        <p className="bgExample">
+          <pre>
+            {`
        import { useState } from "react";
        import ReactDOM from "react-dom/client";
        
@@ -2568,18 +2701,33 @@ root.render(<App />);`}
        }
        
        const root = ReactDOM.createRoot(document.getElementById('root'));
-       root.render(<Car />);`} </pre>   
+       root.render(<Car />);`}{" "}
+          </pre>
         </p>
-        <p>Jab hum ab ek object ko track kar rahe hain, hamein ab us object ko reference karna hoga, phir us object ke property ko render karte waqt. (example: `car.brand`)</p>
-<h2>Updating Objects and Arrays in State</h2>   
-<p>Jab state update hota hai, toh poora state overwrite ho jata hai.</p>
-<p>Agar hum sirf apne car ke color ko update karna chahte hain?</p>
-<p>Agar hum sirf setCar({`color: "blue"`}) ko call karte hain, to yeh hamare state se brand, model, aur year ko hata dega.</p>
-<p>Hum JavaScript ke spread operator ka istemal karke ismein help le sakte hain.</p>
-<h3>Example</h3>
-<p>Use the JavaScript spread operator to update only the color of the car:</p>
-<p className="bgExample"><pre>
- {`
+        <p>
+          Jab hum ab ek object ko track kar rahe hain, hamein ab us object ko
+          reference karna hoga, phir us object ke property ko render karte waqt.
+          (example: `car.brand`)
+        </p>
+        <h2>Updating Objects and Arrays in State</h2>
+        <p>Jab state update hota hai, toh poora state overwrite ho jata hai.</p>
+        <p>Agar hum sirf apne car ke color ko update karna chahte hain?</p>
+        <p>
+          Agar hum sirf setCar({`color: "blue"`}) ko call karte hain, to yeh
+          hamare state se brand, model, aur year ko hata dega.
+        </p>
+        <p>
+          Hum JavaScript ke spread operator ka istemal karke ismein help le
+          sakte hain.
+        </p>
+        <h3>Example</h3>
+        <p>
+          Use the JavaScript spread operator to update only the color of the
+          car:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
  import { useState } from "react";
  import ReactDOM from "react-dom/client";
  
@@ -2612,10 +2760,784 @@ root.render(<App />);`}
  }
  
  const root = ReactDOM.createRoot(document.getElementById('root'));
- root.render(<Car />);`} </pre></p>
- <p>Kyunki humein state ki current value ki zarurat hai, isliye hum ek function ko apne `<span className="clrRed">setCar</span>` function mein pass karte hain. Ye function previous value ko recieve karta hai.</p>
- <p>Phir hum ek object return karte hain, previous state ko spread karte hain aur sirf <span className="clrRed">color</span> ko update karte hain.</p>
-   </div>
+ root.render(<Car />);`}{" "}
+          </pre>
+        </p>
+        <p>
+          Kyunki humein state ki current value ki zarurat hai, isliye hum ek
+          function ko apne `<span className="clrRed">setCar</span>` function
+          mein pass karte hain. Ye function previous value ko recieve karta hai.
+        </p>
+        <p>
+          Phir hum ek object return karte hain, previous state ko spread karte
+          hain aur sirf <span className="clrRed">color</span> ko update karte
+          hain.
+        </p>
+        <br />
+        <h2>
+          React <span className="clrRed">useEffect</span> Hook
+        </h2>
+        <p>
+          <span className="clrRed">UseEffect</span> Hook components mein side
+          effects perform karne ka kaam aata hai.
+        </p>
+        <p>
+          Kuch side effects ke examples hain: data fetch karna, DOM ko direct
+          update karna, aur timers
+        </p>
+        <p>
+          <span className="clrRed">useEffect</span> do arguments accept karta
+          hai. Dusra argument optional hota hai.
+        </p>
+        <p>
+          <span className="clrRed">useEffect</span>
+          {`(<function>, <dependency>)`}
+        </p>
+        <p> timer as an example dekhte hain .</p>
+        <h3>Example</h3>
+        <p>
+          Use <span className="clrRed">setTimeout()</span> to count 1 second
+          after initial render:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
+ import { useState, useEffect } from "react";
+ import ReactDOM from "react-dom/client";
+ 
+ function Timer() {
+   const [count, setCount] = useState(0);
+ 
+   useEffect(() => {
+     setTimeout(() => {
+       setCount((count) => count + 1);
+     }, 1000);
+   });
+ 
+   return <h1>I've rendered {count} times!</h1>;
+ }
+ 
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ root.render(<Timer />);`}
+          </pre>
+        </p>
+        <p>
+          par ruko! Yeh count karte ja raha hai jabki yeh sirf ek baar hona
+          chahiye tha!
+        </p>
+        <p>
+          useEffect har render par chalta hai. Iska matlab hai ki jab count
+          badalta hai, ek render hota hai, jo phir dusre effect ko trigger karta
+          hai.
+        </p>
+        <p>
+          "hum ye nahi chahte. Side effects kab run ho, isko control karne ke
+          liye several ways hain."
+        </p>
+        <p>
+          Hamesha second parameter ko include karna chahiye, jo ek array accept
+          karta hai. Is array mein useEffect ko optional taur par dependencies
+          bhi diye ja sakte hain.
+        </p>
+        <h3>Example</h3>
+        <p>1. No dependency (jab humne koi dependency pass nahi ki ho)</p>
+        <p className="bgExample">
+          <pre>
+            {`
+useEffect(() => {
+  //every render pe run karega
+});`}
+          </pre>
+        </p>
+        <h3>Example</h3>
+        <p>2. An empty array (jab empty array ho dependency):</p>
+        <p className="bgExample">
+          <pre>
+            {`
+    useEffect(() => {
+      //Runs only on the first render
+    }, []);`}
+          </pre>
+        </p>
+        <h3>Example</h3>
+        <p>
+          3. Props or state values (jab dependency mein prop ya state value di
+          gai ho)
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
+ useEffect(() => {
+  //first render pe run karega
+  //And any time jab koi dependency ki value change hogi tab render hoga
+}, [prop, state]);`}
+          </pre>
+        </p>
+        <p>
+          Toh, is samasya ko dur karne ke liye, chaliye is effect ko sirf
+          initial render par run karaate hain.
+        </p>
+        <h3>Example</h3>
+        <p>only run the effect on first render</p>
+        <p className="bgExample">
+          <pre>
+            {`
+ import { useState, useEffect } from "react";
+ import ReactDOM from "react-dom/client";
+ 
+ function Timer() {
+   const [count, setCount] = useState(0);
+ 
+   useEffect(() => {
+     setTimeout(() => {
+       setCount((count) => count + 1);
+     }, 1000);
+   }, []); // < sirf first render par run kare iske liye yaha par empty brackets added hain dependency jaisa upar bataya gya hai
+ 
+   return <h1>I've rendered {count} times!</h1>;
+ }
+ 
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ root.render(<Timer />);`}{" "}
+          </pre>
+        </p>
+        <h3>Example</h3>
+        <p>
+          Yahaan ek <span className="clrRed">useEffect</span> Hook ka ek example
+          hai jo ek variable par dependent hai. Agar count variable update hota
+          hai, toh effect phir se run hoga.
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
+ import { useState, useEffect } from "react";
+ import ReactDOM from "react-dom/client";
+ 
+ function Counter() {
+   const [count, setCount] = useState(0);
+   const [calculation, setCalculation] = useState(0);
+ 
+   useEffect(() => {
+     setCalculation(() => count * 2);
+   }, [count]); // <- add the count variable here
+ 
+   return (
+     <>
+       <p>Count: {count}</p>
+       <button onClick={() => setCount((c) => c + 1)}>+</button>
+       <p>Calculation: {calculation}</p>
+     </>
+   );
+ }
+ 
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ root.render(<Counter />);`}
+          </pre>
+        </p>
+        <p>
+          Agar multiple dependencies hain, toh unko useEffect ki dependency
+          array mein include kiya jaana chahiye.
+        </p>
+        <div className="bgYellow">
+          <h4>Real Life Example of useEffect Hook</h4>
+          <p>
+            Ek common real-life example useEffect ka istemal karte hue, data
+            fetching aur API calls ke liye hota hai. Niche ek simple example
+            hai, jisme hum useEffect ka istemal karke fake API se data fetch
+            karte hain.
+          </p>
+          <p className="bgExample">
+            <pre>
+              {`import React, { useState, useEffect } from 'react';
+
+const DataFetchingExample = () => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Fake API URL
+        const apiUrl = 'https://jsonplaceholder.typicode.com/todos/1';
+        
+        // Data fetch
+        const response = await fetch(apiUrl);
+        const result = await response.json();
+
+        // Set state based on fetched data
+        setData(result);
+        setLoading(false);
+      } catch (error) {
+        // Handle error
+        setError(error);
+        setLoading(false);
+      }
+    };
+
+    // Call fetchData function
+    fetchData();
+  }, []); // Empty dependency array ensures that useEffect runs only once on component mount
+
+  // JSX rendering based on state
+  return (
+    <div>
+      <h2>Data Fetching Example</h2>
+      {loading && <p>Loading...</p>}
+      {error && <p>Error: {error.message}</p>}
+      {data && (
+        <div>
+          <p>User ID: {data.userId}</p>
+          <p>Title: {data.title}</p>
+          <p>Completed: {data.completed ? 'Yes' : 'No'}</p>
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default DataFetchingExample;
+
+         `}
+            </pre>
+          </p>
+          <p>
+            Is example mein, useEffect ka istemal kiya gaya hai to fetch data
+            jab component mount hota hai ([] dependency array se ensure kiya
+            gaya hai ki useEffect sirf ek baar chale). fetchData function async
+            tareeke se data fetch karti hai aur state ko set karti hai. State ke
+            changes ke basis par, appropriate JSX render hota hai, jisme
+            loading, error, aur fetched data ko handle kiya gaya hai.
+          </p>
+        </div>
+        <h2>Effect Cleanup process</h2>
+        <p>
+          Kuch effects ko memory leaks kam karne ke liye cleanup ki zarurat hoti
+          hai.
+        </p>
+        <p>
+          Timeouts, subscriptions, event listeners, aur doosre effects jinki
+          zarurat nahi reh gai ho, unhe dispose kiya jaana chahiye.
+        </p>
+        <p>
+          Hum ye useEffect Hook ke end mein ek return function include karke
+          karte hain."
+        </p>
+        <h3>Example</h3>
+        <p className="bgExample">
+          <pre>
+            {`
+  import { useState, useEffect } from "react";
+  import ReactDOM from "react-dom/client";
+  
+  function Timer() {
+    const [count, setCount] = useState(0);
+  
+    useEffect(() => {
+      let timer = setTimeout(() => {
+      setCount((count) => count + 1);
+    }, 1000);
+  
+    return () => clearTimeout(timer)
+    }, []);
+  
+    return <h1>I've rendered {count} times!</h1>;
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(<Timer />);`}
+          </pre>
+        </p>
+        <p className="bgYellow">
+          Note that : Timer ko clear karne ke liye, humein ise ek naam dena
+          pada.
+        </p>
+        <br />
+        <h2>useContext Hook</h2>
+        <p>React Context ek tareeka hai state ko globally manage karne ka.</p>
+        <p>
+          Ye useState Hook ke saath istemal kiya ja sakta hai taki state ko deep
+          nested components ke beech mein share karna aasaan ho, jo ke sirf
+          useState use karke par mushkil hota hai.
+        </p>
+        <h2>Problem</h2>
+        <p>
+          State stack mein highest parent components mein rakha jana chahiye jo
+          state ko access karna chahte hain{" "}
+        </p>
+        <p>
+          Iska illustration ke liye, hamare paas kai nested components hain.
+          Stack ke upar aur neeche wale component ko state ki access ki zarurat
+          hai
+        </p>
+        <p>
+          Isko Context hook ke bina karne ke par, hamein har nested component ke
+          through state ko 'props' ke roop mein bhejna hoga. jisko 'prop
+          drilling' kehte hain.
+        </p>
+        <h3>Example</h3>
+        <p>
+          Passing "props" through nested components (Nested components ke
+          through props pass karne pe)
+        </p>
+        <p className="bgExample">
+          <pre>
+            <code>
+              {`
+ import { useState } from "react";
+ import ReactDOM from "react-dom/client";
+ 
+ function Component1() {
+   const [user, setUser] = useState("Jesse Hall");
+   
+   return (
+     <>
+     <h1>Hello {user}!</h1>
+     <Component2 user={user} />
+     </>
+     );
+    }
+    
+    function Component2({ user }) {
+      return (
+        <>
+        <h1>Component 2</h1>
+        <Component3 user={user} />
+        </>
+        );
+      }
+      
+      function Component3({ user }) {
+        return (
+          <>
+          <h1>Component 3</h1>
+          <Component4 user={user} />
+          </>
+          );
+        }
+        
+        function Component4({ user }) {
+          return (
+            <>
+            <h1>Component 4</h1>
+            <Component5 user={user} />
+            </>
+            );
+          }
+          
+          function Component5({ user }) {
+            return (
+              <>
+              <h1>Component 5</h1>
+              <h2>Hello {user} again!</h2>
+              </>
+              );
+            }
+            
+            const root = ReactDOM.createRoot(document.getElementById('root'));
+            root.render(<Component1 />);`}
+            </code>
+          </pre>
+        </p>
+        <p>
+          "even though components 2,3,4 ko state ki jaruart nahi thi, lekin
+          state ko component 5 tak pahunchane ke liye usey unke through aage
+          bhejna pada."
+        </p>
+
+        <h2>Solution</h2>
+        <p>iska Solution hai context create karna</p>
+        <h4>Create Context</h4>
+        <p>
+          To create context, you must Import{" "}
+          <span className="clrRed">createContext</span> and initialize it:
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`import { useState, createContext } from "react";
+import ReactDOM from "react-dom/client";
+
+const UserContext = createContext()`}
+          </pre>
+        </p>
+        <p>
+          next step hai Context Provider ka istemaal karke un component ke tree
+          ko wrap karna jinko state Context ki zarurat hai.
+        </p>
+        <div className="bgYellow">
+          <h4>Real Life Example of useContext Hook</h4>
+          <p>
+            Ek common real-life example useContext ka istemal karte hue,
+            multiple components ke beech data ko share karna hai, jaise ki theme
+            (dark mode ya light mode) ko. Niche ek simple example hai, jisme hum
+            theme ko global context ke through share karte hain.
+          </p>
+          <p className="bgExample">
+            <pre>
+              {`
+            import React, { createContext, useContext, useState } from 'react';
+
+            // ThemeContext create karna
+            const ThemeContext = createContext();
+            
+            // Custom hook banakar ThemeContext ka istemal karna
+            const useTheme = () => {
+              const context = useContext(ThemeContext);
+              if (!context) {
+                throw new Error('useTheme must be used within a ThemeProvider');
+              }
+              return context;
+            };
+            
+            // ThemeProvider component create karna
+            const ThemeProvider = ({ children }) => {
+              const [theme, setTheme] = useState('light');
+            
+              const toggleTheme = () => {
+                setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+              };
+            
+              return (
+                <ThemeContext.Provider value={{ theme, toggleTheme }}>
+                  {children}
+                </ThemeContext.Provider>
+              );
+            };
+            
+            // Child component create karna jo useContext ka istemal kare
+            const ThemedComponent = () => {
+              const { theme, toggleTheme } = useTheme();
+            
+              return (
+                <div style={{ background: theme === 'light' ? '#fff' : '#333', color: theme === 'light' ? '#333' : '#fff', padding: '20px', textAlign: 'center' }}>
+                  <h2>Themed Component</h2>
+                  <p>Current Theme: {theme}</p>
+                  <button onClick={toggleTheme}>Toggle Theme</button>
+                </div>
+              );
+            };
+            
+            // Parent component create karna jisme ThemeProvider wrap ho
+            const App = () => {
+              return (
+                <ThemeProvider>
+                  <ThemedComponent />
+                </ThemeProvider>
+              );
+            };
+            
+            export default App;
+            `}
+            </pre>
+          </p>
+          <p>
+            Is example mein, useContext ka istemal ThemedComponent component
+            mein theme aur toggleTheme function ko access karne ke liye kiya
+            gaya hai. ThemedComponent ke bina hi direct access karne ke liye,
+            useTheme custom hook ka istemal kiya gaya hai. ThemeProvider
+            component, ThemeContext.Provider ke through, theme state aur
+            toggleTheme function ko provide karta hai. Iske alawa, jab button
+            click hota hai, theme change hota hai aur ye change ThemedComponent
+            ko reflect hota hai.
+          </p>
+        </div>
+        <h4>Context Provider </h4>
+        <p>
+          child components ko Context Provider mein wrap karein aur state ki
+          value provide karein
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`function Component1() {
+  const [user, setUser] = useState("Jesse Hall");
+
+  return (
+    <UserContext.Provider value={user}>
+      <h1>Hello{user}!</h1>
+      <Component2 user={user} />
+    </UserContext.Provider>
+  );
+}`}
+          </pre>
+        </p>
+        <h2>
+          Use the <span className="clrRed">useContext</span> Hook
+        </h2>
+
+        <p>
+          child component mein Context ka istemal karne ke liye, hamein{" "}
+          <span className="clrRed">useContext</span> Hook ka istemal karna padta
+          hai."
+        </p>
+        <p>
+          First, <span className="clrRed">useContext</span> include karo in the
+          import statement:
+        </p>
+        <p className="bgExample">
+          {`import { useState, createContext, useContext } from "react";`}
+        </p>
+        <p>Then aap user Context all components mein access kar sakte hain:</p>
+        <p className="bgExample">
+          <pre>
+            {`function Component5() {
+  const user = useContext(UserContext);
+
+  return (
+    <>
+      <h1>Component 5</h1>
+      <h2>Hello {user} again!</h2>
+    </>
+  );
+}`}
+          </pre>
+        </p>
+        <h2>Example</h2>
+        <p>example using React Context :</p>
+        <p className="bgExample">
+          <pre>
+            {`import { useState, createContext, useContext } from "react";
+import ReactDOM from "react-dom/client";
+
+const UserContext = createContext();
+
+function Component1() {
+  const [user, setUser] = useState("Jesse Hall");
+
+  return (
+    <UserContext.Provider value={user}>
+      <h1>Hello {user}!</h1>
+      <Component2 />
+    </UserContext.Provider>
+  );
+}
+
+function Component2() {
+  return (
+    <>
+      <h1>Component 2</h1>
+      <Component3 />
+    </>
+  );
+}
+
+function Component3() {
+  return (
+    <>
+      <h1>Component 3</h1>
+      <Component4 />
+    </>
+  );
+}
+
+function Component4() {
+  return (
+    <>
+      <h1>Component 4</h1>
+      <Component5 />
+    </>
+  );
+}
+
+function Component5() {
+  const user = useContext(UserContext);
+
+  return (
+    <>
+      <h1>Component 5</h1>
+      <h2>Hello {user} again!</h2>
+    </>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Component1 />);`}
+          </pre>
+        </p>
+        <h2>React useRef Hook</h2>
+        <p>
+          The useRef Hook aapko renders ke beech mein values ko persist karne
+          mein help karta hai.
+        </p>
+        <p>
+          Iska istemal ek mutable value ko store karne ke liye kiya ja sakta hai
+          jo update hone par re-render ko cause nahi karta.
+        </p>
+        <p>
+          Iska istemal ek DOM element ko seedhe access karne ke liye bhi kiya ja
+          sakta hai.
+        </p>
+        <h2>Re-Renders nahi karta hai.</h2>
+        <p>
+          Agar hum try karen ki hamara application kitni baar render hota hai,
+          useState Hook ka istemal karke, toh ham khud ko ek infinite loop mein
+          atak jayenge kyunki yah Hook hi khud ek re-render cause karta hai.
+        </p>
+        <p>Isse bachne ke liye, ham useRef Hook ka istemal kar sakte hain.</p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">useRef</span> application re-renders track
+          karne ke liye
+        </p>
+        <p className="bgExample">
+          <pre>
+            {`
+ import { useState, useEffect, useRef } from "react";
+ import ReactDOM from "react-dom/client";
+ 
+ function App() {
+   const [inputValue, setInputValue] = useState("");
+   const count = useRef(0);
+ 
+   useEffect(() => {
+     count.current = count.current + 1;
+   });
+ 
+   return (
+     <>
+       <input
+         type="text"
+         value={inputValue}
+         onChange={(e) => setInputValue(e.target.value)}
+       />
+       <h1>Render Count: {count.current}</h1>
+     </>
+   );
+ }
+ 
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ root.render(<App />);`}{" "}
+          </pre>
+        </p>
+        <p>
+          <span className="clRed">useRef()</span> ek item hi return karta hai.
+          Ye ek ' <span className="clrRed">current</span> ' named object return
+          karta hai.
+        </p>
+        <p>
+          Jab hum useRef ko initialize karte hain, toh hum initial value set
+          karte hain: useRef(0).
+        </p>
+        <p>
+          Yeh kuch iss tarah kaam karta hai: const count = {`{current: 0}`}. Hum
+          count ko <span className="clrRed">count.current</span> ka istemal
+          karke access kar sakte hain.
+        </p>
+        <p>
+          Apne computer par ise run kare aur input mein likhne ki koshish
+          karein, dekhein ki kaise application render count badhta hai.
+        </p>
+        <h2>Accessing DOM elements using useRef</h2>
+        <p>
+          in general, ham chahte hain ki React sab DOM manupulation handle kar
+          le.
+        </p>
+        <p>
+          Lekin kuch aise instances hain jahan{" "}
+          <span className="clrRed">useRef</span> ka use bina kisi issue ke kiya
+          ja sakta hai.
+        </p>
+        <p>
+          React mein, ham ek element mein ref attribute jod sakte hain taki ham
+          usse directly DOM se access kar sake.
+        </p>
+        <h3>Example</h3>
+        <p>Input par focus karne ke liye useRef ka istemal karein.</p>
+        <p className="bgExample">
+          <pre>
+            {`
+        import { useRef } from "react";
+        import ReactDOM from "react-dom/client";
+        
+        function App() {
+          const inputElement = useRef();
+        
+          const focusInput = () => {
+            inputElement.current.focus();
+          };
+        
+          return (
+            <>
+              <input type="text" ref={inputElement} />
+              <button onClick={focusInput}>Focus Input</button>
+            </>
+          );
+        }
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);`}
+          </pre>
+        </p>
+        <div className="bgYellow">
+          <h4>Real life Example of useRef</h4>
+          <p>
+            Ek common real-life example jahan useRef ka istemal hota hai, vo ek
+            form validation scenario hai. Suppose aap ek form banate hain jisme
+            user ek field mein email address daal raha hai, aur aapko ye check
+            karna hai ki vo email address valid hai ya nahi. Aise mein, aap
+            useRef ka istemal karke previous value aur current value ko compare
+            kar sakte hain. Jab user naya character type karta hai, aap useRef
+            ke current value ko update karenge. Phir, useEffect ke andar, aap
+            previous value aur current value ko compare karke validation logic
+            chala sakte hain. Agar email address valid hai, toh aap kuch UI
+            changes kar sakte hain, warna error message dikha sakte hain. Yeh
+            approach form validation mein common hai kyunki useRef aapko allow
+            karta hai previous aur current values ko track karke efficiently
+            handle karna.
+          </p>
+        </div>
+        <h2>State Change Tracking</h2>
+        <p>
+          The <span className="clrRed">useRef</span> Hook ka upayog previous
+          state values ko track karne ke liye bhi kiya ja sakta hai.
+        </p>
+        <p>
+          Yah isliye hai kyunki ham <span className="clrRed">useRef</span>{" "}
+          values ko renders ke beech me persist kar sakte hain.
+        </p>
+        <h3>Example</h3>
+        <p className="bgExample">
+          <pre>
+            {`
+       import { useState, useEffect, useRef } from "react";
+       import ReactDOM from "react-dom/client";
+       
+       function App() {
+         const [inputValue, setInputValue] = useState("");
+         const previousInputValue = useRef("");
+       
+         useEffect(() => {
+           previousInputValue.current = inputValue;
+         }, [inputValue]);
+       
+         return (
+           <>
+             <input
+               type="text"
+               value={inputValue}
+               onChange={(e) => setInputValue(e.target.value)}
+             />
+             <h2>Current Value: {inputValue}</h2>
+             <h2>Previous Value: {previousInputValue.current}</h2>
+           </>
+         );
+       }
+       
+       const root = ReactDOM.createRoot(document.getElementById('root'));
+       root.render(<App />);`}
+          </pre>
+        </p>
+        <p>
+          Is bar ham <span className="clrRed">useState</span>,{" "}
+          <span className="clrRed">useEffect</span>, aur{" "}
+          <span className="clrRed"></span> ke combination ka istemal karte hain
+          previous state ko track karne ke liye.
+        </p>
+        <p>
+          useEffect mein, har bar jab input field mein text daal kar inputValue
+          update hota hai, tab hum useRef ke current value ko update kar rahe
+          hain.
+        </p>
+      </div>
     </div>
   );
 }
