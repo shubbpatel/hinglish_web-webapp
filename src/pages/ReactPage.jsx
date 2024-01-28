@@ -2477,21 +2477,20 @@ root.render(<App />);`}
             State ek concept hai jo batata hai ki ek component ke andar kuch
             data hai jo badal sakta hai. Agar hum ise simple shabdon mein
             samjhein, toh state component ke "mood" ya "halat" ko darust rakhne
-            ka tareeka hai. <br /> 
+            ka tareeka hai. <br />
             <br />
-            
-            Imagine karo ki ek React component ek insan ki tarah
-            hai. Is insan ke mood ko hum state kehte hain. Kabhi khush, kabhi
-            gussa, aur kabhi udas. useState ka istemal is mood ya state ko
-            badalne ke liye hota hai. Jab aap apne component ke andar useState
-            ka istemal karte hain, toh aap ek variable ko state banate hain. Jab
-            aap us variable ki value badalte hain, toh React component re-render
-            hota hai aur naya mood ya state dikhta hai. Udaharan ke taur par, ek
-            button ke click se message badalna:
+            Imagine karo ki ek React component ek insan ki tarah hai. Is insan
+            ke mood ko hum state kehte hain. Kabhi khush, kabhi gussa, aur kabhi
+            udas. useState ka istemal is mood ya state ko badalne ke liye hota
+            hai. Jab aap apne component ke andar useState ka istemal karte hain,
+            toh aap ek variable ko state banate hain. Jab aap us variable ki
+            value badalte hain, toh React component re-render hota hai aur naya
+            mood ya state dikhta hai. Udaharan ke taur par, ek button ke click
+            se message badalna:
           </p>
           <p className="bgExample">
-         <pre>
-        {`
+            <pre>
+              {`
         import React, { useState } from 'react';
 
         const StateExample = () => {
@@ -2512,10 +2511,13 @@ root.render(<App />);`}
         };
         
         export default StateExample;
-        `}  </pre>   
+        `}{" "}
+            </pre>
           </p>
           <p>
-          Is example mein message variable state hai. Jab button par click hota hai, setMessage ke madhyam se message ki value badli jati hai aur component re-render hota hai, jisse naya message dikhega.
+            Is example mein message variable state hai. Jab button par click
+            hota hai, setMessage ke madhyam se message ki value badli jati hai
+            aur component re-render hota hai, jisse naya message dikhega.
           </p>
         </div>
         <h2>import useState</h2>
@@ -3537,6 +3539,45 @@ root.render(<Component1 />);`}
           update hota hai, tab hum useRef ke current value ko update kar rahe
           hain.
         </p>
+        <br />
+        <h2>
+          React <span className="clrRed">useReducer</span> Hook
+        </h2>
+        <p>
+          useReducer Hook useState Hook ke kuch similar hai, lekin thoda alag
+          tareeke se kaam karta hai. useReducer Hook ka main goal complex state
+          management ko handle karna hai.
+        </p>
+        <p>
+          useReducer Hook custom state logic implement karne mein madad karta
+          hai. Iska use karke aap complex state logic ko asaan tareeke se handle
+          kar sakte hain. Iska use ek reducer function ke through state ko
+          update karna hai.
+        </p>
+        <p>
+          Yadi aapke component ka state bahut complex hai aur usme multiple
+          fields hain jo alag-alag tareeke se update hote hain, to useReducer ek
+          acchi choice ho sakti hai.
+        </p>
+        <p>
+          Agar aapko lagta hai ki aap more than one state variables ko track kar
+          rahe hain jo complex logic par depend karte hain, to useReducer ka
+          istemal beneficial ho sakta hai. Is Hook ki madad se aap ek custom
+          reducer function ka upayog karke state ko manage kar sakte hain, aur
+          isse aapko component ke state management mein flexibility milti hai.
+        </p>
+        <h2>Syntax </h2>
+        <p>useReducer Hook do arguments accept karta hai.</p>
+        <p>
+          1. educer Function: Ye ek function hai jo state ko modify karta hai.
+          Ye function do parameters accept karta hai: current state (state) aur
+          action.
+        </p>
+        <p>
+          2. Initial State: Ye woh initial value hai jo aap apne state ko set
+          karne ke liye istemal karte hain.
+        </p>
+        <p className="bgYellow">{`useReducer(<reducer>, <initialState>)`}</p>
       </div>
     </div>
   );
