@@ -15,6 +15,14 @@ export default function Home() {
       </nav>
       <div className="dj">
         <h1>React</h1>
+        <div className="index">
+          <a href="/">React Home</a>
+          <a href="#ES6">React ES6</a>
+          <a href="#components">React Components</a>
+          <a href="#props">React Props</a>
+          <a href="#router">React Router</a>
+          <a href="#Hooks">React Hooks</a>
+        </div>
         <h2>Getting Started</h2>
         <p>
           React ek JavaScript library hai jise user interfaces banane ke liye
@@ -103,7 +111,7 @@ export default function Home() {
           samajhenge ki React ye kaise karta hai
         </p>
         <br />
-        <h2>What is ES 6 ? (ES 6 kya hai ?)</h2>
+        <h2 id="ES6">What is ES 6 ? (ES 6 kya hai ?)</h2>
         <p>
           ES6 ka matlab hai ECMAScript 6. ECMAScript ko JavaScript ko
           standardize karne ke liye banaya gaya tha, aur ES6 ECMAScript ka 6th
@@ -1195,7 +1203,7 @@ root.render(myElement);
           chahiye.
         </p>
         <br />
-        <h2>React Components</h2>
+        <h2 id="components">React Components</h2>
         <p>
           Components functions jaise hote hain jo HTML elements return karte
           hain.
@@ -1383,7 +1391,7 @@ root.render(<Garage />);`}
         <p className="bgYellow">
           <span className="clrRed">props</span> se matlab hai properties.
         </p>
-        <h2>Props</h2>
+        <h2 id="props">Props</h2>
         <p>
           React Props vaise hi jaise JavaScript mein function arguments aur HTML
           mein attributes hote hain.
@@ -2058,7 +2066,7 @@ root.render(<MyForm />);`}
           hai.
         </p>
         <br />
-        <h2>React Router</h2>
+        <h2 id="router">React Router</h2>
         <p>Create React App mein page routing included nahi rehta hai.</p>
         <p>iske liye React Router most popular solution hai.</p>
         <h2>Add React Router </h2>
@@ -2385,7 +2393,7 @@ root.render(<App />);`}
           <span className="clrRed">todos</span> update honge.
         </p>
         <br />
-        <h2>React Hooks</h2>
+        <h2 id="Hooks">React Hooks</h2>
         <p>hooks react mein version 16.8 mein add hue the</p>
         <p>
           Hooks function components ko state aur dusre React features ka access
@@ -3578,7 +3586,220 @@ root.render(<Component1 />);`}
           karne ke liye istemal karte hain.
         </p>
         <p className="bgYellow">{`useReducer(<reducer>, <initialState>)`}</p>
-        <p></p>
+        <p><span className="clrRed">reducer</span> function mein aap apni custom state logic rakh sakte hain. <span className="clrRed">initialState</span> generally ek simple value ho sakta hai, lekin aksar ye ek object bhi hota hai, jise aap apne component ke state ka initial structure define karne ke liye use karte hain.</p>
+        <p>useReducer Hook current state aur ek dispatch method return karta hai.</p>
+        <p>Yeh state ko modify karne ke liye actions ko dispatch karne ka kaam karta hai. Dispatch function ko action object ke saath call kiya jata hai, jiska structure aap khud tay karte hain. Yeh action object reducer function ke through pass hota hai, jahan aap state ko modify kar sakte hain.</p>
+        <p>example of useReducer in a counter app:</p>
+        <h3>Example</h3>
+        <p className="bgExample">
+          <pre>
+       {`
+       import { useReducer } from "react";
+       import ReactDOM from "react-dom/client";
+       
+       const initialTodos = [
+         {
+           id: 1,
+           title: "Todo 1",
+           complete: false,
+         },
+         {
+           id: 2,
+           title: "Todo 2",
+           complete: false,
+         },
+       ];
+       
+       const reducer = (state, action) => {
+         switch (action.type) {
+           case "COMPLETE":
+             return state.map((todo) => {
+               if (todo.id === action.id) {
+                 return { ...todo, complete: !todo.complete };
+               } else {
+                 return todo;
+               }
+             });
+           default:
+             return state;
+         }
+       };
+       
+       function Todos() {
+         const [todos, dispatch] = useReducer(reducer, initialTodos);
+       
+         const handleComplete = (todo) => {
+           dispatch({ type: "COMPLETE", id: todo.id });
+         };
+       
+         return (
+           <>
+             {todos.map((todo) => (
+               <div key={todo.id}>
+                 <label>
+                   <input
+                     type="checkbox"
+                     checked={todo.complete}
+                     onChange={() => handleComplete(todo)}
+                   />
+                   {todo.title}
+                 </label>
+               </div>
+             ))}
+           </>
+         );
+       }
+       
+       const root = ReactDOM.createRoot(document.getElementById('root'));
+       root.render(<Todos />);`}     
+          </pre>
+        </p>
+        <p>Ye sirf todo ke complete status ko track karne ka logic hai.</p>
+        <p>Sare todo ko add, delete, aur complete karne ka pura logic ek hi <span className="clrRed">useReducer</span> Hook me ho sakta hai, aur isme aur actions add karke kiya ja sakta hai.</p>
+        <br />
+        <h2>useCallback Hook</h2>
+        <p>React useCallback Hook ek memoized callback function return karta hai.</p>
+        <p>Memoization ko ek value ko cache karna ke roop mein samjhein, jisse use dobara calculate karne ki zarurat na ho.</p>
+        <p>Isse hume resource-intensive functions ko alag karne me help milti hai, taki ye har render par automatically run na ho.</p>
+        <p>The useCallback Hook sirf tabhi chalta hai jab uske kisi dependency me koi update hota hai.</p>
+        <p>ye performance improve kar sakta hai.</p>
+        <p>The useCallback aur useMemo Hooks similar hote hain. Main difference yeh hai ki useMemo ek memoized value return karta hai, jabki useCallback ek memoized function return karta hai. Aap useMemo ke baare mein adhik jaankari aage padh sakte hain.</p>
+        <h2>Problem </h2>
+        <p>One reason to use useCallback is to prevent a component from re-rendering unless its props have changed.</p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">index.js</span>
+          <pre className="bgExample">
+       {`
+       import { useState } from "react";
+       import ReactDOM from "react-dom/client";
+       import Todos from "./Todos";
+       
+       const App = () => {
+         const [count, setCount] = useState(0);
+         const [todos, setTodos] = useState([]);
+       
+         const increment = () => {
+           setCount((c) => c + 1);
+         };
+         const addTodo = () => {
+           setTodos((t) => [...t, "New Todo"]);
+         };
+       
+         return (
+           <>
+             <Todos todos={todos} addTodo={addTodo} />
+             <hr />
+             <div>
+               Count: {count}
+               <button onClick={increment}>+</button>
+             </div>
+           </>
+         );
+       };
+       
+       const root = ReactDOM.createRoot(document.getElementById('root'));
+       root.render(<App />);`}     
+          </pre>
+        </p>
+        <p>
+          <span>Todo.js</span>
+          <pre className="bgExample">
+{
+  `import { memo } from "react";
+
+  const Todos = ({ todos, addTodo }) => {
+    console.log("child render");
+    return (
+      <>
+        <h2>My Todos</h2>
+        {todos.map((todo, index) => {
+          return <p key={index}>{todo}</p>;
+        })}
+        <button onClick={addTodo}>Add Todo</button>
+      </>
+    );
+  };
+  
+  export default memo(Todos);`
+}
+          </pre>
+        </p>
+        <p>Try running this and click the count increment button.</p>
+        <p>app dekhenge ki Todos component re-render hota hai, jabki todos mein koi change nahi hota</p>
+        <p>Iska kaaran kya hai? Hum memo ka istemaal kar rahe hain, isliye Todos component re-render nahi hona chahiye, kyun ki na to todos state badal rahi hai aur na hi addTodo function count ko badhane par badal rahi hai.</p>
+        <p>Iska karan hai  'referential equality'.</p>
+        <p>Har baar jab ek component re-render hota hai, uske functions fir se create ho jaate hain. Is wajah se addTodo function asal mein badal gayi hai.</p>
+        <h2>
+          Solution
+        </h2>
+        <p>Isko theek karne ke liye, hum useCallback hook ka istemal kar sakte hain, taki yeh function har baar create na ho jabki zarurat na ho.</p>
+        <p>Needlessly re-rendering se bachne ke liye useCallback Hook ka istemal karo Todos component mein:</p>
+        <h3>Example</h3>
+        <p>
+          <span className="clrRed">index.js</span>
+          <pre className="bgExample">
+        {`
+        import { useState, useCallback } from "react";
+        import ReactDOM from "react-dom/client";
+        import Todos from "./Todos";
+        
+        const App = () => {
+          const [count, setCount] = useState(0);
+          const [todos, setTodos] = useState([]);
+        
+          const increment = () => {
+            setCount((c) => c + 1);
+          };
+          const addTodo = useCallback(() => {
+            setTodos((t) => [...t, "New Todo"]);
+          }, [todos]);
+        
+          return (
+            <>
+              <Todos todos={todos} addTodo={addTodo} />
+              <hr />
+              <div>
+                Count: {count}
+                <button onClick={increment}>+</button>
+              </div>
+            </>
+          );
+        };
+        
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+        `}    
+          </pre>
+        </p>
+        <p>
+          <span className="clrRed">Todo.js</span>
+          <pre className="bgExample">
+       {`
+       import { memo } from "react";
+
+       const Todos = ({ todos, addTodo }) => {
+         console.log("child render");
+         return (
+           <>
+             <h2>My Todos</h2>
+             {todos.map((todo, index) => {
+               return <p key={index}>{todo}</p>;
+             })}
+             <button onClick={addTodo}>Add Todo</button>
+           </>
+         );
+       };
+       
+       export default memo(Todos);`}     
+          </pre>
+        </p>
+        <p>Ab Todos component tabhi re-render hoga jab todos prop change hoga.</p>
+        <br />
+        {/* <h2>useMemo Hook</h2>
+        <p>React useMemo Hook ek memoized value return karta hai.</p>
+        <p className="bgYellow">Memoization ko ek value ko cache karna samjho jise dobara calculate na karna pade.</p>
+        <p>useMemo Hook tabhi chalta hai jab uske kisi dependency me koi update hota hai.</p> */}
       </div>
     </div>
   );
