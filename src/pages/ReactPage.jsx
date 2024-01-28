@@ -2444,7 +2444,7 @@ root.render(<App />);`}
           state ka track rakh sakein.
         </p>
         <p>
-          state am generally un data ya property ko refer karti hai jo hamen
+          state generally un data ya property ko refer karti hai jo hamen
           track karna hai.
         </p>
         <h2>Hooks rules</h2>
@@ -3578,6 +3578,7 @@ root.render(<Component1 />);`}
           karne ke liye istemal karte hain.
         </p>
         <p className="bgYellow">{`useReducer(<reducer>, <initialState>)`}</p>
+        <p></p>
       </div>
     </div>
   );
