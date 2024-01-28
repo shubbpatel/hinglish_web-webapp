@@ -16,14 +16,16 @@ export default function Home() {
       <div className="dj">
         <h1>React</h1>
         <div className="index">
-          <a href="/">React Home</a>
+          <a href="#top">React Home</a>
           <a href="#ES6">React ES6</a>
           <a href="#components">React Components</a>
           <a href="#props">React Props</a>
+          <a href="#conditionals">React Conditionals</a>
+          <a href="#forms">React Forms</a>
           <a href="#router">React Router</a>
           <a href="#Hooks">React Hooks</a>
         </div>
-        <h2>Getting Started</h2>
+        <h2 id="top">Getting Started</h2>
         <p>
           React ek JavaScript library hai jise user interfaces banane ke liye
           design kiya gaya hai.
@@ -1531,7 +1533,7 @@ root.render(<Garage />);`}
         <h3>HTML</h3>
         <p className="bgExample">{`<button onclick="shoot()">Take the Shot!</button>`}</p>
         <br />
-        <h2>React.JS Conditional Rendering</h2>
+        <h2 id="conditionals">React.JS Conditional Rendering</h2>
         <p>
           React mein, aap conditionally components ko render kar sakte hain.
         </p>
@@ -1755,7 +1757,7 @@ root.render(<Garage />);`}{" "}
           </pre>
         </p>
         <br />
-        <h2>React Forms</h2>
+        <h2 id="forms">React Forms</h2>
         <p>
           Jaise ki HTML mein hota hai, waise hi React bhi forms ka istemal karta
           hai jisse users web page ke saath interact kar sakein.

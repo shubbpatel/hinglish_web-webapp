@@ -8,7 +8,7 @@ margin: auto;
     /* color: rgb(15, 14, 16); */
     background-color: rgb(64, 190, 228);
     border-radius: 5px;
-    padding: 20px;
+    padding: 20px 5px;
     text-align: left;
 
 
@@ -34,13 +34,15 @@ padding: 10px;
     padding: 5px;
     border-radius: 7px;
 }
+
 .index{
     background-color: rgb(54, 165, 198);
     gap: 1rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     position: sticky;
     top: 0;
     display: flex;
+    padding: 5px;
     flex-direction: row;
     /* flex-wrap: wrap; */
     overflow: auto;
@@ -50,6 +52,7 @@ padding: 10px;
     color: rgb(10, 10, 10);
     background-color: rgb(244, 220, 8);
     font-weight: bold;
+    font-size: .8rem;
     margin-right: 5px;
     border-radius: 5px;
     padding: 5px;
