@@ -18,9 +18,11 @@ export default function Home() {
         <div className="index">
           <a href="#top">React Home</a>
           <a href="#ES6">React ES6</a>
+          <a href="#jsx">React JSX</a>
           <a href="#components">React Components</a>
           <a href="#props">React Props</a>
           <a href="#conditionals">React Conditionals</a>
+          <a href="#lists">React Lists</a>
           <a href="#forms">React Forms</a>
           <a href="#router">React Router</a>
           <a href="#Hooks">React Hooks</a>
@@ -992,7 +994,7 @@ Syntax: condition ? <expression if true> : <expression if false>
           </pre>
         </p>
         <br />
-        <h2 id="JSX">React JSX</h2>
+        <h2 id="jsx">React JSX</h2>
         <h3>What is JSX (JSX kya hai)?</h3>
         <p>JSX ka matlab hai JavaScript XML.</p>
         <p>JSX humein React mein HTML likhne me help karta hai.</p>
@@ -1674,7 +1676,7 @@ root.render(<Goal isGoal={false} />);`}{" "}
           </pre>
         </p>
         <br />
-        <h2>React Lists</h2>
+        <h2 id="lists">React Lists</h2>
         <p>
           React mein aap ek tarah ke loop ke saath lists ko render karenge."
         </p>
