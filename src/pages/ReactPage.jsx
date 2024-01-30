@@ -1,19 +1,12 @@
 import React from "react";
-import "./react.css";
+import "./style/react.css";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <nav className="navbar">
-        {" "}
-        <a className="logotxt" href="/">
-          Hinglish Web
-        </a>
-        {/* <a className="logotxt" href="#JSX">
-          JSX
-        </a> */}
-      </nav>
-      <div className="dj">
+      <Navbar/>
+      <div className="container">
         <h1>React</h1>
         <div className="index">
           <a href="#top">React Home</a>
@@ -2114,6 +2107,36 @@ root.render(<MyForm />);`}
           <b className="clrRed">.jsx</b> bhi use kar sakte hain now a days ye{" "}
           <span className="clrRed">.jsx</span> preffered tarika hai{" "}
         </p>
+        <h2>Usage</h2>
+        <p>hum index.js mein React Router ka use karenge.</p>
+        <pre className="bgExample">
+          {`
+          import ReactDOM from "react-dom/client";
+          import { BrowserRouter, Routes, Route } from "react-router-dom";
+          import Layout from "./pages/Layout";
+          import Home from "./pages/Home";
+          import Blogs from "./pages/Blogs";
+          import Contact from "./pages/Contact";
+          import NoPage from "./pages/NoPage";
+          
+          export default function App() {
+            return (
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="blogs" element={<Blogs />} />
+                    <Route path="contact" element={<Contact />} />
+                    <Route path="*" element={<NoPage />} />
+                  </Route>
+                </Routes>
+              </BrowserRouter>
+            );
+          }
+          
+          const root = ReactDOM.createRoot(document.getElementById('root'));
+          root.render(<App />);`}
+        </pre>
         <h2>Example Explained</h2>
         <p>
           We wrap our content first with{" "}
@@ -2474,7 +2497,7 @@ root.render(<App />);`}
         </p>
 
         <br />
-        <h2>React useState Hook</h2>
+        <h2>React <span className="bgRed">useState</span> Hook</h2>
         <p>
           React <span className="clrRed">useState</span> Hook hume function
           component mein state track karne me help karta hai.
@@ -2789,7 +2812,7 @@ root.render(<App />);`}
         </p>
         <br />
         <h2>
-          React <span className="clrRed">useEffect</span> Hook
+          React <span className="bgRed">useEffect</span> Hook
         </h2>
         <p>
           <span className="clrRed">UseEffect</span> Hook components mein side
@@ -3067,7 +3090,7 @@ export default DataFetchingExample;
           pada.
         </p>
         <br />
-        <h2>useContext Hook</h2>
+        <h2><span className="bgRed">useContext</span> Hook</h2>
         <p>React Context ek tareeka hai state ko globally manage karne ka.</p>
         <p>
           Ye useState Hook ke saath istemal kiya ja sakta hai taki state ko deep
@@ -3367,7 +3390,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Component1 />);`}
           </pre>
         </p>
-        <h2>React useRef Hook</h2>
+        <h2>React <span className="bgRed">useRef</span> Hook</h2>
         <p>
           The useRef Hook aapko renders ke beech mein values ko persist karne
           mein help karta hai.
@@ -3553,7 +3576,7 @@ root.render(<Component1 />);`}
         </p>
         <br />
         <h2>
-          React <span className="clrRed">useReducer</span> Hook
+          React <span className="bgRed">useReducer</span> Hook
         </h2>
         <p>
           useReducer Hook useState Hook ke kuch similar hai, lekin thoda alag
@@ -3661,7 +3684,7 @@ root.render(<Component1 />);`}
         <p>Ye sirf todo ke complete status ko track karne ka logic hai.</p>
         <p>Sare todo ko add, delete, aur complete karne ka pura logic ek hi <span className="clrRed">useReducer</span> Hook me ho sakta hai, aur isme aur actions add karke kiya ja sakta hai.</p>
         <br />
-        <h2>useCallback Hook</h2>
+        <h2><span className="bgRed">useCallback</span> Hook</h2>
         <p>React useCallback Hook ek memoized callback function return karta hai.</p>
         <p>Memoization ko ek value ko cache karna ke roop mein samjhein, jisse use dobara calculate karne ki zarurat na ho.</p>
         <p>Isse hume resource-intensive functions ko alag karne me help milti hai, taki ye har render par automatically run na ho.</p>

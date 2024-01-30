@@ -36,13 +36,20 @@ code {
   border-radius: 5px;
 }
 .bgExample {
-  background-color: rgb(175, 226, 189);
+  background-color: rgb(167, 223, 181);
   padding: 10px;
   border-radius: 5px;
   overflow: auto;
 }
 .clrRed{
   color: red;
+  
+}
+.bgRed{
+  background-color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
