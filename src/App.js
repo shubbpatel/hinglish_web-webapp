@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import JavaScript from './pages/JavaScript';
-import ReactPage from './pages/ReactPage'
+import JavaScript from './pages/javascript/JavaScript';
+import ReactPage from './pages/react/ReactPage'
 import Navbar from './components/Navbar';
 
 function App() {
