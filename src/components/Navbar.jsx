@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <div>
-      <nav className="navbar">
+    <div className="nav">
+      <nav className="navbarr">
         {" "}
         <a className="logotxt" href="/">
           Hinglish Web
@@ -13,8 +13,8 @@ export default function Navbar() {
         {/* <a className="logotxt" href="#JSX">
           JSX
         </a> */}
-
       </nav>
+
       <div className="topics">
         {" "}
         {/* <Link to="/html">HTML</Link> */}

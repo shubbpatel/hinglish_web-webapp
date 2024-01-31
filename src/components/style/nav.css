@@ -1,11 +1,16 @@
-.navbar {
-  /* color: rgb(15, 14, 16); */
-  background-color: rgb(64, 190, 228);
-  border-radius: 5px 5px 0px 0px;
-  padding: 20px 5px;
-  text-align: left;
+.nav{
   position: sticky;
   top: 0;
+  z-index: 100;
+  /* width: 65vw; */
+}
+.navbarr {
+  /* color: rgb(15, 14, 16); */
+  background-color: rgb(64, 190, 228);
+  /* border-radius: 5px 5px 0px 0px; */
+  padding: 15px 5px;
+  text-align: left;
+ 
 }
 .logotxt {
   font-weight: bold;
@@ -38,7 +43,6 @@
   background-color: rgb(197, 43, 197);
   padding: 2px;
   border-radius: 5px;
-  margin: 3px;
 }
 .topics a:hover {
   background-color: rgb(64, 190, 228);

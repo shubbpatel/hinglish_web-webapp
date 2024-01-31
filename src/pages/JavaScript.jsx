@@ -2,12 +2,12 @@ import React from "react";
 
 export default function JavaScript() {
   return (
-    <div>
-      <div className="container">
-        <h1 id="introduction">JavaScript</h1>
+    <div className="bContainer">
+        <h1 id="introduction" style={{paddingLeft:'5px'}}>JavaScript</h1>
         <div className="index">
           <a href="#">Introduction</a>
         </div>
+      <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
         <p>
           Is tutorial mein aapko JavaScript sikhaya jayega, start se lekar

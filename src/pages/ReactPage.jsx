@@ -1,11 +1,11 @@
 import React from "react";
 import "./style/react.css";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div>
-      <div className="container">
-        <h1>React</h1>
+    <div className="bContainer">
+        <h1 style={{paddingLeft:'5px'}}>React</h1>
         <div className="index">
           <a href="#top">Introduction</a>
           <a href="#ES6">React ES6</a>
@@ -18,6 +18,7 @@ export default function Home() {
           <a href="#router">React Router</a>
           <a href="#Hooks">React Hooks</a>
         </div>
+      <div className="container">
         <h2 id="top">Getting Started</h2>
         <p>
           React ek JavaScript library hai jise user interfaces banane ke liye

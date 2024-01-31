@@ -1,16 +1,18 @@
+.bContainer {
+  border: 1px solid rgb(64, 190, 228);
+  border-radius: 7px;
+}
 .container {
   text-align: left;
   font-size: larger;
-  border: 1px solid rgb(64, 190, 228);
   padding: 5px;
-  border-radius: 7px;
 }
 
 .index {
-  background-color: rgb(54, 165, 198);
+  background-color: rgb(246, 249, 249);
 
   position: sticky;
-  top: 0;
+  top: 86px;
   display: flex;
   padding: 5px;
   flex-direction: row;
@@ -19,10 +21,10 @@
 .index a {
   text-decoration: none;
   color: rgb(10, 10, 10);
-  background-color: rgb(244, 220, 8);
+  background-color: rgb(246, 229, 79);
   font-weight: bold;
   font-size: 0.8rem;
-  margin-right: 5px;
+  margin-right: 7px;
   border-radius: 5px;
   padding: 5px;
 }
