@@ -1,15 +1,13 @@
 import React from "react";
 import "./style/react.css";
-import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
     <div>
-      <Navbar/>
       <div className="container">
         <h1>React</h1>
         <div className="index">
-          <a href="#top">React Home</a>
+          <a href="#top">Introduction</a>
           <a href="#ES6">React ES6</a>
           <a href="#jsx">React JSX</a>
           <a href="#components">React Components</a>

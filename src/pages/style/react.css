@@ -1,4 +1,4 @@
-.container{
+.container {
   text-align: left;
   font-size: larger;
   border: 1px solid rgb(64, 190, 228);
@@ -8,14 +8,12 @@
 
 .index {
   background-color: rgb(54, 165, 198);
-  /* gap: 1rem; */
-  /* padding: 1rem; */
+
   position: sticky;
   top: 0;
   display: flex;
   padding: 5px;
   flex-direction: row;
-  /* flex-wrap: wrap; */
   overflow: auto;
 }
 .index a {

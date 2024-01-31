@@ -1,12 +1,11 @@
-import React from 'react'
-import './style/nav.css'
-
-
+import React from "react";
+import "./style/nav.css";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
-        <nav className="navbar">
+      <nav className="navbar">
         {" "}
         <a className="logotxt" href="/">
           Hinglish Web
@@ -14,7 +13,15 @@ export default function Navbar() {
         {/* <a className="logotxt" href="#JSX">
           JSX
         </a> */}
+
       </nav>
+      <div className="topics">
+        {" "}
+        {/* <Link to="/html">HTML</Link> */}
+        {/* <Link to="/css">CSS</Link> */}
+        <Link to="/javascript">JavaScript</Link>
+        <Link to="/">React</Link>
+      </div>
     </div>
-  )
+  );
 }
