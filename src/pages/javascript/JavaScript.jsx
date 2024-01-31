@@ -1,12 +1,19 @@
 import React from "react";
+import OutputJS from "./OutputJS";
+import Statements from "./Statements";
+import "./js.css";
 
 export default function JavaScript() {
   return (
     <div className="bContainer">
-        <h1 id="introduction" style={{paddingLeft:'5px'}}>JavaScript</h1>
-        <div className="index">
-          <a href="#">Introduction</a>
-        </div>
+      <h1 id="introduction" style={{ paddingLeft: "5px" }}>
+        JavaScript
+      </h1>
+      <div className="index">
+        <a href="#introduction">Introduction</a>
+        <a href="#output">Javascript Output</a>
+        <a href="#Statements">Javascript Statements</a>
+      </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
         <p>
@@ -82,7 +89,6 @@ export default function JavaScript() {
         <br />
         <h2>Where to put JavaScript</h2>
         <h3>The {`<script>`} Tag</h3>
-
         <p>
           HTML mein, JavaScript code <script> and </script> ke beech mein insert
           hota hai.
@@ -240,33 +246,48 @@ function myFunction() {
     `}
         </pre>
         <h2>External References</h2>
-        <p>Ek external script ko 3 alag tareeko se reference kiya ja sakta hai
-</p>
-<p>Ek full URL ke saath (ek pura web address ke saath)
-</p>
-<p>Ek file path ke saath (jaise ki /js/)
-</p>
-<p>Kisi bhi path ke bina
-</p>
-<br />
-<p>Is example mein ek full <b>URL</b> ka istemal kiya gaya hai myScript.js ko link karne ke liye:
-</p>
-<h3>Example</h3>
-<p className="bgExample">{`<script src="https:/hinglishweb.js"></script>
+        <p>
+          Ek external script ko 3 alag tareeko se reference kiya ja sakta hai
+        </p>
+        <p>Ek full URL ke saath (ek pura web address ke saath)</p>
+        <p>Ek file path ke saath (jaise ki /js/)</p>
+        <p>Kisi bhi path ke bina</p>
+        <br />
+        <p>
+          Is example mein ek full <b>URL</b> ka istemal kiya gaya hai
+          myScript.js ko link karne ke liye:
+        </p>
+        <h3>Example</h3>
+        <p className="bgExample">{`<script src="https:/hinglishweb.js"></script>
 `}</p>
-<br />
-<p>Is example mein ek file URL ka istemal kiya gaya hai myScript.js ko link karne ke liye:
-</p>
-<h3>Example</h3>
-<p className="bgExample">{`<script src="/js/myScript.js"></script>
-`} </p>
-<br />
-<p>Is example mein myScript.js ko link karne ke liye koi path ka istemal nahi kiya gaya hai:
-</p>
-<h3>Example</h3>
-<p className="bgExample">{`<script src="myScript.js"></script>
-`} </p>
-
+        <br />
+        <p>
+          Is example mein ek file URL ka istemal kiya gaya hai myScript.js ko
+          link karne ke liye:
+        </p>
+        <h3>Example</h3>
+        <p className="bgExample">
+          {`<script src="/js/myScript.js"></script>
+`}{" "}
+        </p>
+        <br />
+        <p>
+          Is example mein myScript.js ko link karne ke liye koi path ka istemal
+          nahi kiya gaya hai:
+        </p>
+        <h3>Example</h3>
+        <p className="bgExample">
+          {`<script src="myScript.js"></script>
+`}{" "}
+        </p>
+        <br /> <hr />
+        <div id="output">
+          <OutputJS />
+        </div>
+        <br /> <hr />
+        <div id="Statements">
+          <Statements />
+        </div>
       </div>
     </div>
   );

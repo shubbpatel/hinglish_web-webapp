@@ -2576,7 +2576,7 @@ root.render(<App />);`}
           do values return karta hai:
         </p>
         <p>1. Current state</p>
-        <p>2. ek function jo state update kart hai</p>
+        <p>2. ek function jo state update karta hai</p>
         <h3>Example :</h3>
         <p>state Function component ke top mein initialize karen.</p>
         <p>
@@ -3728,7 +3728,7 @@ root.render(<Component1 />);`}
           </pre>
         </p>
         <p>
-          <span>Todo.js</span>
+          <span className="clrRed">Todo.js</span>
           <pre className="bgExample">
 {
   `import { memo } from "react";

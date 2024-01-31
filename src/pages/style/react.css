@@ -9,19 +9,26 @@
 }
 
 .index {
-  background-color: rgb(246, 249, 249);
+  background-color: rgb(248, 249, 249);
 
   position: sticky;
-  top: 85px;
+  top: 72px;
+  /* left: 0; */
+  /* left: 0; */
+  /* bottom: 0; */
   display: flex;
   padding: 5px;
+  /* flex-direction: column; */
   flex-direction: row;
   overflow: auto;
+  /* z-index: 200; */
+
 }
 .index a {
   text-decoration: none;
-  color: rgb(10, 10, 10);
-  background-color: rgb(246, 229, 79);
+  color: rgb(250, 248, 248);
+  background-color: rgb(75, 135, 215);
+  /* background-color: rgb(64, 190, 228); */
   font-weight: bold;
   font-size: 0.8rem;
   margin-right: 7px;
@@ -29,5 +36,12 @@
   padding: 5px;
 }
 .index a:hover {
-  background-color: rgb(181, 170, 70);
+  background-color: rgb(237, 221, 77);
+  color: black;
 }
+/* @media (max-width: 767px) {
+  .index {
+    position: fixed;
+    bottom: 0;
+  }
+} */
