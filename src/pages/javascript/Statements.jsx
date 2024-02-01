@@ -144,6 +144,7 @@ let person="Hege";
 </pre>
 <p>JavaScript keywords reserved words hote hain. Reserved words ko variables ke names ke roop mein use nahi kiya ja sakta.
 </p>
+<hr />
     </div>
   )
 }

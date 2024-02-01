@@ -5,6 +5,9 @@ import "./js.css";
 import Syntax from "./Syntax";
 import Comments from "./Comments";
 import Variables from "./Variables";
+import Let from "./Let";
+import Operators from "./Operators";
+import Arithmetic from "./Arithmetic";
 
 export default function JavaScript() {
   return (
@@ -19,6 +22,8 @@ export default function JavaScript() {
         <a href="#syntax">Javascript Syntax</a>
         <a href="#comments">Javascript Comments</a>
         <a href="#variables">Javascript Variables</a>
+        <a href="#let">Javascript Let</a>
+        <a href="#operators">Javascript Operators</a>
       </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
@@ -302,6 +307,15 @@ function myFunction() {
         </div>
         <div id="variables">
           <Variables/>
+        </div>
+        <div id="let">
+          <Let/>
+        </div>
+        <div id="operators">
+          <Operators/>
+        </div>
+        <div id="arithmetic">
+          <Arithmetic/>
         </div>
       </div>
     </div>
