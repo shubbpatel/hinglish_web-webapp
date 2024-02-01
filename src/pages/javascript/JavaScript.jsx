@@ -2,6 +2,9 @@ import React from "react";
 import OutputJS from "./OutputJS";
 import Statements from "./Statements";
 import "./js.css";
+import Syntax from "./Syntax";
+import Comments from "./Comments";
+import Variables from "./Variables";
 
 export default function JavaScript() {
   return (
@@ -13,6 +16,9 @@ export default function JavaScript() {
         <a href="#introduction">Introduction</a>
         <a href="#output">Javascript Output</a>
         <a href="#Statements">Javascript Statements</a>
+        <a href="#syntax">Javascript Syntax</a>
+        <a href="#comments">Javascript Comments</a>
+        <a href="#variables">Javascript Variables</a>
       </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
@@ -287,6 +293,15 @@ function myFunction() {
         <br /> <hr />
         <div id="Statements">
           <Statements />
+        </div>
+        <div id="syntax">
+          <Syntax/>
+        </div>
+        <div id="comments">
+          <Comments/>
+        </div>
+        <div id="variables">
+          <Variables/>
         </div>
       </div>
     </div>

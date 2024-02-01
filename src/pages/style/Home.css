@@ -1,0 +1,60 @@
+.homeContainer {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  width: 70%;
+}
+.homeBtnBox {
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  border: 2px solid rgb(55, 179, 228);
+  background-color: aliceblue;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem; /* Three columns with equal width */
+  flex-wrap: wrap;
+  /* width: 70%; */
+}
+.homeBtn {
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 7px;
+}
+.homeBtn:hover{
+background-color: black;
+color: white;
+}
+.reactBtn {
+  background-color: rgb(122, 245, 245);
+  color: black;
+}
+.jsBtn {
+  background-color: rgb(249, 239, 104);
+  color: black;
+}
+/* .reactBtn:hover {
+  background-color: rgb(15, 96, 96);
+}
+.jsBtn:hover {
+  background-color: rgb(130, 122, 34);
+} */
+.cssBtn{
+    background-color: rgb(225, 138, 246);
+}
+.htmlBtn{
+    background-color: rgb(71, 196, 71);
+}
+.pythonBtn{
+    background-color: rgb(69, 127, 182);
+}
+.cBtn{
+    background-color: grey;
+}
+.cppBtn{
+    background-color: red;
+}
