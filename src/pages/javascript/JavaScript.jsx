@@ -8,6 +8,8 @@ import Variables from "./Variables";
 import Let from "./Let";
 import Operators from "./Operators";
 import Arithmetic from "./Arithmetic";
+import Assignment from "./Assignment";
+import DataTypes from "./DataTypes";
 
 export default function JavaScript() {
   return (
@@ -24,6 +26,9 @@ export default function JavaScript() {
         <a href="#variables">Javascript Variables</a>
         <a href="#let">Javascript Let</a>
         <a href="#operators">Javascript Operators</a>
+        <a href="#arithmetic">Javascript Arithmetic</a>
+        <a href="#assignment">Javascript Assignment</a>
+        <a href="#dataType">Javascript Data Type</a>
       </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
@@ -316,6 +321,12 @@ function myFunction() {
         </div>
         <div id="arithmetic">
           <Arithmetic/>
+        </div>
+        <div id="assignment">
+          <Assignment/>
+        </div>
+        <div id="dataType">
+          <DataTypes/>
         </div>
       </div>
     </div>
