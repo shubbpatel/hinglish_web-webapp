@@ -31,7 +31,7 @@ export default function Home() {
             {` import React from 'react'; import ReactDOM from 'react-dom/client';
           function Hello(props){" "}
           {
-              return <h1>Hello World!</h1>;
+              return <h1>Namaste India!</h1>;
             }
             const container = document.getElementById("root"); const root =
             ReactDOM.createRoot(container);
@@ -164,7 +164,7 @@ export default function Home() {
                 }
             }
             
-        const mybike = new bike("BMW");`}
+        const mybike = new bike("Hero");`}
           </pre>
         </p>
         <br />
@@ -254,7 +254,7 @@ mytruck.show(); `}
         <p>before: </p>
         <p className="bgExample">
           {`hello = function() {
-  return "Hello World!";
+  return "Hello Bharat!";
 } `}
         </p>
         <br />
@@ -262,7 +262,7 @@ mytruck.show(); `}
         <p>with Arrow Function :</p>
         <p className="bgExample">
           {` hello = () => {
-  return "Hello World!";
+  return "Hello Bharat!";
 } `}
         </p>
         <p>
@@ -273,7 +273,7 @@ mytruck.show(); `}
         </p>
         <h3>Example</h3>
         <p>Arrow Functions ka Return Value by Default:</p>
-        <p className="bgExample">{`hello = () => "Hello World!"; `}</p>
+        <p className="bgExample">{`hello = () => "Hello Bharat!"; `}</p>
         <p className="bgYellow">
           Note: Ye kaam tabhi karta hai agar function mein sirf ek statement hai
         </p>
@@ -522,7 +522,7 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
         <p className="bgExample">
           <pre>
             {`
-          const vehicles = ['mustang', 'f-150', 'expedition']; <br />
+          const vehicles = ['Mahindra', 'f-150', 'expedition']; <br />
           // old way const
           <br />
           car = vehicles[0]; <br />
@@ -552,7 +552,7 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
           sakte hain lekin comma rakh sakte hain:
         </p>
         <p className="bgExample">
-          const vehicles = ['mustang', 'f-150', 'expedition'];
+          const vehicles = ['Mahindra', 'f-150', 'expedition'];
           <br />
           const [car,, suv] = vehicles;
         </p>
@@ -589,8 +589,8 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           <pre>
             {`
                 const vehicleOne = {
-                    brand: 'Ford',
-                    model: 'Mustang',
+                    brand: 'Mahindra',
+                    model: 'Bolero',
                     type: 'car',
                     year: 2021, 
                     color: 'red'
@@ -615,8 +615,8 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           <pre>
             {`
                 const vehicleOne = {
-                    brand: 'Ford',
-                    model: 'Mustang',
+                    brand: 'Mahindra',
+                    model: 'Bolero',
                     type: 'car',
                     year: 2021, 
                     color: 'red'
@@ -643,15 +643,15 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           <pre>
             {`
         const vehicleOne = {
-            brand: 'Ford',
-            model: 'Mustang',
+            brand: 'Mahindra',
+            model: 'Bolero',
             type: 'car',
             year: 2021, 
             color: 'red',
             registration: {
-              city: 'Houston',
-              state: 'Texas',
-              country: 'USA'
+              city: 'Inodre',
+              state: 'Madhya Pradesh',
+              country: 'India'
             }
           }
           
@@ -707,8 +707,8 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           <pre>
             {`
        const myVehicle = {
-        brand: 'Ford',
-        model: 'Mustang',
+        brand: 'TATA',
+        model: 'PUNCH',
         color: 'red'
       }
       
@@ -760,7 +760,7 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
         <p className="bgExample">
           <pre>
             {`
-    export const name = "Jesse"
+    export const name = "katrina"
     export const age = 40
     `}
           </pre>
@@ -769,7 +769,7 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
         <p className="bgExample">
           <pre>
             {`
-         const name = "Jesse"
+         const name = "katrina"
          const age = 40
          
          export { name, age }
@@ -791,8 +791,8 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           <pre>
             {`
          const text = () => {
-            const name = "Jesse";
-            const age = 40;
+            const name = "Disha";
+            const age = 35;
             return name + ' is ' + age + 'years old.';
           };
           
@@ -1086,8 +1086,8 @@ root.render(myElement);
             {`
     const myElement = (
         <div>
-          <p>I am a paragraph.</p>
-          <p>I am a paragraph too.</p>
+          <p>Main ek paragraph hoon.</p>
+          <p>Main bhi ek paragraph hoon.</p>
         </div>
       );
     `}
@@ -1112,8 +1112,8 @@ root.render(myElement);
             {`
    const myElement = (
     <>
-      <p>I am a paragraph.</p>
-      <p>I am a paragraph too.</p>
+      <p>Namaste from a paragraph.</p>
+      <p>Namaste from a paragraph again.</p>
     </>
   );`}
           </pre>
@@ -1433,7 +1433,7 @@ root.render(<Garage />);`}
 function Garage() {
   return (
     <>
-      <h1>Who lives in my garage?</h1>
+      <h1>Mere garage mein konsi gaadi hai?</h1>
       <Truck brand="TATA" />
     </>
   );
@@ -1466,7 +1466,7 @@ function Garage() {
   const truckName = "TATA";
   return (
     <>
-      <h1>Who lives in my garage?</h1>
+      <h1>Mere garage mein konsi gaadi hai?</h1>
       <Truck brand={ truckName } />
     </>
   );
@@ -1615,7 +1615,7 @@ function MadeGoal() {
   );
 }
 
-const cars = ['Ford', 'BMW', 'Audi'];
+const cars = ['TATA', 'Mahindra', 'Maruti Suzuki'];
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage cars={cars} />);
  `}{" "}
@@ -1682,7 +1682,7 @@ root.render(<Goal isGoal={false} />);`}{" "}
 }
 
 function Garage() {
-  const cars = ['Ford', 'BMW', 'Audi'];
+  const cars = ['TATA', 'Mahindra', 'Maruti Suzuki'];
   return (
     <>
       <h1>Who lives in my garage?</h1>
@@ -1731,9 +1731,9 @@ root.render(<Garage />);`}
 
 function Garage() {
   const cars = [
-    {id: 1, brand: 'Ford'},
-    {id: 2, brand: 'BMW'},
-    {id: 3, brand: 'Audi'}
+    {id: 1, brand: 'TATA'},
+    {id: 2, brand: 'Mahindra'},
+    {id: 3, brand: 'Maruti Suzuki'}
   ];
   return (
     <>
