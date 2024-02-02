@@ -85,14 +85,14 @@ export default function DataTypes() {
 <p>JavaScript expressions ko left se right ki or se evaluate karta hai. Alag-alag sequences  se alag-alag result show  ho sakte hain:
 </p>
 <h3>Ex. 1</h3>
-<pre>
+<pre className='bgExample'>
     {`
     let x = 10 + 4 + "TATA";
     `}
 </pre>
 <p><b>Output :</b> 14TATA</p>
 <h3>Ex. 2</h3>
-<pre>
+<pre className='bgExample'>
     {`
     let x = "TATA" + 42 + 2;
     `}
@@ -153,7 +153,7 @@ let carName2 = 'TATA Punch';
 <p>Numbers ko decimals ke saath ya bina decimals ke likha ja sakta hai:
 </p>
 <h3>Ex.</h3>
-<pre>{`
+<pre className='bgExample'>{`
 // With decimals:
 let x1 = 34.00;
 
@@ -166,7 +166,7 @@ let x2 = 34;
 <p>Extra large ya extra small numbers ko scientific (exponential) notation ke saath likha ja sakta hai:
 </p>
 <h3>Ex.</h3>
-<pre>{`
+<pre className='bgExample'>{`
 let y = 123e5;    // 12300000
 let z = 123e-5;   // 0.00123
 `}</pre>

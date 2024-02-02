@@ -11,7 +11,7 @@
 
 .navbarr {
   /* color: rgb(15, 14, 16); */
-  /* background-color:#041519; */
+  /* background-color:#cfd2d2; */
   background-color: #62d3fc;
   /* border-radius: 5px 5px 0px 0px; */
   padding: 10px 5px;
@@ -33,6 +33,7 @@
   border-radius: 2px;
   font-size: 15px;
   font-weight: bold;
+
 }
 .topics {
   display: flex;
