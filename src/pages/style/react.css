@@ -1,5 +1,5 @@
 .bContainer {
-  border: 1px solid rgb(64, 190, 228);
+  border: 1px solid rgb(123, 211, 245);
   border-radius: 7px;
 }
 .container {
@@ -9,10 +9,10 @@
 }
 
 .index {
-  background-color: rgb(236, 243, 243);
+  background-color: rgb(237, 240, 240);
 
   position: sticky;
-  top: 72px;
+  top: 78px;
   /* left: 0; */
   /* left: 0; */
   /* bottom: 0; */

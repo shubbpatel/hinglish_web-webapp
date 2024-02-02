@@ -17,7 +17,7 @@ export default function Variables() {
           Using <span className="clrRed">let</span>
         </li>
         <li>
-          Using <span className="clrRed"></span>
+          Using <span className="clrRed">const</span>
         </li>
       </ul>
       <p>pehle example mein, x, y, aur z undeclared variables hain.</p>

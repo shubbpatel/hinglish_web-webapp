@@ -11,7 +11,10 @@ body {
   width: 100vw;
   max-width: 65vw;
   margin: auto;
+  /* background-color: black; */
+  color: black;
   background-color: white;
+  /* color: rgb(231, 239, 241); */
 }
 
 
@@ -28,6 +31,7 @@ code {
   background-color: rgb(250, 234, 22);
   padding: 5px;
   border-radius: 5px;
+  color: black;
 
 }
 .bgBlue {
@@ -40,6 +44,7 @@ code {
   padding: 10px;
   border-radius: 5px;
   overflow: auto;
+  color: black;
 }
 .clrRed{
   color: red;
