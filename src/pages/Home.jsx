@@ -144,13 +144,7 @@ export default function Home() {
           for 8 hours any ways So if you have got apportunity to work on
           something you are interested in then work stop day dreaming
         </p> */}
-        <p>
-          Regardless of the life phase you find yourself in—be it as a student,
-          a professional, a homemaker, or in any role—if you desire three meals
-          a day with dignity, you need to put in at least 8 hours of work. If
-          you have the chance to work on something you're passionate about,
-          seize the opportunity and stop daydreaming.
-        </p>
+        
 
       
       </div>
