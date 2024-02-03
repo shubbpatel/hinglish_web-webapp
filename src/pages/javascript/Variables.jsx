@@ -3,7 +3,7 @@ import React from "react";
 export default function Variables() {
   return (
     <div>
-      <h2>JavaScript Variables</h2>
+      <h2>JavaScript Variables in Hindi</h2>
       <p>
         <b>Variables are Containers for Storing Data</b>
       </p>

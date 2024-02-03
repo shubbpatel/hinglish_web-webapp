@@ -3,7 +3,7 @@ import React from 'react'
 export default function OutputJS() {
   return (
     <div id='Output'>
-        <h2>JavaScript Output</h2>
+        <h2>JavaScript Output in Hindi</h2>
         <h3>JavaScript Display Possibilities
 </h3>
 <p>JavaScript data ko alag-alag tareeko se 'display' kar sakta hai:

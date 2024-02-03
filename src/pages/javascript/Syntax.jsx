@@ -3,7 +3,7 @@ import React from "react";
 export default function Syntax() {
   return (
     <div>
-      <h2>JavaScript Syntax</h2>
+      <h2>JavaScript Syntax in Hindi</h2>
       <p>
         JavaScript syntax wo set of rules hai, jisme define kiya gaya hai ki
         JavaScript programs kaise banaye jate hain:

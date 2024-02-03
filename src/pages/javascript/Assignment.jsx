@@ -3,7 +3,7 @@ import React from "react";
 export default function Assignment() {
   return (
     <div>
-      <h2>JavaScript Assignment Operators</h2>
+      <h2>JavaScript Assignment Operators in Hindi</h2>
       <p>
         Assignment operators JavaScript variables ko values assign karte hain.
       </p>

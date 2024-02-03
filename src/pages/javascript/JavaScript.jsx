@@ -14,21 +14,21 @@ import DataTypes from "./DataTypes";
 export default function JavaScript() {
   return (
     <div className="bContainer">
-      <h1 id="introduction" style={{ paddingLeft: "5px" }}>
-        JavaScript
+      <h1 id="javascript-in-hindi" style={{ paddingLeft: "5px" }}>
+        JavaScript in Hindi
       </h1>
       <div className="index">
-        <a href="#introduction">Introduction</a>
+        <a href="#javascript-in-hindi">Introduction</a>
         <a href="#output">Javascript Output</a>
         <a href="#Statements">Javascript Statements</a>
-        <a href="#syntax">Javascript Syntax</a>
+        <a href="#javascript-syntax-hindi">Javascript Syntax</a>
         <a href="#comments">Javascript Comments</a>
-        <a href="#variables">Javascript Variables</a>
-        <a href="#let">Javascript Let</a>
-        <a href="#operators">Javascript Operators</a>
+        <a href="#javascript-variables-hindi">Javascript Variables</a>
+        <a href="#javascript-let-hindi">Javascript Let</a>
+        <a href="#javascript-operators-hindi">Javascript Operators</a>
         <a href="#arithmetic">Javascript Arithmetic</a>
         <a href="#assignment">Javascript Assignment</a>
-        <a href="#dataType">Javascript Data Type</a>
+        <a href="#javascript-datatypes-hindi">Javascript Data Types</a>
       </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
@@ -304,19 +304,19 @@ function myFunction() {
         <div id="Statements">
           <Statements />
         </div>
-        <div id="syntax">
+        <div id="javascript-syntax-hindi">
           <Syntax/>
         </div>
         <div id="comments">
           <Comments/>
         </div>
-        <div id="variables">
+        <div id="javascript-variables-hindi">
           <Variables/>
         </div>
-        <div id="let">
+        <div id="javascript-let-hindi">
           <Let/>
         </div>
-        <div id="operators">
+        <div id="javascript-operators-hindi">
           <Operators/>
         </div>
         <div id="arithmetic">
@@ -325,7 +325,7 @@ function myFunction() {
         <div id="assignment">
           <Assignment/>
         </div>
-        <div id="dataType">
+        <div id="javascript-datatypes-hindi">
           <DataTypes/>
         </div>
       </div>

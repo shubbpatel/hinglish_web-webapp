@@ -3,7 +3,7 @@ import React from "react";
 export default function Operators() {
   return (
     <div>
-      <h2>JavaScript Operators</h2>
+      <h2>JavaScript Operators in Hindi</h2>
       <p>
         The <b>Addition Operator </b>+ adds numbers:
       </p>
@@ -45,7 +45,7 @@ export default function Operators() {
         let y = 2; <br />
         let z = x * y;
       </p>
-      <h2>Types of JavaScript Operators</h2>
+      <h2>Types of JavaScript Operators in Hindi</h2>
       <p>There are different types of JavaScript operators:</p>
       <table>
         <tr>

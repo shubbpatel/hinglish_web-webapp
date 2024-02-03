@@ -6,19 +6,19 @@ export default function Home() {
     <div className="bContainer">
         <h1 style={{paddingLeft:'5px'}}>React</h1>
         <div className="index">
-          <a href="#top">Introduction</a>
-          <a href="#ES6">React ES6</a>
+          <a href="#react-in-hindi">Introduction</a>
+          <a href="#javascript-ES6-hindi">React ES6</a>
           <a href="#jsx">React JSX</a>
-          <a href="#components">React Components</a>
-          <a href="#props">React Props</a>
+          <a href="#react-components-hindi">React Components</a>
+          <a href="#react-props-hindi">React Props</a>
           <a href="#conditionals">React Conditionals</a>
           <a href="#lists">React Lists</a>
           <a href="#forms">React Forms</a>
           <a href="#router">React Router</a>
-          <a href="#Hooks">React Hooks</a>
+          <a href="#react-Hooks-hindi">React Hooks</a>
         </div>
       <div className="container">
-        <h2 id="top">Getting Started</h2>
+        <h2 id="react-in-hindi">Getting Started</h2>
         <p>
           React ek JavaScript library hai jise user interfaces banane ke liye
           design kiya gaya hai.
@@ -106,7 +106,7 @@ export default function Home() {
           samajhenge ki React ye kaise karta hai
         </p>
         <br />
-        <h2 id="ES6">What is ES 6 ? (ES 6 kya hai ?)</h2>
+        <h2 id="javascript-ES6-hindi">What is ES6 in Hindi  ? (ES 6 kya hai ?)</h2>
         <p>
           ES6 ka matlab hai ECMAScript 6. ECMAScript ko JavaScript ko
           standardize karne ke liye banaya gaya tha, aur ES6 ECMAScript ka 6th
@@ -1198,7 +1198,7 @@ root.render(myElement);
           chahiye.
         </p>
         <br />
-        <h2 id="components">React Components</h2>
+        <h2 id="react-components-hindi">React Components in Hindi</h2>
         <p>
           Components functions jaise hote hain jo HTML elements return karte
           hain.
@@ -1241,7 +1241,7 @@ root.render(myElement);
   }`}
           </pre>
         </p>
-        <h2>Function Component</h2>
+        <h2>React Functional Component in Hindi</h2>
         <p>
           Yahan upar diye gaye example ka ek aur roop hai, lekin is bar ek
           Function component ka istemal kiya gaya hai.
@@ -1380,13 +1380,13 @@ root.render(<Garage />);`}
           </pre>
         </p>
         <br />
-        <h2>React Props</h2>
+        <h2 id="react-props-hindi" >React Props in Hindi</h2>
         <p>Props React components mein bheje jaane wale arguments hote hain.</p>
         <p>Props components ko HTML attributes ke through bheje jaate hain.</p>
         <p className="bgYellow">
           <span className="clrRed">props</span> se matlab hai properties.
         </p>
-        <h2 id="props">Props</h2>
+        <h2 >Props</h2>
         <p>
           React Props vaise hi jaise JavaScript mein function arguments aur HTML
           mein attributes hote hain.
@@ -2418,7 +2418,7 @@ root.render(<App />);`}
           <span className="clrRed">todos</span> update honge.
         </p>
         <br />
-        <h2 id="Hooks">React Hooks</h2>
+        <h2 id="react-Hooks-hindi">React Hooks in Hindi</h2>
         <p>hooks react mein version 16.8 mein add hue the</p>
         <p>
           Hooks function components ko state aur dusre React features ka access

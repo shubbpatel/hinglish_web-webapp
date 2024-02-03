@@ -3,7 +3,7 @@ import React from 'react'
 export default function DataTypes() {
   return (
     <div>
-        <h2>JavaScript Data Types
+        <h2>JavaScript Data Types in Hindi
 </h2>
 <h3>JavaScript has many Datatypes
 </h3>
@@ -50,7 +50,7 @@ export default function DataTypes() {
 </pre>
 <p className='bgYellow'>NOTE: Ek JavaScript variable kisi bhi tarah ke data ko hold kar sakta hai.
 </p>
-<h2>The Concept of Data Types
+<h2>The Concept of Data Types in Hindi
 </h2>
 <p>Programming mein, data types ek important concept hai.
 </p>
@@ -198,7 +198,7 @@ let z = 123e-5;   // 0.00123
 </pre>
 <p>Booleans ko aksar conditional testing mein istemal kiya jata hai.
 </p>
-<h2>JavaScript Arrays
+<h2>JavaScript Arrays in Hindi
 </h2>
 <p>JavaScript arrays ko square brackets ke saath likha jata hai.
 </p>
@@ -211,7 +211,7 @@ let z = 123e-5;   // 0.00123
 `}</pre>
 <p>Array indexes zero-based hote hain, jiska matlab hai ki pehla item [0], doosra [1], aur aage aise hi chalte jata hai.
 </p>
-<h2>JavaScript Objects
+<h2>JavaScript Objects in Hindi
 </h2>
 <p>JavaScript objects ko curly braces `{}` mein likha jata hai.
 </p>
