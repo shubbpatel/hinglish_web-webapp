@@ -4,7 +4,7 @@ import "./style/Home.css";
 export default function Home() {
   return (
     <div className="homeContainer">
-      {/* <h1>jaldi learn karna hai to apni language me learn karo</h1> */}
+      <h1>jaldi seekhna hai to apni language me learn karo</h1>
       <div className="homeBtnBox">
         <button
           onClick={() => {
@@ -132,9 +132,10 @@ export default function Home() {
           </tr>
         </table>
         <p>
-        Most of the time, we are in a marathon but often run it like a sprint, leading to burnout. So, don't do that. Don't exhaust yourself. Have a life. Great things take time; exercise patience. Many times, comparison undermines patience, so avoid comparing. We all have different stories. Elon Musk had three different girlfriends while building three companies.{" "}
+        Most of the time, we are in a marathon but often run it like a sprint, leading to burnout. So, don't do that. Don't exhaust yourself. Have a life. Great things take time; exercise patience. Many times, comparison undermines patience, so avoid comparing. We all have different stories. {" "}
         </p>
         {/* <p>
+        Elon Musk had three different girlfriends while building three companies.
           One very important thing you should push into your head that no matter
           whatever phase of life you are in or will be in like you are a school
           student or college student, working somewhere , housewife or house
