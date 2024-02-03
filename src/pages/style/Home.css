@@ -2,7 +2,9 @@
   margin: auto;
   text-align: center;
   align-items: center;
-  width: 70%;
+  /* width: 70%; */
+  background-color: #fff;
+
 }
 .homeBtnBox {
   margin: auto;
@@ -58,3 +60,30 @@ color: white;
 .cppBtn{
     background-color: red;
 }
+.homeTable  table {
+    border-collapse: collapse;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #fff;
+  
+  }
+  .homeTable h2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ padding: 5px 0px;
+  }
+  .homeTable th {
+    font-size: 18px;
+    background-color: #a8e3f8;
+  
+  }
+  .homeTable td {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .homeTable th, td {
+    padding: 15px 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }

@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
     <Navbar/>
     <Routes>
-      {/* <Route path='/' element={<Home/>}/> */}
-      <Route path="/" element={<ReactPage/>} />
+      <Route path='/' element={<Home/>}/>
+      <Route path="/react" element={<ReactPage/>} />
       <Route path="/javascript" element={<JavaScript/>} />
     </Routes>
     </BrowserRouter>

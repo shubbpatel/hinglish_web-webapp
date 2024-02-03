@@ -35,7 +35,7 @@ export default function Navbar() {
        
         {/* <Link to="/html" style={{backgroundColor:'green'}}>HTML</Link> */}
         {/* <Link to="/css" style={{backgroundColor:'purple'}}>CSS</Link> */}
-        <Link to="/" style={{backgroundColor:'#99dbf3',color:'black'}}>React</Link>
+        <Link to="/react" style={{backgroundColor:'#99dbf3',color:'black'}}>React</Link>
         <Link to="/javascript" style={{backgroundColor:'rgb(250, 234, 22)',color:'black'}}>JavaScript</Link>
         {/* <Link to="/python" style={{backgroundColor:'grey',padding:'0px 5px'}}>C</Link> */}
         {/* <Link to="/python" style={{backgroundColor:'red'}}>C++</Link> */}
