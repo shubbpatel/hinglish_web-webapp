@@ -4,7 +4,7 @@ import "./style/Home.css";
 export default function Home() {
   return (
     <div className="homeContainer">
-      <h1>jaldi seekhna hai to apni language me learn karo</h1>
+      {/* <h1>jaldi seekhna hai to apni language me learn karo</h1> */}
       <div className="homeBtnBox">
         <button
           onClick={() => {
