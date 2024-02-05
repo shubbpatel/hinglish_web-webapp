@@ -4,7 +4,6 @@
   align-items: center;
   /* width: 70%; */
   background-color: #fff;
-
 }
 .homeBtnBox {
   margin: auto;
@@ -27,9 +26,9 @@
   font-weight: bold;
   border-radius: 7px;
 }
-.homeBtn:hover{
-background-color: black;
-color: white;
+.homeBtn:hover {
+  background-color: black;
+  color: white;
 }
 .reactBtn {
   background-color: rgb(122, 245, 245);
@@ -45,45 +44,49 @@ color: white;
 .jsBtn:hover {
   background-color: rgb(130, 122, 34);
 } */
-.cssBtn{
-    background-color: rgb(225, 138, 246);
+.cssBtn {
+  background-color: rgb(225, 138, 246);
 }
-.htmlBtn{
-    background-color: rgb(71, 196, 71);
+.htmlBtn {
+  background-color: rgb(71, 196, 71);
 }
-.pythonBtn{
-    background-color: rgb(69, 127, 182);
+.pythonBtn {
+  background-color: rgb(69, 127, 182);
 }
-.cBtn{
-    background-color: grey;
+.cBtn {
+  background-color: grey;
 }
-.cppBtn{
-    background-color: red;
+.cppBtn {
+  background-color: red;
 }
-.homeTable  table {
-    border-collapse: collapse;
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    border-radius: 10px;
-    background-color: #fff;
-  
-  }
-  .homeTable h2 {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- padding: 5px 0px;
-  }
-  .homeTable th {
-    font-size: 18px;
-    background-color: #a8e3f8;
-  
-  }
-  .homeTable td {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .homeTable th, td {
-    padding: 15px 5px;
-    text-align: center;
-    border: 1px solid #ddd;
-  }
+.homeTable table {
+  border-collapse: collapse;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.homeTable h2 {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 0px;
+}
+.homeTable th {
+  font-size: 18px;
+  /* background-color: #a5d2e2; */
+  background-color: #a8e3f8;
+  padding: 8px 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+
+  /* background-color: #dbe0e2; */
+}
+.homeTable td {
+  font-size: 14px;
+  font-weight: bold;
+}
+.homeTable td {
+  padding: 15px 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
