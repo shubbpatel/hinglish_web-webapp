@@ -254,6 +254,7 @@ Ex.
 <pre className='bgExample'>{`
 let bike;    // Value is undefined, type is undefined
 `}</pre>
+<hr />
     </div>
   )
 }

@@ -29,7 +29,7 @@ export default function Home() {
         <button className="cppBtn homeBtn">C++</button>
       </div>
       <div className="homeTable">
-        <h2 >Productivity Hack Table</h2>
+        <h2 >Productivity Hack</h2>
         <table>
           <tr>
             <th>8 Hour</th>
