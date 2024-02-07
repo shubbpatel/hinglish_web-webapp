@@ -9,9 +9,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   width: 100vw;
-  max-width: 65vw;
+  max-width: 70vw;
   margin: auto;
-  /* background-color: black; */
+  /* background-color: rgb(46, 45, 45); */
   color: black;
   background-color: rgb(252, 248, 248);
   /* color: rgb(231, 239, 241); */

@@ -4,7 +4,7 @@ import "../style/react.css";
 export default function Home() {
   return (
     <div className="bContainer">
-        <h1 style={{paddingLeft:'5px'}}>React</h1>
+        <h1 style={{paddingLeft:'5px'}}>React JS in Hindi</h1>
         <div className="index">
           <a href="#react-in-hindi">Introduction</a>
           <a href="#javascript-ES6-hindi">React ES6</a>

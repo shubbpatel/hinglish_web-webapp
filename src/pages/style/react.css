@@ -2,6 +2,8 @@
   border: 1px solid rgb(123, 211, 245);
   border-radius: 7px;
   background-color: #fff;
+  padding-top: 1rem;
+  
 }
 .container {
   text-align: left;
@@ -24,6 +26,9 @@
   overflow: auto;
   /* z-index: 200; */
 
+}
+.index::-webkit-scrollbar {
+    display: none;
 }
 .index a {
   text-decoration: none;

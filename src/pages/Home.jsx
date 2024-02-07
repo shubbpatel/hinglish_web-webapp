@@ -27,6 +27,7 @@ export default function Home() {
         <button className="pythonBtn homeBtn">Python</button>
         <button className="cBtn homeBtn">C</button>
         <button className="cppBtn homeBtn">C++</button>
+        
       </div>
       <div className="homeTable">
         <h2 >Productivity Hack</h2>

@@ -12,6 +12,8 @@ import Assignment from "./Assignment";
 import DataTypes from "./DataTypes";
 import Functions from "./Functions";
 import Objects from "./Objects";
+import Events from "./Events";
+import Strings from "./Strings";
 
 export default function JavaScript() {
   return (
@@ -33,6 +35,8 @@ export default function JavaScript() {
         <a href="#javascript-datatypes-hindi">Javascript DataTypes</a>
         <a href="#javascript-functions-hindi">Javascript Functions</a>
         <a href="#javascript-objects-hindi">Javascript Objects</a>
+        <a href="#javascript-events-hindi">Javascript Events</a>
+        <a href="#javascript-strings-hindi">Javascript Strings</a>
       </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
@@ -337,6 +341,12 @@ function myFunction() {
         </div>
         <div id="javascript-objects-hindi">
           <Objects/>
+        </div>
+        <div id="javascript-events-hindi">
+          <Events/>
+        </div>
+        <div id="javascript-strings-hindi">
+          <Strings/>
         </div>
       </div>
     </div>
