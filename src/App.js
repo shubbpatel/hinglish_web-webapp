@@ -11,8 +11,8 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path="/react" element={<ReactPage/>} />
-      <Route path="/javascript" element={<JavaScript/>} />
+      <Route path="/react-hindi" element={<ReactPage/>} />
+      <Route path="/javascript-hindi" element={<JavaScript/>} />
     </Routes>
     </BrowserRouter>
      

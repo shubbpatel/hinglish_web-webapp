@@ -11,6 +11,7 @@ import Arithmetic from "./Arithmetic";
 import Assignment from "./Assignment";
 import DataTypes from "./DataTypes";
 import Functions from "./Functions";
+import Objects from "./Objects";
 
 export default function JavaScript() {
   return (
@@ -31,6 +32,7 @@ export default function JavaScript() {
         <a href="#assignment">Javascript Assignment</a>
         <a href="#javascript-datatypes-hindi">Javascript DataTypes</a>
         <a href="#javascript-functions-hindi">Javascript Functions</a>
+        <a href="#javascript-objects-hindi">Javascript Objects</a>
       </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
@@ -332,6 +334,9 @@ function myFunction() {
         </div>
         <div id="javascript-functions-hindi">
           <Functions/>
+        </div>
+        <div id="javascript-objects-hindi">
+          <Objects/>
         </div>
       </div>
     </div>

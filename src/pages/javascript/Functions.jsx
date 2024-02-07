@@ -104,7 +104,137 @@ export default function Functions() {
       <p>
         <b>There are three ways of writing a function in JavaScript:</b>
       </p>
-      <p></p>
+      <h4>
+        Function Declaration: Isme function keyword ka use hota hai. Function
+        declaration ke sath ek function name hona chahiye.{" "}
+      </h4>
+      <h3>Ex.</h3>
+      <pre className="bgExample">
+        {`
+        function javascriptFunction(parameterX, parameterY) {
+            // Set of statements
+        }`}
+      </pre>
+
+      <h4>Functions Expression in JavaScript in hindi</h4>
+      <p>
+        Aise ek function anonymous bhi ho sakta hai; iske paas ek naam hone ki
+        jarurat nahi hoti. example ke liye, function dj ko iss tarah se define
+        kiya ja sakta tha:
+      </p>
+      <pre className="bgExample">
+        {`
+        const dj = function (number) {
+            return number * number;
+      };
+      const x = dj(5); // x gets the value 25
+      console.log(x);`}
+      </pre>
+      <p className="clrBlack">
+        <b>25</b>
+      </p>
+      <p>
+        Haa, ek function expression ke saath ek naam provide kiya ja sakta hai.
+        Ek naam dene se function ko khud se refer karne ka option milta hai, aur
+        ye debugger ke stack traces mein function ko identify karne mein help
+        karta hai:
+      </p>
+
+      <h2>Function return in javascript in hindi</h2>
+      <p>
+        Jab JavaScript return statement tak pahunchta hai, tab function ka
+        execution ruk jata hai.
+      </p>
+      <p>
+        Agar function kisi statement se invoke hua tha, to JavaScript uske baad
+        wale code ko execute karne ke liye "return" karega.
+      </p>
+      <p>
+        Functions bahut baar ek return value calculate karte hain. Ye return
+        value "caller" ko "return" kiya jata hai.
+      </p>
+      <pre className="bgExample">
+        {`
+        // Function is called, the return value will end up in x
+        let x = myFunction(4, 3);
+        
+        function myFunction(a, b) {
+        // Function returns the product of a and b
+          return a * b;
+        }`}
+      </pre>
+      <p>
+        Functions ka istemal code ko reuse karne me help karta hai. <br />
+        Aap aise code likh sakte hain jo bar-bar istemal kiya ja sakta hai.
+      </p>
+      <h2>The Operator ()</h2>
+      <p>() operator function ko invoke (call) karta hai:</p>
+      <h3>Ex.</h3>
+      <p>Fahrenheit to Celsius:</p>
+      <pre className="bgExample">
+        {`
+         function toCelsius(fahrenheit) {
+            return (5/9) * (fahrenheit-32);
+          }
+          
+          let value = toCelsius(89);`}
+      </pre>
+      <p>
+        Galat parameters ke sath ek function ko access karna galat javab laa
+        sakta hai:
+      </p>
+      <h3>Ex.</h3>
+      <pre className="bgExample">
+        {`function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+
+let value = toCelsius();`}
+      </pre>
+      <p>
+        Accessing a function without () returns the function and not the
+        function result:
+      </p>
+      <pre className="bgExample">
+       {`
+       function toCelsius(fahrenheit) {
+        return (5/9) * (fahrenheit-32);
+      }
+      
+      let value = toCelsius;`} 
+      </pre>
+      <p>Jaise ki aap upar ke example mein dekh sakte hain, toCelsius function object ko refer karta hai, aur toCelsius() function ke result ko refer karta hai.</p>
+      <h2>
+      Functions Used as Variable Values in javascript in hindi
+      </h2>
+      <p>Functions ko aap variables ke tarah istemal kar sakte hain, sabhi prakar ke formulas, assignments, aur calculations mein.</p>
+      <p>Iske bajaye, aap seedhe function ko istemal kar sakte hain:</p>
+      <pre className="bgExample">
+        {`
+        let x = toCelsius(89);
+        let text = "The temperature is " + x + " Celsius";`}
+      </pre>
+      <p>You can use the function directly, as a variable value:</p>
+      <pre className="bgExample">
+       {`let text = "The temperature is " + toCelsius(77) + " Celsius";`} 
+      </pre>
+      <h2>JavaScript Local Variables in hindi</h2>
+      <p>JavaScript function ke andar declare kiye gaye variables, function ke liye LOCAL ho jate hain.</p>
+      <p>local variables ko sirf function ke andar se hi access kiya ja sakta hai.</p>
+      <pre className="bgExample">
+      {`
+      // bikeName yahan par use nahi ho sakta
+
+      function myFunction() {
+        let bikeName = "BMW G 310 R";
+        // bikeName yahan par use ho sakta
+      }
+      
+      // bikeName yahan par use nahi ho sakta`}  
+      </pre>
+      <p>Kyunki local variables sirf apne functions ke andar recognize hote hain, isliye alag-alag functions mein unhi naam ke variables ka use kiya ja sakta hai.</p>
+      <p>local variables ek function start hota hai tab create hote hain, aur jab function end hota hai tab delete hote hain.</p>
+      <hr />
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function Home() {
       <div className="homeBtnBox">
         <button
           onClick={() => {
-            window.location = "/javascript";
+            window.location = "/javascript-hindi";
           }}
           className="jsBtn homeBtn"
         >
@@ -16,7 +16,7 @@ export default function Home() {
         </button>
         <button
           onClick={() => {
-            window.location = "react";
+            window.location = "react-hindi";
           }}
           className="reactBtn homeBtn"
         >
