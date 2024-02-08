@@ -67,7 +67,7 @@ let plan3 = 'Hyundai Exter "green"';`}</pre>
         JavaScript will misunderstand this string:
       </h3>
       <pre className="bgExample">
-        {`let text = "We are the so-called "Vikings" from the north.";
+        {`let text = "You are the "King" of your jungle.";
 `}
       </pre>
     </div>

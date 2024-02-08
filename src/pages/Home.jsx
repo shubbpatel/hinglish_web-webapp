@@ -133,7 +133,7 @@ export default function Home() {
           </tr>
         </table>
         <p>
-        Most of the time, we are in a marathon but often run it like a sprint, leading to burnout. So, don't do that. Don't exhaust yourself. Have a life. Great things take time; exercise patience. Many times, comparison undermines patience, so avoid comparing. We all have different stories. {" "}
+        Most of the time, we are in a marathon but often run it like a sprint, leading to burnout. So, don't do that. Don't exhaust yourself. Have a life. Great things take time; exercise patience. Many times, comparison undermines patience, so avoid comparing. We all have different stories and actually when you write down 10 things you want for yourself you will realize we all want very different things out of life so there's no point comparing yourself to anyone in wrong way. {" "}
         </p>
         {/* <p>
         Elon Musk had three different girlfriends while building three companies.
