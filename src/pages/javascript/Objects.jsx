@@ -225,7 +225,7 @@ export default function Objects() {
       <p>Agar aap <span className="clrRed">()</span> ke bina ek method ko access karte hain, to yah us function ka definition return karega:</p>
       <pre className="bgExample">{`name = user.fullName;`}</pre>
       <p><b>Output</b></p>
-       <pre>
+       <pre className="bgExample">
         {`function() { return this.firstName + " " + this.lastName; }`}
        </pre>
        <hr />
