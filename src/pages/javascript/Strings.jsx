@@ -16,7 +16,7 @@ export default function Strings() {
         hain:
       </p>
       <h3>Ex.</h3>
-      <pre>
+      <pre className="bgExample">
         {`
         var name = "Superstar Rajnikant";  // Double quotes
         var movie = 'Lal Salaam';  // Single quotes`}
@@ -44,20 +44,32 @@ let plan3 = 'Hyundai Exter "green"';`}</pre>
       </p>
       <h3>Ex.</h3>
       <pre className="bgExample">
-        let {`text`} = ` What the mind can "conceive" and "believe" it can achieve
-        is true in every area of life""`;
+        let {`text`} = ` What the mind can "conceive" and "believe" it can
+        achieve is true in every area of life""`;
       </pre>
       <h3>String Length</h3>
-      <p>Ek string ki length pata karne ke liye, built-in <span className="clrRed">length</span> property ka istemal karein:</p>
+      <p>
+        Ek string ki length pata karne ke liye, built-in{" "}
+        <span className="clrRed">length</span> property ka istemal karein:
+      </p>
       <h3>Ex.</h3>
       <pre className="bgExample">
         {`
         let heyYou = "JustBelieveInYourself";
         let length = text.length;`}
       </pre>
-      <p><b>OutPut</b></p>
+      <p>
+        <b>OutPut</b>
+      </p>
       <p className="clrBlack">17</p>
-
+      <h3>
+        Kyun ki strings ko quotes ke andar likha jaana chahiye, isliye
+        JavaScript will misunderstand this string:
+      </h3>
+      <pre className="bgExample">
+        {`let text = "We are the so-called "Vikings" from the north.";
+`}
+      </pre>
     </div>
   );
 }
