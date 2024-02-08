@@ -45,7 +45,7 @@ let plan3 = 'Hyundai Exter "green"';`}</pre>
       <h3>Ex.</h3>
       <pre className="bgExample">
         let {`text`} = ` What the mind can "conceive" and "believe" it can
-        achieve is true in every area of life""`;
+        achieve is true in every area of life`;
       </pre>
       <h3>String Length</h3>
       <p>
@@ -62,14 +62,29 @@ let plan3 = 'Hyundai Exter "green"';`}</pre>
         <b>OutPut</b>
       </p>
       <p className="clrBlack">17</p>
-      <h3>
-        Kyun ki strings ko quotes ke andar likha jaana chahiye, isliye
-        JavaScript will misunderstand this string:
-      </h3>
+
+      <h3>Breaking Long String Lines </h3>
+      <p>
+        Readability ke liye, coders often long code lines se bachne ki koshish
+        karte hain.
+      </p>
+      <p>Ek safe tareeka ek statement ko todne ka hai ek operator use karke:</p>
       <pre className="bgExample">
-        {`let text = "You are the "King" of your jungle.";
-`}
+        {`
+        document.getElementById("demo").innerHTML =
+        "Holi kab hai, kab hai holi!";`}
       </pre>
+      <p>
+        safe tareeka ek string ko todne ka hai string addition ka istemal karna
+      </p>
+      <h3>Ex.</h3>
+      <pre className="bgExample">
+        {`
+        document.getElementById("demo").innerHTML = "Holi kab hai " +
+        "kab hai holi!";`}
+      </pre>
+     
+     <hr />
     </div>
   );
 }

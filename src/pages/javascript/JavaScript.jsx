@@ -14,6 +14,7 @@ import Functions from "./Functions";
 import Objects from "./Objects";
 import Events from "./Events";
 import Strings from "./Strings";
+import Arrays from "./Arrays";
 
 export default function JavaScript() {
   return (
@@ -37,6 +38,7 @@ export default function JavaScript() {
         <a href="#javascript-objects-hindi">Javascript Objects</a>
         <a href="#javascript-events-hindi">Javascript Events</a>
         <a href="#javascript-strings-hindi">Javascript Strings</a>
+        <a href="#javascript-array-hindi">Javascript Array</a>
       </div>
       <div className="container">
         <p>Agar jaldi seekhna hai to apni language mein seekho</p>
@@ -347,6 +349,9 @@ function myFunction() {
         </div>
         <div id="javascript-strings-hindi">
           <Strings/>
+        </div>
+        <div id="javascript-array-hindi">
+          <Arrays/>
         </div>
       </div>
     </div>

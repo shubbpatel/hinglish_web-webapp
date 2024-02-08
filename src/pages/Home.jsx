@@ -22,15 +22,14 @@ export default function Home() {
         >
           React
         </button>
-        <button className="htmlBtn homeBtn">HTML</button>
+        {/* <button className="htmlBtn homeBtn">HTML</button>
         <button className="cssBtn homeBtn">CSS</button>
         <button className="pythonBtn homeBtn">Python</button>
         <button className="cBtn homeBtn">C</button>
-        <button className="cppBtn homeBtn">C++</button>
-        
+        <button className="cppBtn homeBtn">C++</button> */}
       </div>
       <div className="homeTable">
-        <h2 >Productivity Hack</h2>
+        <h2>Productivity Hack</h2>
         <table>
           <tr>
             <th>8 Hour</th>
@@ -74,12 +73,13 @@ export default function Home() {
               feel so energized that you end up doing an extra 1 hour, sometimes
               2-3 hours extra. That is sufficient for whatever you are pursuing.
             </td>
-            <td>1.5 hours for food (Take your food with some entertainment so you don't crave entertainment while working )</td>
+            <td>
+              1.5 hours for food (Take your food with some entertainment so you
+              don't crave entertainment while working )
+            </td>
           </tr>
           <tr>
-            <td>
-              Strengthens your immune system.
-            </td>
+            <td>Strengthens your immune system.</td>
             <td>
               You can do this in shifts or in one Go (shifts work better).{" "}
             </td>
@@ -133,7 +133,13 @@ export default function Home() {
           </tr>
         </table>
         <p>
-        Most of the time, we are in a marathon but often run it like a sprint, leading to burnout. So, don't do that. Don't exhaust yourself. Have a life. Great things take time; exercise patience. Many times, comparison undermines patience, so avoid comparing. We all have different stories and actually when you write down 10 things you want for yourself you will realize we all want very different things out of life so there's no point comparing yourself to anyone in wrong way. {" "}
+          Most of the time, we are in a marathon but often run it like a sprint,
+          leading to burnout. So, don't do that. Don't exhaust yourself. Have a
+          life. Great things take time; exercise patience. Many times,
+          comparison undermines patience, so avoid comparing. We all have
+          different stories and actually when you write down 10 things you want
+          for yourself you will realize we all want very different things out of
+          life so there's no point comparing yourself to anyone in wrong way.{" "}
         </p>
         {/* <p>
         Elon Musk had three different girlfriends while building three companies.
@@ -145,9 +151,6 @@ export default function Home() {
           for 8 hours any ways So if you have got apportunity to work on
           something you are interested in then work stop day dreaming
         </p> */}
-        
-
-      
       </div>
     </div>
   );
