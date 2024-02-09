@@ -4,6 +4,7 @@ import JavaScript from './pages/javascript/JavaScript';
 import ReactPage from './pages/react/ReactPage'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path="/react-hindi" element={<ReactPage/>} />
       <Route path="/javascript-hindi" element={<JavaScript/>} />
     </Routes>
+    <Footer/>
     </BrowserRouter>
      
   );

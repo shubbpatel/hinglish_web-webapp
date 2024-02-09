@@ -116,8 +116,8 @@ export default function Home() {
             <td>
               <span className="clrRed">Note:</span> regardless of the life phase
               you find yourself in—be it as a student, a professional, a
-              homemaker, or in any role—if you desire three meals a day with
-              dignity, you need to put in at least 8 hours of work. So accept it
+              homemaker, or in any role— anyone who desires three meals a day with
+              dignity, needs to put in at least 8 hours of work. So accept it
               and if you have the chance to work on something you're passionate
               about, seize the opportunity and stop daydreaming.
             </td>
