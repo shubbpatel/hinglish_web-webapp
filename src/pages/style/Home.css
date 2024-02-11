@@ -2,16 +2,18 @@
   margin: auto;
   text-align: center;
   align-items: center;
-  /* width: 70%; */
+  /* max-width: 70vw; */
   background-color: #fff;
+  border-radius: 8px;
 }
+
 .homeBtnBox {
   margin: auto;
   padding: 2rem;
   display: flex;
   border: 2px solid rgb(55, 179, 228);
   background-color: aliceblue;
-  border-radius: 10px;
+  border-radius: 8px;
   justify-content: center;
   flex-direction: row;
   gap: 1rem; /* Three columns with equal width */
