@@ -222,12 +222,12 @@ let songName;
 <h3>Example</h3>
 <pre className="bgExample">{`let person = "Badshah", songName = "Dj Wale Babu", price = 200;
 `}</pre>
-<p>Ek declaration kai lines ko cover kar sakti hai:
+<p>Ek declaration multiple lines ko cover kar sakti hai:
 </p>
 <h3>Example</h3>
 <pre className="bgExample">{`
 let person = "Badshah",
-carName = "Dj Wale Babu",
+songName = "Dj Wale Babu",
 price = 200;
 `}</pre>
 <h2>Value = undefined
