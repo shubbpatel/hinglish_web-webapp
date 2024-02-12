@@ -5,6 +5,11 @@ import ReactPage from './pages/react/ReactPage'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
+import AboutUs from './pages/AboutUs';
+import Services from './pages/Services';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   return (
@@ -14,6 +19,11 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path="/react-hindi" element={<ReactPage/>} />
       <Route path="/javascript-hindi" element={<JavaScript/>} />
+      <Route path="/about" element={<AboutUs/>} />
+      <Route path="/services" element={<Services/>} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy/>} />
+      <Route path="/terms-of-service" element={<TermsOfService/>} />
+      <Route path="/contact" element={<ContactUs/>} />
     </Routes>
     <Footer/>
     </BrowserRouter>

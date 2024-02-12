@@ -242,9 +242,9 @@ export default function Operators() {
     let result = text1 < text2;
     `}
       </pre>
-      <p>Dhyaan rakhe ki strings ko aksharik roop se tulna kiya jata hai.</p>
+      <p>Strings ko alphabetically compare kiya jata hai.</p>
       <h3>Example</h3>
-      <pre className="bgResult">
+      <pre className="bgExample">
         {`
   let text1 = "20";
   let text2 = "5";

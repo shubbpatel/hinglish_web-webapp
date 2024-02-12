@@ -11,9 +11,9 @@ body {
   width: 100vw;
   max-width: 70vw;
   margin: auto;
-  /* background-color: rgb(46, 45, 45); */
+  background-color: #d6eff6;
   color: black;
-  background-color: rgb(230, 235, 239);
+  /* background-color: rgb(230, 235, 239); */
   /* color: rgb(231, 239, 241); */
 }
 
