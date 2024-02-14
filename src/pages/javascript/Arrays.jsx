@@ -1,15 +1,21 @@
 import React from "react";
 
 export default function Arrays() {
-  const songs = [
-    "DJ Wale Babu",
-    "Jhoome Jo Pathaan",
-    "Arjan Vailly",
-    "Tere Vaaste",
+  let productsDatabase = [
+    "Laptop",
+    "Smartphone",
+    "Headphones",
+    "Smartwatch",
+    "Tablet",
   ];
-  let deletedSongs = songs.splice(1, 3, "Husn", "Ankhiyaan Gulaab", "Hua Main");
-  console.log("original array: ", songs);
-  console.log("Deleted songs array: ", deletedSongs);
+  var output = productsDatabase.includes("Smartwatch");
+  console.log(output);
+  if (output === true) {
+    console.log("found in the products database.");
+  } else {
+    console.log("not found in the products database.");
+  }
+
   return (
     <div>
       <h2>Arrays in Javascript in Hindi</h2>
@@ -563,7 +569,130 @@ console.log("All Products:", allProducts);
         Deleted songs array: ['Jhoome Jo Pathaan', 'Arjan Vailly', 'Tere
         Vaaste']
       </p>
-      
+      <h2>indexOf() Method</h2>
+      <p>
+        <b>indexOf( )</b>: Ye method array mein kisi bhi element ka first index
+        return karta hai agar woh element array mein present hai, agar nahi toh
+        -1 return karta hai.
+      </p>
+      <p className="bgYellow">
+        <b>Real Life Example of indexOf ( )</b> Imagine kijiye aap ek library ka
+        online system develop kar rahe hain jahan users books ko search kar
+        sakte hain. Jab koi user ek specific book ka naam search karta hai, toh
+        aapko uss book ko library ke database mein khojna padta hai. Is
+        situation mein, indexOf() method ka istemal kiya ja sakta hai jab aap
+        library ke database mein se ek specific book ko search karte hain. Yeh
+        method ek array mein se specified element ka index dhoondhne ke liye use
+        hota hai.
+      </p>
+      <p>
+        indexOf() method ek specified index se shuru hota hai aur left se right
+        search karta hai.
+      </p>
+      <p>
+        By default search pehle element se shuru hoti hai aur last element pe
+        khatam hoti hai.
+      </p>
+      <pre className="bgExample">
+        {`
+       const songs = ['DJ Wale Babu', 'Jhoome Jo Pathaan', 'Arjan Vailly','Tere Vaaste'];
+       let index = songs.indexOf("Tere Vaaste");
+       console.log(index);
+       `}
+      </pre>
+      <p>
+        <b>Output</b>
+      </p>
+      <p className="clrBlack">3</p>
+      <h2>lastIndexOf() Method</h2>
+      <p>
+        <b>lastIndexOf( )</b>: Ye method array mein kisi bhi element ka last
+        index return karta hai agar woh element array mein present hai, agar
+        nahi toh -1 return karta hai.
+      </p>
+      <p>
+        indexOf() method ek specified index se shuru hota hai aur left se right
+        search karta hai.
+      </p>
+      <p>
+        LastIndexOf() method specified value ka last index (position) return
+        karta hai.
+      </p>
+      <p className="bgYellow">
+        <b>Real Life Example of lastIndexOf Method</b>
+        Ek real-life example jahan lastIndexOf() method ka istemal kiya ja sakta
+        hai woh ek online discussion forum ka search functionality hai. Imagine
+        kijiye aap ek discussion forum develop kar rahe hain jahan users topics
+        aur threads ko search kar sakte hain. Jab koi user ek specific topic ka
+        naam search karta hai, toh aapko sabse latest (ya last) instance ya
+        thread ko dhoondhna padta hai. Is situation mein, lastIndexOf() method
+        ka istemal kiya ja sakta hai jab aap forum ke database mein se ek
+        specific topic ya thread ko search karte hain. Yeh method ek array mein
+        se specified element ka last index dhoondhne ke liye use hota hai.
+      </p>
+      <h3>Ex.</h3>
+      <pre className="bgExample">
+        {`
+       const songs = ['DJ Wale Babu', 'Jhoome Jo Pathaan', 'Arjan Vailly','Tere Vaaste', 'Arjan Vailly'];
+       let index = songs.lastIndexOf("Arjan Vailly");
+       console.log(index);
+       `}
+      </pre>
+      <p>
+        <b>Output</b>
+      </p>
+      <p className="clrBlack">4</p>
+      <h2>includes() Method</h2>
+      <p>
+        <b>includes()</b>: Ye method determine karta hai ki array mein kya koi
+        specific value present hai ya nahi, aur phir true ya false return karta
+        hai.
+      </p>
+      <p className="bgYellow">
+        <b>Real Life Example of includes( ) Method</b> Ek real-life example
+        jahan includes() method ka istemal kiya ja sakta hai woh ek e-commerce
+        website ka search functionality hai. Imagine kijiye aap ek e-commerce
+        website develop kar rahe hain jahan users products ko search kar sakte
+        hain. Jab koi user ek specific product ka naam search karta hai, toh
+        aapko uss product ko available products mein dhoondhna padta hai. Is
+        situation mein, includes() method ka istemal kiya ja sakta hai jab aap
+        e-commerce website ke database mein se ek specific product ko search
+        karte hain. Yeh method ek array mein se specified element ka existence
+        check karne ke liye use hota hai.
+      </p>
+      <h3>Ex.</h3>
+      <pre className="bgExample">
+        {`
+ let productsDatabase = [
+  "Laptop",
+  "Smartphone",
+  "Headphones",
+  "Smartwatch",
+  "Tablet",
+];
+var output = productsDatabase.includes("Smartwatch");
+console.log(output);
+if (output === true) {
+  console.log("found in the products database.");
+} else {
+  console.log("not found in the products database.");
+}
+
+`}
+      </pre>
+      <p>
+        <b>Output</b>
+      </p>
+      <p className="clrBlack">
+        true <br />
+        found in the products database.
+      </p>
+      <h2>forEach( ) Method</h2>
+      <p>
+        <b>forEach( ):</b> Is method se diye gaye function ko har array element ke
+        liye ek baar execute kiya jata hai.
+      </p>
+      <p></p>
     </div>
   );
 }

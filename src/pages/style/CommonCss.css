@@ -1,6 +1,15 @@
 .aboutUs a {
-color: black;
+  color: black;
 }
 .aboutUs h1 {
-text-align: center;
+  text-align: center;
+}
+.alphaRoom {
+  background-color: black;
+  color: white;
+}
+.highValueRoom {
+  text-align: center;
+  font-size: larger;
+  padding: 7px;
 }

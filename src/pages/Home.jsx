@@ -16,14 +16,29 @@ export default function Home() {
         </button>
         <button
           onClick={() => {
-            window.location = "react-hindi";
+            window.location = "/react-hindi";
           }}
           className="reactBtn homeBtn"
         >
           React
         </button>
-        {/* <button className="htmlBtn homeBtn">HTML</button>
-        <button className="cssBtn homeBtn">CSS</button>
+        <button
+          onClick={() => {
+            window.location = "/personality-development-tutorial";
+          }}
+          className="highValueBtn homeBtn"
+        >
+          High Value Room
+        </button>
+        {/* <button
+          onClick={() => {
+            window.location = "/html-hindi";
+          }}
+          className="htmlBtn homeBtn"
+        >
+          HTML
+        </button> */}
+        {/* <button className="cssBtn homeBtn">CSS</button>
         <button className="pythonBtn homeBtn">Python</button>
         <button className="cBtn homeBtn">C</button>
         <button className="cppBtn homeBtn">C++</button> */}
@@ -116,10 +131,10 @@ export default function Home() {
             <td>
               <span className="clrRed">Note:</span> regardless of the life phase
               you find yourself in—be it as a student, a professional, a
-              homemaker, or in any role— anyone who desires three meals a day with
-              dignity, needs to put in at least 8 hours of work. So accept it
-              and if you have the chance to work on something you're passionate
-              about, seize the opportunity and stop daydreaming.
+              homemaker, or in any role— anyone who desires three meals a day
+              with dignity, needs to put in at least 8 hours of work. So accept
+              it and if you have the chance to work on something you're
+              passionate about, seize the opportunity and stop daydreaming.
             </td>
             <td>
               You still have 3 hours left to do whatever you want. Spend it with

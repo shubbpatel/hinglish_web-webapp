@@ -14,19 +14,19 @@ const Footer = () => {
       </div>
       <div className="footer-links">
         <ul className="social-links">
-          <li>
+          {/* <li>
             <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
               <FaFacebook />
             </a>
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
               <FaTwitter />
             </a>
-          </li>
+          </li> */}
           <li>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/hinglishweb/"
               target="_blank"
               rel="noreferrer"
             >

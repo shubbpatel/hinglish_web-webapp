@@ -33,7 +33,7 @@ export default function Navbar() {
 
       <div className="topics">
        
-        {/* <Link to="/html" style={{backgroundColor:'green'}}>HTML</Link> */}
+        {/* <Link to="/html-hindi" style={{backgroundColor:'rgb(71, 196, 71)', color:'black'}}>HTML</Link> */}
         {/* <Link to="/css" style={{backgroundColor:'purple'}}>CSS</Link> */}
         <Link to="/react-hindi" style={{backgroundColor:'rgb(122, 245, 245)',color:'black'}}>React</Link>
         <Link to="/javascript-hindi" style={{backgroundColor:'rgb(250, 234, 22)',color:'black'}}>JavaScript</Link>

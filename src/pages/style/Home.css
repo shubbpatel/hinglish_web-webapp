@@ -36,6 +36,24 @@
   background-color: rgb(122, 245, 245);
   color: black;
 }
+.highValueBtn{
+  background-color: black;
+  color: rgb(66, 65, 65);
+  cursor: pointer;
+  animation: colorChange 2s infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: grey; /* Start with grey color */
+  }
+  50% {
+    color: white; /* End with white color */
+  }
+  100% {
+    color: grey; /* End with white color */
+  }
+}
 .jsBtn {
   background-color: rgb(249, 239, 104);
   color: black;

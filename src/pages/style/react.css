@@ -1,10 +1,11 @@
 .bContainer {
-  border: 1px solid rgb(123, 211, 245);
+  /* border: 1px solid rgb(123, 211, 245); */
   border-radius: 7px;
   background-color: #fff;
   padding-top: 1rem;
   /* max-width: 70vw; */
   margin: auto;
+  min-height: 100vh;
   
 }
 
@@ -49,9 +50,3 @@
   background-color: rgb(237, 221, 77);
   color: black;
 }
-/* @media (max-width: 767px) {
-  .index {
-    position: fixed;
-    bottom: 0;
-  }
-} */
