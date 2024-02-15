@@ -16,8 +16,9 @@
   border-radius: 8px;
   justify-content: center;
   flex-direction: row;
-  gap: 1rem; /* Three columns with equal width */
+  /* gap: 1rem; Three columns with equal width */
   flex-wrap: wrap;
+
   /* width: 70%; */
 }
 .homeBtn {
@@ -27,6 +28,8 @@
   cursor: pointer;
   font-weight: bold;
   border-radius: 7px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 .homeBtn:hover {
   background-color: black;

@@ -13,3 +13,9 @@
   font-size: larger;
   padding: 7px;
 }
+.brder{
+   border :1px solid #54c8f2; 
+   padding: 5px;
+ width: 90%;
+  margin: auto;
+  }

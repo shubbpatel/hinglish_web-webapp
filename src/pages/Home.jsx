@@ -30,14 +30,14 @@ export default function Home() {
         >
           High Value Room
         </button>
-        {/* <button
+        <button
           onClick={() => {
             window.location = "/html-hindi";
           }}
           className="htmlBtn homeBtn"
         >
           HTML
-        </button> */}
+        </button>
         {/* <button className="cssBtn homeBtn">CSS</button>
         <button className="pythonBtn homeBtn">Python</button>
         <button className="cBtn homeBtn">C</button>
