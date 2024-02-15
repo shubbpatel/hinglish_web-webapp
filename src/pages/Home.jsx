@@ -38,10 +38,11 @@ export default function Home() {
         >
           HTML
         </button>
-        {/* <button className="cssBtn homeBtn">CSS</button>
-        <button className="pythonBtn homeBtn">Python</button>
-        <button className="cBtn homeBtn">C</button>
-        <button className="cppBtn homeBtn">C++</button> */}
+        {/* {/* <button className="cssBtn homeBtn">CSS</button> */}
+        {/* <button className="pythonBtn homeBtn">Python</button> */}
+        {/* <button className="cBtn homeBtn">C</button> */}
+        {/* <button className="cppBtn homeBtn">C++</button>  */}
+       
       </div>
       <div className="homeTable">
         <h2>Productivity Hack</h2>
@@ -147,7 +148,7 @@ export default function Home() {
             <th>Have a life</th>
           </tr>
         </table>
-        <p>
+        {/* <p>
           Most of the time, we are in a marathon but often run it like a sprint,
           leading to burnout. So, don't do that. Don't exhaust yourself. Have a
           life. Great things take time; exercise patience. Many times,
@@ -155,7 +156,7 @@ export default function Home() {
           different stories and actually when you write down 10 things you want
           for yourself you will realize we all want very different things out of
           life so there's no point comparing yourself to anyone in wrong way.{" "}
-        </p>
+        </p> */}
         {/* <p>
         Elon Musk had three different girlfriends while building three companies.
           One very important thing you should push into your head that no matter
