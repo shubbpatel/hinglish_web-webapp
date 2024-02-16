@@ -2,12 +2,8 @@ import React from "react";
 
 export default function LawsOfHighValueMan() {
   return (
-    <div
-      className="alphaRoom highValueRoom"
-      
-    >
+    <div className="alphaRoom highValueRoom">
       <h1>40 Laws Of High A Value Man</h1>
-
       <br />
       <h3>LAW 1 - HE IS NOT A BOY</h3>
       <p>
@@ -27,7 +23,8 @@ export default function LawsOfHighValueMan() {
         can develop our own means of entering into the mature masculine. This is
         known as the hero's journey, something every man has to go on but most
         don't.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 2 - HE IS NOT TENTATIVE</h3>
       <p>
         Law number two: He is not tentative. To be tentative is to be hesitant,
@@ -37,7 +34,8 @@ export default function LawsOfHighValueMan() {
         inside. <br /> <br />
         To be alpha is to drop all tentative, hesitant behavior and start
         acting. Forget the cortex and go from your gut.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 3 - HE IS NOT A WHINER</h3>
       <p>
         Law number three: He is not a whiner. "Why does he have it better than
@@ -46,7 +44,8 @@ export default function LawsOfHighValueMan() {
         on for years and years. It's a sign of insufficient action and laziness.
         Instead of solving problems, the whiner prefers to create trauma and
         complain.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 4 - HE DOESN'T BLAME ANYONE FOR HIS PLACE</h3>
       <p>
         {" "}
@@ -59,7 +58,8 @@ export default function LawsOfHighValueMan() {
         your ego. When you begin to blame everyone and everything else, you lose
         control. Life just happens to you as opposed to you thrusting into life
         and constructing the life you want.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 5 - HE IS NOT TENSE</h3>
       <p>
         Law number five: He is not tense. How much tension are you holding in
@@ -70,7 +70,8 @@ export default function LawsOfHighValueMan() {
         activates. Your body fights to hold back your true self, resulting in an
         extreme amount of tension in the body. This can lead to deformities,
         disease, and a weaker version of yourself.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 6 - HE IS NOT RIGID</h3>
       <p>
         {" "}
@@ -84,14 +85,16 @@ export default function LawsOfHighValueMan() {
         that you cannot feel; life will only exist in the mind. The body becomes
         a tool the mind uses to achieve some end. At its core, rigidity is a
         response to fear. The more afraid you are, the more rigid you are.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 7 - HE IS NOT A DAYDREAMER</h3>
       <p>
         Law number seven: He is not a daydreamer. Do you constantly daydream? Do
         you play out what you should have said or done? Do you prefer just to
         dream about life as opposed to living it? Daydreaming is a clear-cut
         sign of insufficient action. The man who does more daydreams less.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 8 - HE DOESN'T WAIT</h3>
       <p>
         Law number eight: He doesn't wait. Many men have an ideal of what they
@@ -103,7 +106,8 @@ export default function LawsOfHighValueMan() {
         is largely a construct of the mind aimed at holding you back from taking
         risks. Don't wait until the perfect moment; it will never come because
         it doesn't exist.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 9 - HE IS NOT GOOD LOOKING</h3>
       <p>
         Law number nine: He is not good-looking & he doesn't need to be good
@@ -116,7 +120,8 @@ export default function LawsOfHighValueMan() {
         about these trivialities. Do what you can to improve your looks, i.e.,
         work out, dress better, get a good haircut, but after that, drop all the
         thoughts about your looks.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 10 - HE IS NOT RICH, HE IS WEALTHY</h3>
       <p>
         Law number 10: He is not rich. Maybe you believe looks don't matter. The
@@ -127,17 +132,19 @@ export default function LawsOfHighValueMan() {
         swimming in dough or a vagabond. Money is a tool the alpha uses to
         authentically express his gift. He may have a lot or little; no matter
         what his bank statement says, he is always wealthy.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 11 - HE IS NOT A PICKUP ARTIST</h3>
       <p>
-        Law number 11: He is not a pickup artist. When most people hear the
-        term alpha male (High Value Man), they immediately conjure up images of
-        some over-the-top guy trying to pick up chicks at the local bar or club.
-        This couldn't be further from the truth. The alpha is given in
-        abundance; his life, his mere being, is enough to attract women. He
-        doesn't have to go out every night trying to reach a certain number of
-        sex partners. This is a clear sign of insecurity.
-      </p> <br />
+        Law number 11: He is not a pickup artist. When most people hear the term
+        alpha male (High Value Man), they immediately conjure up images of some
+        over-the-top guy trying to pick up chicks at the local bar or club. This
+        couldn't be further from the truth. The alpha is given in abundance; his
+        life, his mere being, is enough to attract women. He doesn't have to go
+        out every night trying to reach a certain number of sex partners. This
+        is a clear sign of insecurity.
+      </p>{" "}
+      <br />
       <h3>LAW 12 - HE IS NOT LONELY</h3>
       <p>
         Law number 12: He is not lonely. Modern society has done more to
@@ -147,7 +154,8 @@ export default function LawsOfHighValueMan() {
         your true self. It is a way of self-protection; you guard yourself from
         other people; you make yourself lonely to avoid rejection and
         humiliation.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3> LAW 13 - HE IS NOT UNCERTAIN</h3>
       <p>
         Law number 13: He is not uncertain. If no decision is made, nothing can
@@ -156,7 +164,8 @@ export default function LawsOfHighValueMan() {
         decision would risk the possibility of being wrong. To someone
         uncertain, this is terrifying. The golden image of themselves can't be
         risked, so they retreat from life and avoid decision.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 14 - HE IS NOT APATHETIC</h3>
       <p>
         Law number 14: He is not apathetic. 'I don't care, whatever, what do you
@@ -165,7 +174,8 @@ export default function LawsOfHighValueMan() {
         be possessed by a god, inspired. When you go through life in a daze of
         apathy, you lose touch with the god inside of you. Your energy levels
         plummet, and depression sets in. Find your purpose and let it kill you.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 15 - HE IS NOT SOCIALLY CONDITIONED</h3>
       <p>
         Law number 15: He is not socially conditioned. In a sense, it's
@@ -178,7 +188,8 @@ export default function LawsOfHighValueMan() {
         anxieties. Why are you the way you are? Your heart and body will soon
         reveal your truth and the truth that was handed to you by social
         conditioning.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 16 - HE IS NOT EMPTY</h3>
       <p>
         Law number 16: He is not empty. You can have achieved all the success
@@ -190,7 +201,8 @@ export default function LawsOfHighValueMan() {
         constantly drown your senses at the bottom of a bottle to completely opt
         out. The man who is fully in touch with himself is constantly working
         towards a worthwhile goal.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 17 - HE IS NOT APPROVAL SEEKING</h3>
       <p>
         Law number 17: He is not approval-seeking. So much of modern man's
@@ -203,7 +215,8 @@ export default function LawsOfHighValueMan() {
         The fully expressed alpha acts from a sense of giving his unique gift,
         following his gut, and helping others, whether he gets approval or is
         killed for it, matters not.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 18 - HE IS NOT A CONSUMER</h3>
       <p>
         Law number 18: He is not a consumer. We live in a consumer culture where
@@ -217,7 +230,8 @@ export default function LawsOfHighValueMan() {
         bigger you should be doing. You can't get enough of what you don't want.
         The full expression of the alpha wants something that can't be bought:
         freedom.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 19 - HE IS NOT ENSLAVED</h3>
       <p>
         Law number 19: He is not enslaved. 'But I have kids, a job, a mortgage,
@@ -229,7 +243,8 @@ export default function LawsOfHighValueMan() {
         can either find your purpose and let it kill you or die in a sea of
         regrets and rationalizations. Either way, you are going to the same
         place.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 20 - HE IS NOT A BELIEVER</h3>
       <p>
         Law number 20: He is not a believer. I mentioned this in the
@@ -242,7 +257,8 @@ export default function LawsOfHighValueMan() {
         kool-aid' to better understand this inferior position. The alpha has
         faith and then acts, explores, and tests to come to his own conclusion,
         his own theory of everything.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 21 - HE IS AUTHENTIC</h3>
       <p>
         He is authentic. As mentioned in the beginning of this book,
@@ -255,7 +271,8 @@ export default function LawsOfHighValueMan() {
         alpha that is locked in a cage. This problem is only becoming more and
         more prevalent as social media becomes more pronounced. This is the work
         you must be doing: finding yourself and expressing as much as possible.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 22 - HE IS FREE</h3>
       <p>
         Law number 22: He is free. The priority of the masculine on a deep level
@@ -276,7 +293,8 @@ export default function LawsOfHighValueMan() {
         spent with your family when you're in full alignment with your calling.
         Freedom is alpha on a non-physical level. Find your mission towards
         freedom and make it your priority.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 23 - HE IS COMPASSIONATE</h3>
       <p>
         Law number 23: He is compassionate. It is a sign of inhibition not to
@@ -289,7 +307,8 @@ export default function LawsOfHighValueMan() {
         The fully expressed alpha is fearless and literally feels others; he can
         sense what help they need and provides it. He is able to accept love as
         well as give it.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 24 - HE IS GOAL DRIVEN</h3>
       <p>
         Law number 24: He is goal-driven. Man is a goal-striving species. We get
@@ -308,7 +327,8 @@ export default function LawsOfHighValueMan() {
         knowledge of how your goal will be accomplished; you need to know your
         mission and to simply begin to live it in a certain way that will bring
         about the accomplishment of this goal.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 25 - HE LISTENS TO THE OMENS</h3>
       <p>
         Law number 25: He listens to the omens. God largely reveals himself to
@@ -321,14 +341,16 @@ export default function LawsOfHighValueMan() {
         <br /> <br />
         The fully expressed alpha recognizes the omens and follows them with
         courage.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 26 - HE IS LIGHTHEARTED</h3>
       <p>
         Law number 26: He is lighthearted. One of man's greatest strengths is
         his capacity for humor. Identify the things that matter most to you—your
         mission in life. For everything else, take a lighthearted approach, to
         laugh at it, enjoy it.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 27 - HE IS FRIENDS WITH FEAR</h3>
       <p>
         Law number 27: He is friends with fear. If you were absolutely fearless,
@@ -341,7 +363,8 @@ export default function LawsOfHighValueMan() {
         leaning into his fear. Every day, he is pushing his fear further and
         further. Fear is where real transformation occurs. You can either lean
         into it every day or retreat into a life of deluded comfort.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 28 - HE LOVES UNDERSTANDS AND APPRECIATES THE FEMININE</h3>
       <p>
         Law number 28: He loves, understands, and appreciates the feminine. Men
@@ -368,7 +391,8 @@ export default function LawsOfHighValueMan() {
         you aren't being the strongest version of yourself. This is why the
         fully expressed alpha loves the feminine; they push him to higher and
         higher heights.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 29 - HE IS AN EXPLORER</h3>
       <p>
         Law number 29: He is an explorer. The fully expressed alpha is an
@@ -379,7 +403,8 @@ export default function LawsOfHighValueMan() {
         and brings back the treasure to his people. Explore whatever enters your
         heart's desire. Bring back the treasure of your finding to your people
         so that they may be enlightened by your discovery.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 30 - HE GOES ALL THE WAY</h3>
       <p>
         Law number 30: He goes all the way. If you're going to try, go all the
@@ -395,7 +420,8 @@ export default function LawsOfHighValueMan() {
         alone with the gods, and the nights will flame with fire. Do it. Do it.
         Do it. Do it all the way. All the way. You will ride life straight to
         perfect laughter. It's the only good fight there is. - Charles Bukowski
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 31 - HE HAS GLOWING EYES</h3>
       <p>
         Law number 31: He has glowing eyes. A man's outlook on life is conveyed
@@ -408,7 +434,8 @@ export default function LawsOfHighValueMan() {
         Vacant, dull eyes are the mark of a man who has given up on his mission
         for himself. It is the mark of a man who looks around and only sees
         despair and depression.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 32 - HE IS VIBRANT</h3>
       <p>
         Law number 32: He is vibrant. The strings of a violin are made up of a
@@ -427,7 +454,8 @@ export default function LawsOfHighValueMan() {
         When you begin to fully express the alpha male that is in you, your body
         will come alive with energy and vitality that is infectious and affects
         everyone around you.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 33 - HE IS LEADING</h3>
       <p>
         Law number 33: He is leading. Being a leader isn't about being in
@@ -447,7 +475,8 @@ export default function LawsOfHighValueMan() {
         40 without a heroic bent. Most men start dying at 30. By and large, you
         will have to start on the journey without a mentor or a teacher; along
         the path, you will find them.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 34 - HE IS A PRODUCER</h3>
       <p>
         He is a producer. As I said in part one, the fully expressed alpha is
@@ -463,7 +492,8 @@ export default function LawsOfHighValueMan() {
         you open to constant criticism from the swarms of consumers. It takes a
         certain power to keep producing in the face of constant criticism. The
         fully expressed alpha possesses this power in the form of courage.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 35 - HE IS COURAGEOUS</h3>
       <p>
         Law number 35: He is courageous. To be a producer is to create the life
@@ -487,7 +517,8 @@ export default function LawsOfHighValueMan() {
         rational level; the rational takes place in the brain, your calling
         takes place in your heart.' That's why courage is required to live a
         significant life. It's high risk but much higher reward.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 36 - HE DOES NOTHING</h3>
       <p>
         Law number 36: He does nothing. Most men shy away from the dating realm
@@ -509,42 +540,136 @@ export default function LawsOfHighValueMan() {
         The alpha, in his fullness, lives a rich, passionate life and has an
         aura so strong that simply being with him is enough for any woman. This
         is the same for male friends as well.
-      </p> <br />
+      </p>{" "}
+      <br />
       <h3>LAW 37 - HE IS UNAPOLOGETIC</h3>
       <p>
-      Law number 37: He is unapologetic. So many men walk through life in a constant state of apology; their very being is marked by a sense of non-deserving. Someone who blinks often or finds themselves unconsciously nodding their head has this problem; they don't feel they deserve to be alive, so they must not be seen. They don't take up much space; they make themselves small.
-<br /><br />
-The alpha moves through this world without apology. He knows, not believes, but knows that the world is made better by his existence. This does not mean he never says he is sorry or makes mistakes; rather, it means that he acts from his heart and therefore no act can be one that is looked back on with regret and would warrant an apologetic outlook towards life.
-      </p> <br />
+        Law number 37: He is unapologetic. So many men walk through life in a
+        constant state of apology; their very being is marked by a sense of
+        non-deserving. Someone who blinks often or finds themselves
+        unconsciously nodding their head has this problem; they don't feel they
+        deserve to be alive, so they must not be seen. They don't take up much
+        space; they make themselves small.
+        <br />
+        <br />
+        The alpha moves through this world without apology. He knows, not
+        believes, but knows that the world is made better by his existence. This
+        does not mean he never says he is sorry or makes mistakes; rather, it
+        means that he acts from his heart and therefore no act can be one that
+        is looked back on with regret and would warrant an apologetic outlook
+        towards life.
+      </p>{" "}
+      <br />
       <h3>LAW 38 - HE IS SURROUNDED BY SUPPORTIVE PEERS</h3>
       <p>
-      Law number 38: He is surrounded by supportive peers. No man is an island. While it is beneficial for a man to practice extreme self-reliance, no man accomplishes truly great things without other male friends. The adage 'birds of a feather flock together' is true on many levels. Take a good, hard look at your friends. Do they embody the life you want? Would you follow your friends into battle? If you even have to think about it, then you need to question how much time you spend with these men.
-<br /><br />
-The fully expressed alpha is surrounded by others on similar journeys. His frequency is in harmony with them, and they connect naturally. When you begin your journey, you will find these men enter your life naturally. This does not mean you need to ditch your old friends; not at all. Old friends, contented and comfortable with life, can bring you back down to earth. You can laugh with these men, but on the hero's journey, you need to be surrounded by men that will push you when you begin to slack and catch you when you fall.
-      </p> <br />
+        Law number 38: He is surrounded by supportive peers. No man is an
+        island. While it is beneficial for a man to practice extreme
+        self-reliance, no man accomplishes truly great things without other male
+        friends. The adage 'birds of a feather flock together' is true on many
+        levels. Take a good, hard look at your friends. Do they embody the life
+        you want? Would you follow your friends into battle? If you even have to
+        think about it, then you need to question how much time you spend with
+        these men.
+        <br />
+        <br />
+        The fully expressed alpha is surrounded by others on similar journeys.
+        His frequency is in harmony with them, and they connect naturally. When
+        you begin your journey, you will find these men enter your life
+        naturally. This does not mean you need to ditch your old friends; not at
+        all. Old friends, contented and comfortable with life, can bring you
+        back down to earth. You can laugh with these men, but on the hero's
+        journey, you need to be surrounded by men that will push you when you
+        begin to slack and catch you when you fall.
+      </p>{" "}
+      <br />
       <h3>LAW 39 - HE IS ALWAYS GROWING</h3>
       <p>
-      Law number 39: He is always growing. The man who is living on his edge and following his heart's calling is in a constant state of growth. Where authentic expression is the basis of mankind, our evolutionary gift, if you will. Evolution and growth, in and of themselves, are the fundamental processes of everything. Personal growth happens when you set goals; the specific outcome of the goal is not as important as the personal growth that occurs on the journey to that specific outcome. As they say, 'It's not the destination that counts, it's the journey.'
-<br /><br />
-There is no reason you couldn't attain your goal right now, except for how you are. You'll find that when you change how you are, your goals become fairly easy to attain. Goals can be met by fluke chance, but when you evolve the very core of how you are, they become much more probable, because you evolve into someone where that is just what happens with you; it becomes the usual.
-<br /><br />
-This is the fundamental process of all life. However, mankind has largely removed themselves from this process. Evolution works on every level: biological, technological, consciousness level, etc. It works by exploring every available opportunity and every possibility, and choosing the one that returns the most profitable outcomes and discarding the unfavorable ones.
-<br /><br />
-When you cease growing, you begin decaying. There is no escape from this process; you are either growing or decaying. The alpha is moving more and more towards the achievement of his mission, ending in absolute authenticity and freedom, whereas the inferior man is holding back growth with tension and just chasing outcomes.
-      </p> <br />
+        Law number 39: He is always growing. The man who is living on his edge
+        and following his heart's calling is in a constant state of growth.
+        Where authentic expression is the basis of mankind, our evolutionary
+        gift, if you will. Evolution and growth, in and of themselves, are the
+        fundamental processes of everything. Personal growth happens when you
+        set goals; the specific outcome of the goal is not as important as the
+        personal growth that occurs on the journey to that specific outcome. As
+        they say, 'It's not the destination that counts, it's the journey.'
+        <br />
+        <br />
+        There is no reason you couldn't attain your goal right now, except for
+        how you are. You'll find that when you change how you are, your goals
+        become fairly easy to attain. Goals can be met by fluke chance, but when
+        you evolve the very core of how you are, they become much more probable,
+        because you evolve into someone where that is just what happens with
+        you; it becomes the usual.
+        <br />
+        <br />
+        This is the fundamental process of all life. However, mankind has
+        largely removed themselves from this process. Evolution works on every
+        level: biological, technological, consciousness level, etc. It works by
+        exploring every available opportunity and every possibility, and
+        choosing the one that returns the most profitable outcomes and
+        discarding the unfavorable ones.
+        <br />
+        <br />
+        When you cease growing, you begin decaying. There is no escape from this
+        process; you are either growing or decaying. The alpha is moving more
+        and more towards the achievement of his mission, ending in absolute
+        authenticity and freedom, whereas the inferior man is holding back
+        growth with tension and just chasing outcomes.
+      </p>{" "}
+      <br />
       <h3>LAW 40 - HE FUCKS THE WORLD</h3>
-      <p>He fucks the world like the act of sex. Men enter the world with a thrust; this is how we make our mark. Some men either hold back and wait for the right moment or woman, which is typically an action based on fear. Others run around just inserting the tip into many different arenas or women, which is an egotistical numbers game based on the need for approval. And other men become so broken that they are impotent both sexually and spiritually.
-<br /><br />
-The fully expressed alpha absolutely ravishes life. He does not just poke around, getting mediocre results. He enters the world as he enters his woman: with absolute love, authenticity, and the fullest giving of his unique gifts. A man fully in touch with his alpha, a man living on his purpose, a man totally authentic and free, makes every day, every moment, an orgasmic thrust of his fullness. With each action he takes from his core, the flow of life is forced to mold around him, completely authentic, aware, and courageous. The fully expressed alpha fucks the world to smithereens with absolute freedom until his life ends in one exquisite ejaculation.</p> <br />
-<h3>Conclusion</h3>
       <p>
-      Realize that the alpha male you see around you and find yourself paying attention to and respecting is not someone you can't be. There is already one caged up inside of you. My hope is that this text gave you some awareness of the cage and set your subconscious mind on a mission to get the alpha out in his fullness, your fullness, who you are at your core.
-<br /><br />
-Remember, if your only motivation to become an High Value Man is to be the cocky macho jerk kind of guy, thinking that these are the sorts of guys that women like, you are very wrong. That's the thinking of a boy. Furthermore, this text isn't about becoming the ultra-sensitive wimp. This text goes deeper than the superficial concerns of an ordinary man. It will effectively try to shape you to become an altogether better, more confident person, and someone who has complete faith in themselves. Whether you're trying to impress a woman you like or getting over some issues that haunt your past, by following the details of this text and understanding the related psychology, gradually you will be able to shape yourself into the complete alpha male, the strongest version of yourself.
-<br /><br />
-This text provides you with everything you need to know to gain an awareness of what an alpha male (High Value Man) looks like. You may already possess some of these qualities, but a true alpha is one that possesses all of these characteristics in their fullness. 
-
-      </p> <br />
+        He fucks the world like the act of sex. Men enter the world with a
+        thrust; this is how we make our mark. Some men either hold back and wait
+        for the right moment or woman, which is typically an action based on
+        fear. Others run around just inserting the tip into many different
+        arenas or women, which is an egotistical numbers game based on the need
+        for approval. And other men become so broken that they are impotent both
+        sexually and spiritually.
+        <br />
+        <br />
+        The fully expressed alpha absolutely ravishes life. He does not just
+        poke around, getting mediocre results. He enters the world as he enters
+        his woman: with absolute love, authenticity, and the fullest giving of
+        his unique gifts. A man fully in touch with his alpha, a man living on
+        his purpose, a man totally authentic and free, makes every day, every
+        moment, an orgasmic thrust of his fullness. With each action he takes
+        from his core, the flow of life is forced to mold around him, completely
+        authentic, aware, and courageous. The fully expressed alpha fucks the
+        world to smithereens with absolute freedom until his life ends in one
+        exquisite ejaculation.
+      </p>{" "}
+      <br />
+      {/* <h3>Conclusion</h3> */}
+      {/* <p>
+        Realize that the alpha male you see around you and find yourself paying
+        attention to and respecting is not someone you can't be. There is
+        already one caged up inside of you. My hope is that this text gave you
+        some awareness of the cage and set your subconscious mind on a mission
+        to get the alpha out in his fullness, your fullness, who you are at your
+        core.
+        <br />
+        <br />
+        Remember, if your only motivation to become an High Value Man is to be
+        the cocky macho jerk kind of guy, thinking that these are the sorts of
+        guys that women like, you are very wrong. That's the thinking of a boy.
+        Furthermore, this text isn't about becoming the ultra-sensitive wimp.
+        This text goes deeper than the superficial concerns of an ordinary man.
+        It will effectively try to shape you to become an altogether better,
+        more confident person, and someone who has complete faith in themselves.
+        Whether you're trying to impress a woman you like or getting over some
+        issues that haunt your past, by following the details of this text and
+        understanding the related psychology, gradually you will be able to
+        shape yourself into the complete alpha male, the strongest version of
+        yourself.
+        <br />
+        <br />
+        This text provides you with everything you need to know to gain an
+        awareness of what an alpha male (High Value Man) looks like. You may
+        already possess some of these qualities, but a true alpha is one that
+        possesses all of these characteristics in their fullness.
+      </p>{" "} */}
+      <br />
     </div>
   );
 }

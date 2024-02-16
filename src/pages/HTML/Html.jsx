@@ -1,4 +1,5 @@
 import React from "react";
+import BasicExamples from "./BasicExamples";
 
 export default function Html() {
   return (
@@ -64,10 +65,7 @@ export default function Html() {
           {`<h2>Mai Hoon Ek h1 se chhoti Heading.</h2>`}{" "}
         </span>{" "}
         <br />
-        <span className="clrRed">
-          {" "}
-          {`<p>Mai Hoon Ek Paragraph.</p>`}{" "}
-        </span>{" "}
+        <span className="clrRed"> {`<p>Mai Hoon Ek Paragraph.</p>`} </span>{" "}
         <br /> <br />
         <span className="clrRed"> {`Ye hai Starting tag : <p>`} </span> <br />
         <span className="clrRed"> {`Mai Hoon Content`} </span> <br />
@@ -80,7 +78,7 @@ export default function Html() {
       </p>
       <h2>How Browsers use HTML</h2>
       <p>
-        web browsers (Chrome, Firefox, Safari) ka purpose HTML documents ko
+        Web browsers (Chrome, Firefox, Safari) ka purpose HTML documents ko
         padhna aur unhe sahi tarike se show karna hota hai. <br />
         Browser HTML tags show nahi karta hai, lekin unka use karta hai document
         ko kaise show karna hai, ye show karne ke liye.
@@ -107,7 +105,37 @@ export default function Html() {
         </div>
         {`</html>`}
       </div>
-
+      <p>
+        {`<body>`} section ke andar ka content browser mein show hota hai, aur{" "}
+        {`<title> `} element ke andar ka content browser ke title bar mein ya
+        page ke tab mein show hota hai.
+      </p>
+      <h2>HTML Editors in Hindi</h2>
+      <p>HTML sikhne ke liye ek simple text editor ki jarurat hoti hai.</p>
+      <p>
+        Aap use kar sakte hain <b>Notepad,</b> <b>TextEdit</b> ya fir{" "}
+        <b>VS Code</b>{" "}
+      </p>
+      <p>
+        To better understand ke kaise suru karna hai see this youtube video on how to download <b>VS Code </b> 
+        below:
+      </p>
+      <div className="mAuto">
+        <iframe
+          width="100%"
+          height="400"
+          src="https://www.youtube.com/embed/aqQfPgmW05o?si=0L1F7qZ_62SN3n9o"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+      <p className="bgYellow">NOTE: Ye video dekhke youtube pe nahi jana hai distraction se door padhai ho paye iske liye ye video add kiya gaya hai.</p>
+      <hr />
+      <div>
+        <BasicExamples/>
+      </div>
     </div>
   );
 }
