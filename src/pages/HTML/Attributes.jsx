@@ -64,8 +64,12 @@ export default function Attributes() {
       <p>
         1. Absolute URL - Ye ek external image ko define karta hai jo doosre
         website par host kiya gaya hai. example:
-        src="https://www.google.com/images/img_girl.jpg".
       </p>
+      <pre className="bgExample">
+        {`
+        src="https://www.google.com/images/img_girl.jpg".
+                `}
+      </pre>
       <p>
         Note: Bahari image copyright ke under ho sakti hai. Agar aapke use ke
         liye permission nahi milti, to ye copyright laws ka violation ho sakta
@@ -94,8 +98,8 @@ export default function Attributes() {
         <img src="myLogo.jpg" alt="logo_image">
         `}
       </pre>
-      <img
-        src="https://www.dropbox.com/scl/fi/m3p0yhwrrnsnqshncacxs/Your-paragraph-text-2.png?rlkey=1z6muym5k31fkquwgyds95ypp&dl=1"
+      <img 
+        src="https://www.dropbox.com/scl/fi/m3p0yhwrrnsnqshncacxs/Your-paragraph-text-2.png?rlkey=1z6muym5k31fkquwgyds95ypp&dl=1" className="widHund"
         alt="logo_image"
       />
       <p>
@@ -163,11 +167,11 @@ hey...
         characters mein country ko define kiya jata hai.
       </p>
       <p>
-        Following example English as the language and United
-        States as the country specifie karta hai:
+        Following example English as the language and United States as the
+        country specifie karta hai:
       </p>
       <pre className="bgExample">
-    {`
+        {`
     <!DOCTYPE html>
     <html lang="en-US">
     <body>
@@ -176,8 +180,7 @@ hey...
     </html>`}
       </pre>
       <p className="bgYellow">
-        <b>NOTE: Always Use Lowercase Attributes
-</b>
+        <b>NOTE: Always Use Lowercase Attributes</b>
       </p>
     </div>
   );

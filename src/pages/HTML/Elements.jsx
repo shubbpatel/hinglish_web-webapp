@@ -35,7 +35,7 @@ export default function Elements() {
         define karta hai.
       </p>
       <p>
-        ye iska starting tag hai <html>, aur ek end tag </html> hai.
+        ye iska starting tag hai {`<html>`}, aur ek end tag {`</html>`} hai.
       </p>
       <p>
         {`<html>`} element ke inside ek {`<body>`} element hota hai:
@@ -54,7 +54,7 @@ export default function Elements() {
       </pre>
       <p>The {`<body>`} element define karta hai document ki body.</p>
       <p>
-        ye iska starting tag hai <body>, and ye end tag </body> hai.
+        ye iska starting tag hai {`<body>`}, and ye end tag {`</body>`} hai.
       </p>
       <p>
         Then, {`<body>`} element ke inside 3 aur elements hain : {`<h1>`},{" "}
