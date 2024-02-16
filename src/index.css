@@ -17,11 +17,10 @@ body {
   /* color: rgb(231, 239, 241); */
 }
 
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 @media (max-width: 767px) {
   body {
     max-width: 100vw;
@@ -32,7 +31,6 @@ code {
   padding: 5px;
   border-radius: 5px;
   color: black;
-
 }
 .bgBlue {
   background-color: rgb(135, 197, 245);
@@ -45,12 +43,20 @@ code {
   border-radius: 5px;
   overflow: auto;
   color: black;
-}
-.clrRed{
-  color: red;
   
 }
-.bgRed{
+.exampleGrd {
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+.clrRed {
+  color: red;
+}
+.bgRed {
   background-color: red;
   padding-left: 5px;
   padding-right: 5px;
@@ -60,12 +66,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.clrBlack{
+.clrBlack {
   background-color: rgb(50, 49, 49);
   padding: 3px 5px;
   color: white;
 }
-.mAuto{
+.mAuto {
   display: flex;
   align-items: center;
   justify-content: center;

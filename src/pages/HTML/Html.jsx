@@ -1,5 +1,7 @@
 import React from "react";
 import BasicExamples from "./BasicExamples";
+import Elements from "./Elements";
+import Attributes from "./Attributes";
 
 export default function Html() {
   return (
@@ -135,6 +137,12 @@ export default function Html() {
       <hr />
       <div>
         <BasicExamples/>
+      </div>
+      <div>
+        <Elements/>
+      </div>
+      <div>
+        <Attributes/>
       </div>
     </div>
   );
