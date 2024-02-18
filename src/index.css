@@ -32,6 +32,10 @@ body {
   border-radius: 5px;
   color: black;
 }
+.bgWhite {
+  background-color: white;
+  border: 1px solid black;
+}
 .bgBlue {
   background-color: rgb(135, 197, 245);
   padding: 5px;
@@ -43,7 +47,6 @@ body {
   border-radius: 5px;
   overflow: auto;
   color: black;
-  
 }
 .exampleGrd {
   background: rgb(63, 94, 251);
@@ -77,6 +80,6 @@ code {
   justify-content: center;
   margin: auto;
 }
-.widHund{
+.widHund {
   width: 100%;
 }

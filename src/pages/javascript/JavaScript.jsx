@@ -17,6 +17,20 @@ import Strings from "./Strings";
 import Arrays from "./Arrays";
 
 export default function JavaScript() {
+  const vehicle = {
+    brand: "TATA",
+    model: "PUNCH",
+    color: "red",
+  };
+
+  const updateMyVehicle = {
+    type: "car",
+    year: 2021,
+    color: "yellow",
+  };
+
+  const myUpdatedVehicleDetails = { ...vehicle, ...updateMyVehicle };
+  console.log(myUpdatedVehicleDetails);
   return (
     <div className="bContainer">
       <h1 id="javascript-in-hindi" style={{ paddingLeft: "5px" }}>
@@ -315,43 +329,43 @@ function myFunction() {
           <Statements />
         </div>
         <div id="javascript-syntax-hindi">
-          <Syntax/>
+          <Syntax />
         </div>
         <div id="comments">
-          <Comments/>
+          <Comments />
         </div>
         <div id="javascript-variables-hindi">
-          <Variables/>
+          <Variables />
         </div>
         <div id="javascript-let-hindi">
-          <Let/>
+          <Let />
         </div>
         <div id="javascript-operators-hindi">
-          <Operators/>
+          <Operators />
         </div>
         <div id="arithmetic">
-          <Arithmetic/>
+          <Arithmetic />
         </div>
         <div id="assignment">
-          <Assignment/>
+          <Assignment />
         </div>
         <div id="javascript-datatypes-hindi">
-          <DataTypes/>
+          <DataTypes />
         </div>
         <div id="javascript-functions-hindi">
-          <Functions/>
+          <Functions />
         </div>
         <div id="javascript-objects-hindi">
-          <Objects/>
+          <Objects />
         </div>
         <div id="javascript-events-hindi">
-          <Events/>
+          <Events />
         </div>
         <div id="javascript-strings-hindi">
-          <Strings/>
+          <Strings />
         </div>
         <div id="javascript-array-hindi">
-          <Arrays/>
+          <Arrays />
         </div>
       </div>
     </div>

@@ -4,7 +4,10 @@ import "./style/Home.css";
 export default function Home() {
   return (
     <div className="homeContainer">
-      {/* <h1>jaldi seekhna hai to apni language me learn karo</h1> */}
+      <h1>
+        India's Best Website <br /> to Learn Programming for Indian Studends{" "}
+        <br />& in Indian Language
+      </h1>
       <div className="homeBtnBox">
         <button
           onClick={() => {
@@ -22,14 +25,7 @@ export default function Home() {
         >
           React
         </button>
-        <button
-          onClick={() => {
-            window.location = "/personality-development-tutorial";
-          }}
-          className="highValueBtn homeBtn"
-        >
-          High Value Room
-        </button>
+
         <button
           onClick={() => {
             window.location = "/html-hindi";
@@ -38,11 +34,19 @@ export default function Home() {
         >
           HTML
         </button>
+
         {/* {/* <button className="cssBtn homeBtn">CSS</button> */}
         {/* <button className="pythonBtn homeBtn">Python</button> */}
         {/* <button className="cBtn homeBtn">C</button> */}
         {/* <button className="cppBtn homeBtn">C++</button>  */}
-       
+        <button
+          onClick={() => {
+            window.location = "/personality-development-tutorial";
+          }}
+          className="highValueBtn homeBtn"
+        >
+          High Value Room
+        </button>
       </div>
       <div className="homeTable">
         <h2>Productivity Hack</h2>

@@ -3,7 +3,7 @@ import React from "react";
 export default function LawsOfHighValueMan() {
   return (
     <div className="alphaRoom highValueRoom">
-      <h1>40 Laws Of High A Value Man</h1>
+      <h1>40 Laws Of A High Value Man</h1>
       <br />
       <h3>LAW 1 - HE IS NOT A BOY</h3>
       <p>

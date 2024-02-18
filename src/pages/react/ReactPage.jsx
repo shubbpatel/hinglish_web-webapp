@@ -4,27 +4,29 @@ import "../style/react.css";
 export default function Home() {
   return (
     <div className="bContainer">
-        <h1 style={{paddingLeft:'5px'}}>React JS in Hindi</h1>
-        <div className="index">
-          <a href="#react-in-hindi">Introduction</a>
-          <a href="#javascript-ES6-hindi">React ES6</a>
-          <a href="#jsx">React JSX</a>
-          <a href="#react-components-hindi">React Components</a>
-          <a href="#react-props-hindi">React Props</a>
-          <a href="#conditionals">React Conditionals</a>
-          <a href="#lists">React Lists</a>
-          <a href="#forms">React Forms</a>
-          <a href="#router">React Router</a>
-          <a href="#react-Hooks-hindi">React Hooks</a>
-        </div>
+      <h1 style={{ paddingLeft: "5px" }}>React JS in Hindi</h1>
+      <div className="index">
+        <a href="#react-in-hindi">Introduction</a>
+        <a href="#javascript-ES6-hindi">React ES6</a>
+        <a href="#jsx">React JSX</a>
+        <a href="#react-components-hindi">React Components</a>
+        <a href="#react-props-hindi">React Props</a>
+        <a href="#conditionals">React Conditionals</a>
+        <a href="#lists">React Lists</a>
+        <a href="#forms">React Forms</a>
+        <a href="#router">React Router</a>
+        <a href="#react-Hooks-hindi">React Hooks</a>
+      </div>
       <div className="container">
         <h2 id="react-in-hindi">Getting Started</h2>
         <p>
-          React ek JavaScript library hai jise user interfaces banane ke liye
-          design kiya gaya hai.
+          React ek JavaScript library hai jise user interfaces create karne ke
+          liye design kiya gaya hai.
         </p>
         <p>React ka istemal single-page applications banane mein hota hai.</p>
-        <p>React hamen reusable UI components banane me madad karta hai.</p>
+        <p>
+          React hamen reusable UI components create karne me help karta hai.
+        </p>
         <h2>Learn by Examples</h2>
         <p className="bgExample">
           <pre>
@@ -40,10 +42,13 @@ export default function Home() {
         </p>
         <h2>Create React App</h2>
         <p>
-          React sikhne aur test karne ke liye, aapko apne computer par ek React
-          Environment set up karna chahiye. Is tutorial mein, create-react-app
-          ka istemal kiya gaya hai. create-react-app ek official tareeka hai
-          React applications banane ka. create-react-app ka istemal karne ke
+          React learn karne aur test karne ke liye, aapko apne computer par ek
+          React Environment set up karna hoga. Is tutorial mein,{" "}
+          <span className="clrBlack">create-react-app</span>
+          ka use kiya gaya hai.{" "}
+          <span className="clrBlack">create-react-app</span> ek official tareeka
+          hai React applications banane ka.{" "}
+          <span className="clrBlack">create-react-app</span> ka istemal karne ke
           liye Node.js ki zarurat hoti hai. Apne terminal ko us directory mein
           kholiye jahan aap apni application banane chahte hain. Is command ko
           chalaiye to ek React application my-react-app naam se ban jayegi:
@@ -51,25 +56,26 @@ export default function Home() {
         <p className="bgBlue">npx create-react-app my-react-app</p>
         <p>
           create-react-app sab kuch set up karega jo aapko ek React application
-          chalane ke liye zaruri hogi."
+          chalane ke liye zaruri hai."
         </p>
         <br />
         <h2>Run the React Application</h2>
-        <p>my-react-app directory mein jaane ke liye is command ko chalaiye:</p>
+        <p>my-react-app directory mein jaane ke liye ye command run kijiye:</p>
         <p className="bgBlue">cd my-react-app</p>
         <p>
-          React application my-react-app ko chalane ke liye is command ko
+          React application my-react-app ko run run karne ke liye is command ko
           execute karein:
         </p>
         <p className="bgBlue">npm start</p>
         <p>
-          Ek naya browser window khulegi jisme aapke naye banaye gaye React App
-          honge! Agar nahi khulta, to apne browser ko kholiye aur address bar
-          mein localhost:3000 likhiye.
+          Browser mein ek naya window open hoga jisme aapka naya create kiya
+          gaya React App hoga! Agar nahi khulta, to apne browser ko kholiye aur
+          address bar mein <span className="clrBlack">localhost:3000</span>{" "}
+          likhiye.
         </p>
         <img src="" alt="" />
         <br />
-        <h2>Aapko Pehle Se Kya Pata Hona Chahiye ?</h2>
+        <h2>To Learn React Aapko Pehle Se Kya Pata Hona Chahiye ?</h2>
         <p>
           React.JS shuru karne se pehle, aapko inn topics ko pehle padhna
           chahiye:
@@ -79,44 +85,49 @@ export default function Home() {
             <li>JavaScript</li>
           </ul>
           Aapko ECMAScript 6 (ES6) mein aaye naye JavaScript features ke saath
-          kuch anubhav bhi hona chahiye; aap inke baare mein React ES6 chapter
-          mein seekhenge.
+          bhi kuch experience hona chahiye; aap inke baare mein React ES6
+          chapter mein seekhenge.
         </p>
         <br />
         <h2>What is React</h2>
         <p>
-          React, ko ek frontend JavaScript framework bhi kaha jata hai, Facebook
-          dwara banayi gayi ek JavaScript library hai. React UI components
-          banane ka ek tool hai.
+          React, ko ek frontend JavaScript framework bhi kehte hain, Facebook
+          dwara developed ek JavaScript library hai. React UI components banane
+          ka ek tool hai.
         </p>
         <br />
         <h2>React Kaise kaam Karta hai ?</h2>
-        <p className="bgYellow">React memory mein ek VIRTUAL DOM banata hai</p>
+        <p className="bgYellow">
+          React memory mein ek VIRTUAL DOM Create karta hai
+        </p>
         <p>
-          Browser ke DOM me sidha badlaav karne ki jagah, React memory mein ek
-          virtual DOM banata hai, jahan par sab jaruri badlaav hota hai, uske
-          baad jo jaruri changes hain browser ke DOM mein kiya jata hai.
+          Browser ke DOM me direct changes karne ki jagah, React memory mein ek
+          virtual DOM create karta hai, jahan par sabhi necessary changes hote
+          hain, uske baad jo jaruri changes hain browser ke DOM mein kiya jata
+          hai.
         </p>
         <p className="bgYellow">
-          React keval tabhi changes karta hai jab avashyak ho!
+          React keval vahi changes karta hai jo jaruri ho!
         </p>
         <p>
-          React ye jaan leta hai ki kaun-kya change hua hai, aur sirf wahi
-          change karta hai jo jaruri hai. Aap is tutorial ke baki hisse mein ye
+          React ye find kar leta hai ki kya change hua hai, aur sirf wahi change
+          karta hai jo jaruri hai. Aap is tutorial ke baki hisse mein ye
           samajhenge ki React ye kaise karta hai
         </p>
         <br />
-        <h2 id="javascript-ES6-hindi">What is ES6 in Hindi  ? (ES 6 kya hai ?)</h2>
+        <h2 id="javascript-ES6-hindi">
+          What is ES6 in Hindi ? (ES 6 kya hai ?)
+        </h2>
         <p>
           ES6 ka matlab hai ECMAScript 6. ECMAScript ko JavaScript ko
           standardize karne ke liye banaya gaya tha, aur ES6 ECMAScript ka 6th
           version hai, jo 2015 mein launch hua tha, aur ise ECMAScript 2015 bhi
           kaha jata hai.
         </p>
-        <h2>Why Should I Learn ES6? (Mujhe ES 6 kyu seekhna chahiye ?)</h2>
+        <h2>Why Should I Learn ES6? (ES6 kyu seekhna chahiye ?)</h2>
         <p>
-          React ES6 ka istemal karta hai, aur aapko kuch naye features ke saath
-          familiar hona chahiye, jaise ki:
+          Because react ES6 ka istemal karta hai, aur aapko kuch naye features
+          ke saath familiar hona chahiye, jaise ki:
           <ul>
             <li>Classes</li>
             <li>Arrow Functions</li>
@@ -149,11 +160,11 @@ export default function Home() {
           </pre>
         </p>
         <p className="bgYellow">
-          Class ke naam ka dhyan dijiye. Humne naam "bike" ko ek uppercase
+          Class ke naam par dhyan dijiye. Humne Name "Bike" ko ek uppercase
           character ke saath shuru kiya hai. Ye ek class ke liye ek standard
           naming convention hai.
         </p>
-        <p>Ab aap Car class ka istemal karke objects bana sakte hain</p>
+        <p>Ab aap Bike class ka istemal karke objects bana sakte hain</p>
         <br />
         <h3>Example</h3>
         <p className="bgExample">
@@ -176,7 +187,7 @@ export default function Home() {
         <h2>Method in Classes</h2>
         <p>Aap ek class mein apne methods add kar sakte hain.</p>
         <h4>Example</h4>
-        <p>Ek method banaiye jiska naam "present" ho:</p>
+        <p>Ek method create kariye jiska naam "present" ho:</p>
         <p className="bgExample">
           <pre>
             {`class Truck {
@@ -195,9 +206,9 @@ mytruck.present(); `}
         </p>
         <p>
           Jaise ki aap upar ke example mein dekh sakte hain, aap method ko
-          object ke method ka naam refer karte hue bulate hain, jise parentheses
-          ke saath follow kiya jata hai (parameters parentheses ke andar jaate
-          hain).
+          object ke method ka name refer karte hue call karte hain, jise
+          parentheses ke saath follow kiya jata hai (parameters parentheses ke
+          andar jaate hain).
         </p>
         <h3>Class Inheritance</h3>
         <p>
@@ -233,22 +244,22 @@ class Model extends Truck {
         return this.present() + ', it is a ' + this.model
     }
 }
-const mytruck = new Model("Tata", "Ashok leyland");
+const mytruck = new Model("Tata", "Ashok Leyland");
 mytruck.show(); `}
           </pre>
         </p>
         <p>super() method parent class ko refer karta hai.</p>
         <p>
-          "Constructor method mein super() method ko bulakar, hum parent class
-          ke constructor method ko call karte hain aur parent class ke
-          properties aur methods ka upayog karte hain.
+          "Constructor method mein super() method ko call karke, hum parent
+          class ke constructor method ko call karte hain aur parent class ke
+          properties aur methods ka use karte hain.
         </p>
         <br />
         <br />
         <h2>ES6 Arrow Functions</h2>
         <p>
-          in simple words: Arrow functions humein chhoti syntax mein function
-          likhne me madad karte hain
+          In simple words: Arrow functions humein chhoti syntax mein function
+          likhne me madad karte hain.
         </p>
         <h3>Example </h3>
         <p>before: </p>
@@ -308,7 +319,7 @@ mytruck.show(); `}
           kuch bhi ho sakta hai.
         </p>
         <p>
-          Arrow functions mein, 'this' keyword hamesha woh object ko represent
+          Arrow functions mein, 'this' keyword hamesha uss object ko represent
           karta hai jo arrow function ko define karta hai.
         </p>
         <p>Is difference ko samajhne ke liye, do examples dekhte hain.</p>
@@ -383,7 +394,7 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
         </p>
         <p>
           Jab aap functions ke saath kaam kar rahe hain, toh in differences ko
-          yaad rakhein. Kabhi-kabhi regular functions ka behavior aapko chahiye
+          yaad rakhein. Kabhi-kabhi aapko regular functions ka behavior chahiye
           hota hai, agar nahi, to arrow functions ka istemal karein."
         </p>
         <br />
@@ -398,7 +409,7 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
           Ab, ES6 ke saath, aapke pas variables ko define karne ke liye teen
           tareeke hain: <span style={{ color: "green" }}>var</span> ,{" "}
           <span style={{ color: "purple" }}>let</span>, aur{" "}
-          <span style={{ style: "pink" }}>const</span>.
+          <span style={{ color: "red" }}>const</span>.
         </p>
         <h3>Example</h3>
         <p>var</p>
@@ -458,13 +469,13 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
           constant reference ko define karta hai
         </p>
         <p>
-          Is wajah se aap Nahi kar sakte hain :
+          You can not do this :
           <ul>
             <li>ek constant value reassign nahi kar sakte</li>
             <li>ek constant array reassign nahi kar sakte</li>
             <li>ek constant object reassign nahi kar sakte</li>
           </ul>
-          <p>Par aap kar sakte hain:</p>
+          <p>You can do this:</p>
           <ul>
             <li>constant array ke elements change kar sakte hain</li>
             <li>constant object ke properties change kar sakte hain</li>
@@ -472,27 +483,33 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
         </p>
         <br />
         <h2>ES6 'Array Methods'</h2>
-        <p>Bahut se JavaScript array methods hain.</p>
+        <p>JavaScript mein multiple array methods hain.</p>
+        <p>React mein ek bahut hi useful array method hai, jo hai method</p>
         <p>
-          React mein ek bahut hi useful array method hai, jo hai .map() method
+          <span className="clrRed">.map()</span> method aapko array ke har item
+          par ek function chalane me help karta hai, jisse ek naya array as
+          result return hota hai
         </p>
         <p>
-          .map() method aapko array ke har item par ek function chalane me help
-          karta hai, jisse ek naya array result ke roop mein milta hai
-        </p>
-        <p>
-          React mein, map() ka istemal lists banane ke liye kiya ja sakta hai.
+          React mein, <span className="clrRed">.map()</span> ka istemal lists
+          banane ke liye kiya ja sakta hai.
         </p>
         <h3>Example</h3>
         <p>Ek array se items ki ek list banaiye:</p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
 
-          const myArray = ['apple', 'banana', 'orange'];
+          const myArray = ['Mobile', 'Tab', 'Laptop'];
           const myList = myArray.map((item) => <p>{item}</p>)
 `}
-          </pre>
+        </pre>
+        <p>
+          <b>Output</b>
+        </p>
+        <p className="clrBlack">
+          Mobile <br />
+          Tab <br />
+          Laptop
         </p>
         <br />
         <h2>ES6 Destructuring</h2>
@@ -509,7 +526,7 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
         </p>
         <p>
           Destructuring se sirf wohi cheezein nikalna asaan ho jata hai jo
-          zaruri hai.
+          zaruri hain.
         </p>
         <br />
         <h3>Destructing Arrays</h3>
@@ -522,13 +539,13 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
         <p className="bgExample">
           <pre>
             {`
-          const vehicles = ['Mahindra', 'f-150', 'expedition']; <br />
+          const vehicles = ['Mahindra', 'f-150', 'expedition'];
           // old way const
-          <br />
-          car = vehicles[0]; <br />
+          
+          car = vehicles[0]; 
           const truck = vehicles[1];
-          <br />
           const suv = vehicles[2];
+
 `}
           </pre>
         </p>
@@ -561,9 +578,8 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
           ek array return karta hai:
         </p>
         <h3>Example</h3>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
 
   function calculate(a, b) {
   const add = a + b;
@@ -575,8 +591,21 @@ document.getElementById("btn").addEventListener("click", myheader.changeColor); 
 }
 
 const [add, subtract, multiply, divide] = calculate(4, 7); 
+console.log(add);
+console.log(subtract);
+console.log(multiply);
+console.log(divide);
+
 `}
-          </pre>
+        </pre>
+        <p>
+          <b>Output:</b>
+        </p>
+        <p className="clrBlack">
+          11 <br />
+          -3 <br />
+          28 <br />
+          0.57
         </p>
         <br />
         <h2>Destructuring Objects</h2>
@@ -584,16 +613,15 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           Ye hai ek object ko ek function ke andar istemal karne ka purana
           tareeka:
         </p>
-        <h3>Exapmle</h3>
-        <p className="bgExample">
-          <pre>
-            {`
+        <h3>Example</h3>
+        <pre className="bgExample">
+          {`
                 const vehicleOne = {
                     brand: 'Mahindra',
                     model: 'Bolero',
-                    type: 'car',
+                    type: 'SUV',
                     year: 2021, 
-                    color: 'red'
+                    color: 'White'
                   }
                   
                   myVehicle(vehicleOne);
@@ -601,35 +629,43 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
                   // old way
                   function myVehicle(vehicle) {
                     const message = 'My ' + vehicle.type + ' is a ' + vehicle.color + ' ' + vehicle.brand + ' ' + vehicle.model + '.';
+                    console.log(message);
                   }
                 `}
-          </pre>
+        </pre>
+        <p>
+          <b>Output</b>
         </p>
+        <p className="clrBlack">My SUV is a White Mahindra Bolero.</p>
         <p>
           Ye hai ek object ko ek function ke andar istemal karne ka naya
           tareeka:
         </p>
         <h3>Example</h3>
         <p>with destructuring:</p>
-        <p className="bgExample">
-          <pre>
-            {`
-                const vehicleOne = {
-                    brand: 'Mahindra',
-                    model: 'Bolero',
-                    type: 'car',
-                    year: 2021, 
-                    color: 'red'
-                  }
+        <pre className="bgExample">
+          {`
+                 const vehicleOne = {
+                  brand: 'Mahindra',
+                  model: 'Bolero',
+                  type: 'SUV',
+                  year: 2021, 
+                  color: 'White'
+                }
+                
                   
                   myVehicle(vehicleOne);
                   
                   function myVehicle({type, color, brand, model}) {
                     const message = 'My ' + type + ' is a ' + color + ' ' + brand + ' ' + model + '.';
-                  }`}
-          </pre>
-        </p>
+                  }
+                  `}
+        </pre>
         <p>
+          <b>Output</b>
+        </p>
+        <p className="clrBlack">My SUV is a White Mahindra Bolero.</p>
+        <p className="bgBlue">
           Dhyaan dijiye ki object properties ko kisi specific order mein declare
           karne ki jarurat nahi hoti.
         </p>
@@ -639,15 +675,14 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           karke waha se zaruri items ki phir se destructuring kar sakte hain:
         </p>
         <h3>Example</h3>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
         const vehicleOne = {
             brand: 'Mahindra',
             model: 'Bolero',
-            type: 'car',
+            type: 'SUV',
             year: 2021, 
-            color: 'red',
+            color: 'White',
             registration: {
               city: 'Inodre',
               state: 'Madhya Pradesh',
@@ -659,11 +694,15 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           
           function myVehicle({ model, registration: { state } }) {
             const message = 'My ' + model + ' is registered in ' + state + '.';
+            console.log(message)
           }
 
        `}
-          </pre>
+        </pre>
+        <p>
+          <b>Output</b>
         </p>
+        <p className="clrBlack">My Bolero is registered in Madhya Pradesh.</p>
         <br />
         <h2>ES6 Spread Operator</h2>
         <p>
@@ -672,41 +711,51 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           mein copy karne help karta hai.
         </p>
         <h3>Example</h3>
-        <p className="bgExample">
-          <pre>
-            {`
-        const numbersOne = [1, 2, 3];
-        const numbersTwo = [4, 5, 6];
+        <pre className="bgExample">
+          {`
+        const numbersOne = [2, 4, 6];
+        const numbersTwo = [8, 10, 12];
         const numbersCombined = [...numbersOne, ...numbersTwo];
+        console.log(numbersCombined);
         `}
-          </pre>
-        </p>
+        </pre>
         <p>
-          Spread operator aksar destructuring ke saath milakar istemal hota hai
+          <b>Output</b>
         </p>
+        <p className="clrBlack">[2, 4, 6, 8, 10, 12]</p>
+        <p>Spread operator aksar destructuring ke saath istemal hota hai</p>
         <h3>Example</h3>
         <p>
           Pahle aur doosre item ko <span className="clrRed">numbers</span> se
           variables mein assign karein aur baki ko ek array mein rakh dein:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
-        const numbers = [1, 2, 3, 4, 5, 6];
+        <pre className="bgExample">
+          {`
+        const table = [2, 4, 6, 8, 10, 12];
 
-        const [one, two, ...rest] = numbers;
+        const [part1, part2, ...rest] = table;
+        console.log(part1);
+        console.log(part2);
+        console.log(rest);
+
         `}
-          </pre>
+        </pre>
+        <p>
+          <b>Output</b>
+        </p>
+        <p className="clrBlack">
+          2 <br />
+          4 <br />
+          [6, 8, 10, 12]
         </p>
         <p>
-          Hum objects ke saath bhi spread operator ka istemal kar sakte hain:
+          Aap objects ke saath bhi spread operator ka istemal kar sakte hain:
         </p>
         <h3>Example</h3>
         <p>Combine these two objects:</p>
-        <p className="bgExample">
-          <pre>
-            {`
-       const myVehicle = {
+        <pre className="bgExample">
+          {`
+       const vehicle = {
         brand: 'TATA',
         model: 'PUNCH',
         color: 'red'
@@ -718,10 +767,16 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
         color: 'yellow'
       }
       
-      const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+      const myUpdatedVehicleDetails = {...vehicle, ...updateMyVehicle}
+      console.log(myUpdatedVehicleDetails)
        `}
-          </pre>
-        </p>
+        </pre>
+<p>
+  <b>Output</b>
+</p>
+<p className="clrBlack">
+{`{brand: 'TATA', model: 'PUNCH', color: 'yellow', type: 'car', year: 2021}`}
+</p>
         <p className="bgYellow">
           Dhyaan dijiye ki jo properties match nahi hui, woh combine ho gayi,
           lekin jo property match hui, jaise ki color, woh last object
@@ -746,7 +801,7 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           <span className="clrRed">user.js</span> hai, aur usme woh cheezein
           fill karte hain jo hum export karna chahte hain
         </p>
-        <p>2 prakar ke exports hote hain: Named aur Default.</p>
+        <p>2 type ke exports hote hain: Named aur Default.</p>
         <h3>Named Exports</h3>
         <p>
           Aap named exports do tareeke se bana sakte hain. Ek ek karke ya phir
@@ -806,8 +861,8 @@ const [add, subtract, multiply, divide] = calculate(4, 7);
           on ki woh named exports hain ya default exports.
         </p>
         <p>
-          Named exports ko curly braces ka istemal karke destructuring karna
-          padta hai. Default exports ko nahi karna padta.
+          Named exports ko curly braces ka istemal karke destructuring karni
+          padti hai. Default exports ko nahi karni padti.
         </p>
         <h3>Example</h3>
         <p>File user.js se named exports ko import karein:</p>
@@ -863,11 +918,11 @@ Syntax: condition ? <expression if true> : <expression if false>
           karna hai.
         </p>
         <p>
-          React HTML ko web page par createRoot() naam ke ek function aur uske
-          render() method ka istemal karke render karta hai.
+          React HTML ko web page par createRoot( ) naam ke ek function aur uske
+          render( ) method ka istemal karke render karta hai.
         </p>
         <h3>The createRoot Function</h3>
-        <p>createRoot() function ek argument leta hai, ek HTML element</p>
+        <p>createRoot( ) function ek argument leta hai, ek HTML element</p>
         <p>
           Is function ka purpose yeh hai ki define kare ki kahan ek React
           component ko dikhaya jana chahiye.
@@ -880,10 +935,10 @@ Syntax: condition ? <expression if true> : <expression if false>
         <p>Lekin kahaan render karein?</p>
         <p>
           Aapke React project ke root directory mein ek aur folder hai jiska
-          naam hai "public". Is folder mein ek index.html file hai.
+          naam hai <span className="clrRed">"public"</span>. Is folder mein ek <span className="clrRed">index.html</span> file hai.
         </p>
         <p>
-          Aapko is file ke body mein ek {`<div>`}dikhayi dega. Yahi par hamara
+          Aapko is file ke body mein ek <span className="clrRed">{`<div>`} </span>dikhayi dega. Yahi par hamara
           React application render hoga.
         </p>
         <h3>Example</h3>
@@ -919,7 +974,7 @@ Syntax: condition ? <expression if true> : <expression if false>
         </p>
         <h3>Example</h3>
         <p>
-          Ek variable banaiye jo HTML code ko contain kare aur use "root" node
+          Ek variable banaiye jo HTML code ko contain kare aur usse "root" node
           mein dikhayein:
         </p>
         <p className="bgExample">
@@ -960,27 +1015,27 @@ Syntax: condition ? <expression if true> : <expression if false>
         </p>
         <h3>Example</h3>
         <p>
-          Root node ko aap jo kuch bhi chahein us naam se bulana sakte hain:
+          Root node ko aap jo kuch bhi chahein vo naam de sakte hain:
         </p>
         <p className="bgExample">
           <pre>
             {`
 <body>
 
-<header id="sandy"></header>
+<header id="Labbo"></header>
 
 </body>
 
 `}
           </pre>
         </p>
-        <p>Display the result in the{` <header id="sandy"> `} element:</p>
+        <p>Display the result in the{` <header id="Labbo"> `} element:</p>
         <p className="bgExample">
           <pre>
             {`
-        const container = document.getElementById('sandy');
+        const container = document.getElementById('Labbo');
         const root = ReactDOM.createRoot(container);
-        root.render(<p>Hallo</p>);
+        root.render(<p>Namaste</p>);
         `}
           </pre>
         </p>
@@ -1047,13 +1102,15 @@ root.render(myElement);
           return karega:
         </p>
         <h3>Example</h3>
-        <p>Execute the expression 5 + 5:</p>
-        <p className="bgExample">
-          <pre>
+        <p>Execute the expression 10 - 2:</p>
+          <pre className="bgExample">
             {`
-    const myElement = <h1>React is {5 + 5} times better with JSX</h1>;`}
+    const myElement = <h1>React is {10 - 2} times better with JSX</h1>;`}
           </pre>
-        </p>
+          <p><b>Output on your screen will be:</b></p>
+          <div className="bgWhite">
+            <h1>React is {10 - 2} times better with JSX</h1>
+          </div>
         <h3>Inserting a Large Block of HTML</h3>
         <p>
           HTML ko multiple lines par likhne ke liye, HTML ko parentheses ke
@@ -1061,18 +1118,27 @@ root.render(myElement);
         </p>
         <h3>Example</h3>
         <p>Create a list with three list items:</p>
-        <p className="bgExample">
-          <pre>
+          <pre className="bgExample">
             {`
  const myElement = (
     <ul>
-      <li>Apples</li>
-      <li>Bananas</li>
-      <li>Cherries</li>
+      <li>Kela</li>
+      <li>Sev</li>
+      <li>Anaar</li>
+      <li>Papita</li>
     </ul>
   );`}
           </pre>
-        </p>
+        <p><b>Output on your screen will be:</b></p>
+        <div className="bgWhite">
+        <ul>
+      <li>Kela</li>
+      <li>Sev</li>
+      <li>Anaar</li>
+      <li>Papita</li>
+    </ul>
+        </div>
+
         <h3>One Top Level Element</h3>
         <p>HTML code ko ek hi top level element mein wrap kiya jana chahiye.</p>
         <p>
@@ -1080,7 +1146,7 @@ root.render(myElement);
           element ke andar rakhna hoga, jaise ki ek div element.
         </p>
         <h3>Example</h3>
-        <p>Do paragraphs ko ek DIV element ke andar wrap karein:</p>
+        <p>Do paragraphs ko ek <span className="clrRed">{`</div>`}</span> element ke andar wrap karein:</p>
         <p className="bgExample">
           <pre>
             {`
@@ -1211,18 +1277,18 @@ root.render(myElement);
         </p>
         <p>
           Components do prakar ke hote hain, Class components aur Function
-          components. Is tutorial mein ham Function components par dhyan denge.
+          components. Is tutorial mein hum Functional components par jyada dhyan denge.
         </p>
         <h3>Create Your First Component</h3>
         <p>
-          Jab aap ek React component banate hain, to component ka naam UPAR CASE
+          Jab aap ek React component create hain, to component ka naam UPAR CASE
           ke letter se shuru HONA CHAHIYE
         </p>
-        <h4>Class Component</h4>
+        <h2>Class Component</h2>
         <p>
-          Ek class component mein extends React.Component statement include hona
-          chahiye. Ye statement React.Component ke liye inheritance create karta
-          hai, aur aapke component ko React.Component ke functions ko access
+          Ek class component mein extends <b>React.Component</b> statement include hona
+          chahiye. Ye statement <b>React.Component</b> ke liye inheritance create karta
+          hai, aur aapke component ko <b>React.Component</b> ke functions ko access
           karne ka permission deta hai.
         </p>
         <p>
@@ -1231,8 +1297,7 @@ root.render(myElement);
         </p>
         <h3>Example</h3>
         <p>Create a Class component called Car</p>
-        <p className="bgExample">
-          <pre>
+          <pre className="bgExample">
             {`
   class Car extends React.Component {
     render() {
@@ -1240,32 +1305,33 @@ root.render(myElement);
     }
   }`}
           </pre>
-        </p>
         <h2>React Functional Component in Hindi</h2>
         <p>
           Yahan upar diye gaye example ka ek aur roop hai, lekin is bar ek
-          Function component ka istemal kiya gaya hai.
+          Functional component ka istemal kiya gaya hai.
         </p>
         <p>
-          Ek Function component bhi HTML vapas karta hai, aur ek Class component
+          Ek Functional component bhi HTML return karta hai, aur ek Class component
           ke jaisa same behave karta hai, lekin Function components ko likhne ke
-          liye kam code ka istemal hota hai, samajhne mein aasan hai, aur it is
+          liye kam code ka istemal hota hai, samajhne mein aasan hai, and it is
           more preffered now a days .
         </p>
         <h3>Example</h3>
         <p>Create a Function component called Truck</p>
-        <p className="bgExample">
-          <pre>
+          <pre className="bgExample">
             {`
           function Truck() {
             return <h2>Hi, I am a yoyo Truck!</h2>;
           }`}
           </pre>
-        </p>
+          <p><b>Output on your screen will be:</b></p>
+          <div className="bgWhite">
+          <h2>Ka Bhaiya !!, Hum hain ek yoyo Truck!</h2>
+          </div>
         <h2>Rendering a Component</h2>
         <p>
           Ab aapke React application mein ek component hai jiska naam Truck hai,
-          jo ek {`<h2>`} element vapas karta hai.
+          jo ek {`<h2>`} element return karta hai.
         </p>
         <p>
           Ise apne application mein istemal karne ke liye, normal HTML ke taur
@@ -1380,13 +1446,13 @@ root.render(<Garage />);`}
           </pre>
         </p>
         <br />
-        <h2 id="react-props-hindi" >React Props in Hindi</h2>
+        <h2 id="react-props-hindi">React Props in Hindi</h2>
         <p>Props React components mein bheje jaane wale arguments hote hain.</p>
         <p>Props components ko HTML attributes ke through bheje jaate hain.</p>
         <p className="bgYellow">
           <span className="clrRed">props</span> se matlab hai properties.
         </p>
-        <h2 >Props</h2>
+        <h2>Props</h2>
         <p>
           React Props vaise hi jaise JavaScript mein function arguments aur HTML
           mein attributes hote hain.
@@ -2477,8 +2543,8 @@ root.render(<App />);`}
           state ka track rakh sakein.
         </p>
         <p>
-          state generally un data ya property ko refer karti hai jo hamen
-          track karna hai.
+          state generally un data ya property ko refer karti hai jo hamen track
+          karna hai.
         </p>
         <h2>Hooks rules</h2>
         <p>
@@ -2495,7 +2561,9 @@ root.render(<App />);`}
         </p>
 
         <br />
-        <h2>React <span className="bgRed">useState</span> Hook</h2>
+        <h2>
+          React <span className="bgRed">useState</span> Hook
+        </h2>
         <p>
           React <span className="clrRed">useState</span> Hook hume function
           component mein state track karne me help karta hai.
@@ -3088,7 +3156,9 @@ export default DataFetchingExample;
           pada.
         </p>
         <br />
-        <h2><span className="bgRed">useContext</span> Hook</h2>
+        <h2>
+          <span className="bgRed">useContext</span> Hook
+        </h2>
         <p>React Context ek tareeka hai state ko globally manage karne ka.</p>
         <p>
           Ye useState Hook ke saath istemal kiya ja sakta hai taki state ko deep
@@ -3388,7 +3458,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Component1 />);`}
           </pre>
         </p>
-        <h2>React <span className="bgRed">useRef</span> Hook</h2>
+        <h2>
+          React <span className="bgRed">useRef</span> Hook
+        </h2>
         <p>
           The useRef Hook aapko renders ke beech mein values ko persist karne
           mein help karta hai.
@@ -3611,14 +3683,29 @@ root.render(<Component1 />);`}
           karne ke liye istemal karte hain.
         </p>
         <p className="bgYellow">{`useReducer(<reducer>, <initialState>)`}</p>
-        <p><span className="clrRed">reducer</span> function mein aap apni custom state logic rakh sakte hain. <span className="clrRed">initialState</span> generally ek simple value ho sakta hai, lekin aksar ye ek object bhi hota hai, jise aap apne component ke state ka initial structure define karne ke liye use karte hain.</p>
-        <p>useReducer Hook current state aur ek dispatch method return karta hai.</p>
-        <p>Yeh state ko modify karne ke liye actions ko dispatch karne ka kaam karta hai. Dispatch function ko action object ke saath call kiya jata hai, jiska structure aap khud tay karte hain. Yeh action object reducer function ke through pass hota hai, jahan aap state ko modify kar sakte hain.</p>
+        <p>
+          <span className="clrRed">reducer</span> function mein aap apni custom
+          state logic rakh sakte hain.{" "}
+          <span className="clrRed">initialState</span> generally ek simple value
+          ho sakta hai, lekin aksar ye ek object bhi hota hai, jise aap apne
+          component ke state ka initial structure define karne ke liye use karte
+          hain.
+        </p>
+        <p>
+          useReducer Hook current state aur ek dispatch method return karta hai.
+        </p>
+        <p>
+          Yeh state ko modify karne ke liye actions ko dispatch karne ka kaam
+          karta hai. Dispatch function ko action object ke saath call kiya jata
+          hai, jiska structure aap khud tay karte hain. Yeh action object
+          reducer function ke through pass hota hai, jahan aap state ko modify
+          kar sakte hain.
+        </p>
         <p>example of useReducer in a counter app:</p>
         <h3>Example</h3>
         <p className="bgExample">
           <pre>
-       {`
+            {`
        import { useReducer } from "react";
        import ReactDOM from "react-dom/client";
        
@@ -3676,26 +3763,51 @@ root.render(<Component1 />);`}
        }
        
        const root = ReactDOM.createRoot(document.getElementById('root'));
-       root.render(<Todos />);`}     
+       root.render(<Todos />);`}
           </pre>
         </p>
         <p>Ye sirf todo ke complete status ko track karne ka logic hai.</p>
-        <p>Sare todo ko add, delete, aur complete karne ka pura logic ek hi <span className="clrRed">useReducer</span> Hook me ho sakta hai, aur isme aur actions add karke kiya ja sakta hai.</p>
+        <p>
+          Sare todo ko add, delete, aur complete karne ka pura logic ek hi{" "}
+          <span className="clrRed">useReducer</span> Hook me ho sakta hai, aur
+          isme aur actions add karke kiya ja sakta hai.
+        </p>
         <br />
-        <h2><span className="bgRed">useCallback</span> Hook</h2>
-        <p>React useCallback Hook ek memoized callback function return karta hai.</p>
-        <p>Memoization ko ek value ko cache karna ke roop mein samjhein, jisse use dobara calculate karne ki zarurat na ho.</p>
-        <p>Isse hume resource-intensive functions ko alag karne me help milti hai, taki ye har render par automatically run na ho.</p>
-        <p>The useCallback Hook sirf tabhi chalta hai jab uske kisi dependency me koi update hota hai.</p>
+        <h2>
+          <span className="bgRed">useCallback</span> Hook
+        </h2>
+        <p>
+          React useCallback Hook ek memoized callback function return karta hai.
+        </p>
+        <p>
+          Memoization ko ek value ko cache karna ke roop mein samjhein, jisse
+          use dobara calculate karne ki zarurat na ho.
+        </p>
+        <p>
+          Isse hume resource-intensive functions ko alag karne me help milti
+          hai, taki ye har render par automatically run na ho.
+        </p>
+        <p>
+          The useCallback Hook sirf tabhi chalta hai jab uske kisi dependency me
+          koi update hota hai.
+        </p>
         <p>ye performance improve kar sakta hai.</p>
-        <p>The useCallback aur useMemo Hooks similar hote hain. Main difference yeh hai ki useMemo ek memoized value return karta hai, jabki useCallback ek memoized function return karta hai. Aap useMemo ke baare mein adhik jaankari aage padh sakte hain.</p>
+        <p>
+          The useCallback aur useMemo Hooks similar hote hain. Main difference
+          yeh hai ki useMemo ek memoized value return karta hai, jabki
+          useCallback ek memoized function return karta hai. Aap useMemo ke
+          baare mein adhik jaankari aage padh sakte hain.
+        </p>
         <h2>Problem </h2>
-        <p>One reason to use useCallback is to prevent a component from re-rendering unless its props have changed.</p>
+        <p>
+          One reason to use useCallback is to prevent a component from
+          re-rendering unless its props have changed.
+        </p>
         <h3>Example</h3>
         <p>
           <span className="clrRed">index.js</span>
           <pre className="bgExample">
-       {`
+            {`
        import { useState } from "react";
        import ReactDOM from "react-dom/client";
        import Todos from "./Todos";
@@ -3724,14 +3836,13 @@ root.render(<Component1 />);`}
        };
        
        const root = ReactDOM.createRoot(document.getElementById('root'));
-       root.render(<App />);`}     
+       root.render(<App />);`}
           </pre>
         </p>
         <p>
           <span className="clrRed">Todo.js</span>
           <pre className="bgExample">
-{
-  `import { memo } from "react";
+            {`import { memo } from "react";
 
   const Todos = ({ todos, addTodo }) => {
     console.log("child render");
@@ -3746,25 +3857,40 @@ root.render(<Component1 />);`}
     );
   };
   
-  export default memo(Todos);`
-}
+  export default memo(Todos);`}
           </pre>
         </p>
         <p>Try running this and click the count increment button.</p>
-        <p>app dekhenge ki Todos component re-render hota hai, jabki todos mein koi change nahi hota</p>
-        <p>Iska kaaran kya hai? Hum memo ka istemaal kar rahe hain, isliye Todos component re-render nahi hona chahiye, kyun ki na to todos state badal rahi hai aur na hi addTodo function count ko badhane par badal rahi hai.</p>
-        <p>Iska karan hai  'referential equality'.</p>
-        <p>Har baar jab ek component re-render hota hai, uske functions fir se create ho jaate hain. Is wajah se addTodo function asal mein badal gayi hai.</p>
-        <h2>
-          Solution
-        </h2>
-        <p>Isko theek karne ke liye, hum useCallback hook ka istemal kar sakte hain, taki yeh function har baar create na ho jabki zarurat na ho.</p>
-        <p>Needlessly re-rendering se bachne ke liye useCallback Hook ka istemal karo Todos component mein:</p>
+        <p>
+          app dekhenge ki Todos component re-render hota hai, jabki todos mein
+          koi change nahi hota
+        </p>
+        <p>
+          Iska kaaran kya hai? Hum memo ka istemaal kar rahe hain, isliye Todos
+          component re-render nahi hona chahiye, kyun ki na to todos state badal
+          rahi hai aur na hi addTodo function count ko badhane par badal rahi
+          hai.
+        </p>
+        <p>Iska karan hai 'referential equality'.</p>
+        <p>
+          Har baar jab ek component re-render hota hai, uske functions fir se
+          create ho jaate hain. Is wajah se addTodo function asal mein badal
+          gayi hai.
+        </p>
+        <h2>Solution</h2>
+        <p>
+          Isko theek karne ke liye, hum useCallback hook ka istemal kar sakte
+          hain, taki yeh function har baar create na ho jabki zarurat na ho.
+        </p>
+        <p>
+          Needlessly re-rendering se bachne ke liye useCallback Hook ka istemal
+          karo Todos component mein:
+        </p>
         <h3>Example</h3>
         <p>
           <span className="clrRed">index.js</span>
           <pre className="bgExample">
-        {`
+            {`
         import { useState, useCallback } from "react";
         import ReactDOM from "react-dom/client";
         import Todos from "./Todos";
@@ -3794,13 +3920,13 @@ root.render(<Component1 />);`}
         
         const root = ReactDOM.createRoot(document.getElementById('root'));
         root.render(<App />);
-        `}    
+        `}
           </pre>
         </p>
         <p>
           <span className="clrRed">Todo.js</span>
           <pre className="bgExample">
-       {`
+            {`
        import { memo } from "react";
 
        const Todos = ({ todos, addTodo }) => {
@@ -3816,10 +3942,12 @@ root.render(<Component1 />);`}
          );
        };
        
-       export default memo(Todos);`}     
+       export default memo(Todos);`}
           </pre>
         </p>
-        <p>Ab Todos component tabhi re-render hoga jab todos prop change hoga.</p>
+        <p>
+          Ab Todos component tabhi re-render hoga jab todos prop change hoga.
+        </p>
         <br />
         {/* <h2>useMemo Hook</h2>
         <p>React useMemo Hook ek memoized value return karta hai.</p>

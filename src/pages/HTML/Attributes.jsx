@@ -98,8 +98,9 @@ export default function Attributes() {
         <img src="myLogo.jpg" alt="logo_image">
         `}
       </pre>
-      <img 
-        src="https://www.dropbox.com/scl/fi/m3p0yhwrrnsnqshncacxs/Your-paragraph-text-2.png?rlkey=1z6muym5k31fkquwgyds95ypp&dl=1" className="widHund"
+      <img
+        src="https://www.dropbox.com/scl/fi/m3p0yhwrrnsnqshncacxs/Your-paragraph-text-2.png?rlkey=1z6muym5k31fkquwgyds95ypp&dl=1"
+        className="widHund"
         alt="logo_image"
       />
       <p>
@@ -182,6 +183,26 @@ hey...
       <p className="bgYellow">
         <b>NOTE: Always Use Lowercase Attributes</b>
       </p>
+      <h2>Single or Double Quotes With Attributes?</h2>
+      <p>
+        HTML mein attribute values ke around Double quotes are most common, but
+        single quotes can also be used.
+      </p>
+      <p>
+        Kuch situation mein, jab attribute ke value mein double quotes hote
+        hain, tab single quotes ka use necessary hota hai:
+      </p>
+      <h3>Ex.</h3>
+      <pre className="bgExample">
+        {`<p title='John "ShotGun" Nelson'>
+`}
+      </pre>
+      <h2>OR</h2>
+      <pre className="bgExample">
+        {`<p title="John 'ShotGun' Nelson">
+`}
+      </pre>
+
     </div>
   );
 }
