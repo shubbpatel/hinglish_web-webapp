@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="homeContainer">
       <h1>
-        India's Best Website <br /> to Learn Programming for Indian Studends{" "}
+        India's Best Website <br /> to Learn Programming for Indian Students{" "}
         <br />& in Indian Language
       </h1>
       <div className="homeBtnBox">

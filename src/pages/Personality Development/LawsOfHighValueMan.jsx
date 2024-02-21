@@ -110,7 +110,7 @@ export default function LawsOfHighValueMan() {
       <br />
       <h3>LAW 9 - HE IS NOT GOOD LOOKING</h3>
       <p>
-        Law number nine: He is not good-looking & he doesn't need to be good
+        Law number nine: He is not good-looking or he doesn't need to be good
         looking. How many men allow their looks to hold them back? They cannot
         accept that someone as hideous as them could be attractive to a woman or
         able to have core confidence. The fact is, looks are bullshit. There are

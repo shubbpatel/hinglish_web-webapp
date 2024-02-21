@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../style/react.css";
 
 export default function Home() {
+  // message variable ko state banaya gaya hai
+  const [message, setMessage] = useState(false);
+
+  // Jab button par click hota hai, message ki value badal jati hai
+  const handleClick = () => {
+    setMessage(!message);
+  };
+
   return (
     <div className="bContainer">
       <h1 style={{ paddingLeft: "5px" }}>React JS in Hindi</h1>
@@ -771,12 +779,12 @@ console.log(divide);
       console.log(myUpdatedVehicleDetails)
        `}
         </pre>
-<p>
-  <b>Output</b>
-</p>
-<p className="clrBlack">
-{`{brand: 'TATA', model: 'PUNCH', color: 'yellow', type: 'car', year: 2021}`}
-</p>
+        <p>
+          <b>Output</b>
+        </p>
+        <p className="clrBlack">
+          {`{brand: 'TATA', model: 'PUNCH', color: 'yellow', type: 'car', year: 2021}`}
+        </p>
         <p className="bgYellow">
           Dhyaan dijiye ki jo properties match nahi hui, woh combine ho gayi,
           lekin jo property match hui, jaise ki color, woh last object
@@ -935,11 +943,13 @@ Syntax: condition ? <expression if true> : <expression if false>
         <p>Lekin kahaan render karein?</p>
         <p>
           Aapke React project ke root directory mein ek aur folder hai jiska
-          naam hai <span className="clrRed">"public"</span>. Is folder mein ek <span className="clrRed">index.html</span> file hai.
+          naam hai <span className="clrRed">"public"</span>. Is folder mein ek{" "}
+          <span className="clrRed">index.html</span> file hai.
         </p>
         <p>
-          Aapko is file ke body mein ek <span className="clrRed">{`<div>`} </span>dikhayi dega. Yahi par hamara
-          React application render hoga.
+          Aapko is file ke body mein ek{" "}
+          <span className="clrRed">{`<div>`} </span>dikhayi dega. Yahi par
+          hamara React application render hoga.
         </p>
         <h3>Example</h3>
         <p>Ek paragraph ko id "root" wale element ke andar display karien</p>
@@ -1014,9 +1024,7 @@ Syntax: condition ? <expression if true> : <expression if false>
           hone ki bhi zarurat nahi hai:
         </p>
         <h3>Example</h3>
-        <p>
-          Root node ko aap jo kuch bhi chahein vo naam de sakte hain:
-        </p>
+        <p>Root node ko aap jo kuch bhi chahein vo naam de sakte hain:</p>
         <p className="bgExample">
           <pre>
             {`
@@ -1103,14 +1111,16 @@ root.render(myElement);
         </p>
         <h3>Example</h3>
         <p>Execute the expression 10 - 2:</p>
-          <pre className="bgExample">
-            {`
+        <pre className="bgExample">
+          {`
     const myElement = <h1>React is {10 - 2} times better with JSX</h1>;`}
-          </pre>
-          <p><b>Output on your screen will be:</b></p>
-          <div className="bgWhite">
-            <h1>React is {10 - 2} times better with JSX</h1>
-          </div>
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
+        </p>
+        <div className="bgWhite">
+          <h1>React is {10 - 2} times better with JSX</h1>
+        </div>
         <h3>Inserting a Large Block of HTML</h3>
         <p>
           HTML ko multiple lines par likhne ke liye, HTML ko parentheses ke
@@ -1118,8 +1128,8 @@ root.render(myElement);
         </p>
         <h3>Example</h3>
         <p>Create a list with three list items:</p>
-          <pre className="bgExample">
-            {`
+        <pre className="bgExample">
+          {`
  const myElement = (
     <ul>
       <li>Kela</li>
@@ -1128,15 +1138,17 @@ root.render(myElement);
       <li>Papita</li>
     </ul>
   );`}
-          </pre>
-        <p><b>Output on your screen will be:</b></p>
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
+        </p>
         <div className="bgWhite">
-        <ul>
-      <li>Kela</li>
-      <li>Sev</li>
-      <li>Anaar</li>
-      <li>Papita</li>
-    </ul>
+          <ul>
+            <li>Kela</li>
+            <li>Sev</li>
+            <li>Anaar</li>
+            <li>Papita</li>
+          </ul>
         </div>
 
         <h3>One Top Level Element</h3>
@@ -1146,7 +1158,10 @@ root.render(myElement);
           element ke andar rakhna hoga, jaise ki ek div element.
         </p>
         <h3>Example</h3>
-        <p>Do paragraphs ko ek <span className="clrRed">{`</div>`}</span> element ke andar wrap karein:</p>
+        <p>
+          Do paragraphs ko ek <span className="clrRed">{`</div>`}</span> element
+          ke andar wrap karein:
+        </p>
         <p className="bgExample">
           <pre>
             {`
@@ -1199,10 +1214,10 @@ root.render(myElement);
         <h3>Attribute class = className</h3>
         <p>
           <span className="clrRed">Class</span> attribute HTML mein ek bahut
-          jyada istemal hone wala attribute hai, lekin kyun ki JSX JavaScript ke
-          roop mein render hota hai, aur <span className="clrRed">class</span>{" "}
-          keyword JavaScript mein ek reserved word hai, isliye aapko ise JSX
-          mein istemal karne ki anumati nahi hai.
+          jyada istemal hone wala attribute hai, lekin kyun ki JSX as JavaScript
+          render hota hai, aur <span className="clrRed">class</span> keyword
+          JavaScript mein ek reserved word hai, isliye aapko ise JSX mein use
+          karna allowed nahi hai.
         </p>
         <p>Iski jagah attribute ka istemal karein.</p>
         <p>
@@ -1228,36 +1243,47 @@ root.render(myElement);
         </p>
         <h3>Example</h3>
         <p>
-          Write "Hello" if x is less than 10, otherwise "Goodbye": (Agar x 10 se
-          kam hai, to "Hello" likhein, otherwise "Goodbye" likhein:)
+          Write "Melodi" if x is less than 10, otherwise "Khatam bye bye tata
+          goodbye gaya": (Agar x 10 se kam hai, to "Melodi" likhein, otherwise
+          "Khatam bye bye tata goodbye gaya" likhein:)
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
         const x = 5;
-        let text = "Goodbye";
+        let text = "Khatam bye bye tata goodbye gaya";
         if (x < 10) {
-          text = "Hello";
+          text = "Melodi";
         }
         
         const myElement = <h1>{text}</h1>;`}
-          </pre>
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+        <div className="bgWhite">
+          <h1>Melodi</h1>
+        </div>
         <h4>Option 2</h4>
         <p>ternary expressions ko istemal karein instead:</p>
         <h3>Example</h3>
         <p>
-          Write "Hello" if x is less than 10, otherwise "Goodbye". (Agar x 10 se
-          kam hai, to "Hello" likhein, anyatha "Goodbye" likhein:)
+          Write "Melodi" if x is less than 7, otherwise "Khatam bye bye tata
+          goodbye gaya". (Agar x 7 se kam hai, to "Melodi" likhein, anyatha
+          "Khatam bye bye tata goodbye gaya" likhein:)
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
-        const x = 5;
+        <pre className="bgExample">
+          {`
+        const x = 8;
 
-        const myElement = <h1>{(x) < 10 ? "Hello" : "Goodbye"}</h1>;`}
-          </pre>
+        const myElement = <h1>{(x) < 7 ? "Melodi" : "Khatam bye bye tata goodbye gaya"}</h1>;`}
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+
+        <div className="bgWhite">
+          <h1>Khatam bye bye tata goodbye gaya</h1>
+        </div>
         <p className="bgYellow">
           Dhyaan rahe ki JSX ke andar ek JavaScript expression ko shamil karne
           ke liye, JavaScript ko curly braces, {} ke saath wrap kiya jana
@@ -1271,67 +1297,79 @@ root.render(myElement);
         </p>
         <h3>React Components</h3>
         <p>
-          Components independent aur reusable code ke tukde hote hain. Ye
+          Components independent aur reusable code ke pieces hote hain. Ye
           JavaScript functions ke jaise kaam karte hain, lekin isolation mein
           kaam karte hain aur HTML return karte hain.
         </p>
         <p>
           Components do prakar ke hote hain, Class components aur Function
-          components. Is tutorial mein hum Functional components par jyada dhyan denge.
+          components. Is tutorial mein hum Functional components par jyada dhyan
+          denge.
         </p>
         <h3>Create Your First Component</h3>
         <p>
-          Jab aap ek React component create hain, to component ka naam UPAR CASE
-          ke letter se shuru HONA CHAHIYE
+          Jab aap ek React component create karte hain, to component ka naam
+          UPAR CASE ke letter se shuru HONA CHAHIYE
         </p>
         <h2>Class Component</h2>
         <p>
-          Ek class component mein extends <b>React.Component</b> statement include hona
-          chahiye. Ye statement <b>React.Component</b> ke liye inheritance create karta
-          hai, aur aapke component ko <b>React.Component</b> ke functions ko access
-          karne ka permission deta hai.
+          Ek class component mein extends <b>React.Component</b> statement
+          include hona chahiye. Ye statement <b>React.Component</b> ke liye
+          inheritance create karta hai, aur aapke component ko{" "}
+          <b>React.Component</b> ke functions ko access karne ka permission deta
+          hai.
         </p>
         <p>
           Component ko bhi ek render() method ki requirement hoti hai, yeh
           method HTML return karta hai.
         </p>
         <h3>Example</h3>
-        <p>Create a Class component called Car</p>
-          <pre className="bgExample">
-            {`
-  class Car extends React.Component {
+        <p>Create a Class component called Meme</p>
+        <pre className="bgExample">
+          {`
+  class Meme extends React.Component {
     render() {
-      return <h2>Hi, I am a Car!</h2>;
+      return <h2>Khopdi Tod Saale Ka</h2>;
     }
   }`}
-          </pre>
-        <h2>React Functional Component in Hindi</h2>
+        </pre>
         <p>
-          Yahan upar diye gaye example ka ek aur roop hai, lekin is bar ek
-          Functional component ka istemal kiya gaya hai.
+          <b>Output on your screen will be:</b>
+        </p>
+        <div className="bgWhite">
+          <h2>Khopdi Tod Saale Ka</h2>
+        </div>
+
+        <h2>React Function Component in Hindi</h2>
+        <p>
+          Yahan upar diye gaye example ki tarah same example, lekin is bar ek
+          Function component ka istemal kiya gaya hai.
         </p>
         <p>
-          Ek Functional component bhi HTML return karta hai, aur ek Class component
-          ke jaisa same behave karta hai, lekin Function components ko likhne ke
-          liye kam code ka istemal hota hai, samajhne mein aasan hai, and it is
-          more preffered now a days .
+          Ek Functional component bhi HTML return karta hai, aur ek Class
+          component ke jaisa same behave karta hai, lekin Function components ko
+          likhne ke liye kam code ka istemal hota hai, samajhne mein aasan hai,
+          and it is more preffered now a days .
         </p>
         <h3>Example</h3>
         <p>Create a Function component called Truck</p>
-          <pre className="bgExample">
-            {`
-          function Truck() {
-            return <h2>Hi, I am a yoyo Truck!</h2>;
+        <pre className="bgExample">
+          {`
+          function Meme() {
+            return <h2>Khopdi Tod Saale Ka</h2>;
           }`}
-          </pre>
-          <p><b>Output on your screen will be:</b></p>
-          <div className="bgWhite">
-          <h2>Ka Bhaiya !!, Hum hain ek yoyo Truck!</h2>
-          </div>
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
+        </p>
+        <div className="bgWhite">
+          <h2>Khopdi Tod Saale Ka</h2>
+        </div>
         <h2>Rendering a Component</h2>
         <p>
-          Ab aapke React application mein ek component hai jiska naam Truck hai,
-          jo ek {`<h2>`} element return karta hai.
+          Ab aapke React application mein ek component hai jiska naam{" "}
+          <span className="clrRed">Meme</span> hai, jo ek {`<h2>`} element
+          return karta hai.
         </p>
         <p>
           Ise apne application mein istemal karne ke liye, normal HTML ke taur
@@ -1339,123 +1377,135 @@ root.render(myElement);
         </p>
         <h3>Example</h3>
         <p>Truck component ko "root" element mein dikhayein:</p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
   const root = ReactDOM.createRoot(document.getElementById('root'));
-  root.render(<Truck />);  `}
-          </pre>
-        </p>
-        <h2>Props</h2>
+  root.render(<Meme />);  `}
+        </pre>
+        <h2>Props in React In hinglish</h2>
         <p>
-          Components ko props ke roop mein bheja ja sakta hai, props se matlab
-          hai properties.
+          Components ko as props pass kiya ja sakta hai, props se matlab hai
+          properties.
         </p>
         <p>
           Props function ke arguments ki tarah hote hain, aur aap unhe component
-          mein attributes ke roop mein bhejte hain.
+          mein as attributes pass kar skate hain.
         </p>
         <p>Aap agle chapter mein props ke bare mein aur jaanenge.</p>
         <h3>Example</h3>
         <p>
-          Truck component ko ek color pass karne ke liye ek attribute ka istemal
-          karein, aur ise render() function mein istemal karein:
+          Meme component ko ek <b>name</b> pass karne ke liye ek attribute ka
+          istemal karein, aur ise render() function mein istemal karein:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
- function Truck(props) {
-  return <h2>I am a {props.color} Truck!</h2>;
+        <pre className="bgExample">
+          {`
+ function Meme(props) {
+  return <h2>{props.name}, Khopdi Tod Saale Ka</h2>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Truck color="yellow"/>);`}
-          </pre>
+root.render(<Meme name="Shyaam"/>);`}
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+        <div className="bgWhite">
+          <h2>Shyaam, Khopdi Tod Saale Ka</h2>
+        </div>
+
         <h2>Components in Components</h2>
         <p>
           Hum ek component ke andar dusre components ka istemal kar sakte hain:
         </p>
         <h3>Exapmle</h3>
-        <p>Use the Truck component inside the Garage component:</p>
-        <p className="bgExample">
-          <pre>
-            {`
-function Truck() {
-  return <h2>I am a Truck!</h2>;
+        <p>
+          Use the <b>Meme</b> component inside the <b>Instagram</b> component:
+        </p>
+        <pre className="bgExample">
+          {`
+function Meme() {
+  return <h2>Khopdi Tod Saale Ka</h2>;
 }
 
-function Garage() {
+function Instagram() {
   return (
     <>
-      <h1>Who lives in my Garage?</h1>
+      <h1>Instagram </h1>
       <Truck />
     </>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);`}
-          </pre>
+root.render(<Instagram />);`}
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+        <div className="bgWhite">
+          <h1>Instagram </h1>
+          <h2>Khopdi Tod Saale Ka</h2>
+        </div>
+
         <h2>Components in Files</h2>
         <p>
           React ke sath code re-use karna boht asaan ho jata, aur yah
           recommended hai ki aap apne components ko alag-alag seprate files mein
-          split karen
+          split karein
         </p>
         <p>
           Iske liye, ek naye file banayein .js file extension ke saath aur
           usmein code daalein:
         </p>
         <p className="bgYellow">
-          Dhyaan rahe ki filename ek uppercase character se shuru hona chahiye.
+          Dhyaan rahe ki Filename ek uppercase character se shuru hona chahiye.
         </p>
         <h3>Example</h3>
-        <p>Ye hai naya file, humne iska naam "truck.js" rakha hai:</p>
-        <p className="bgExample">
-          <pre>
-            {`
-        function Truck() {
-          return <h2>Hi, I am a Truck!</h2>;
+        <p>
+          Ye hai naya file, humne iska naam{" "}
+          <span className="clrRed">"Meme.jsx"</span> rakha hai:
+        </p>
+        <pre className="bgExample">
+          {`
+        function Meme() {
+          return <h2>Khopdi Tod Saale Ka</h2>;
         }
         
-        export default Truck;`}
-          </pre>
-        </p>
+        export default Meme;`}
+        </pre>
         <p>
-          Truck component ka istemal karne ke liye, aapko apne application mein
-          file ko import karna hoga.
+          <b>Meme</b> component ka istemal karne ke liye, aapko apne application
+          mein file ko import karna hoga.
         </p>
         <h3>Example</h3>
         <p>
-          Ab hum "Truck.js" file ko application mein import karte hain, aur hum
+          Ab hum "Meme.jsx" file ko application mein import karte hain, aur hum
           Truck component ka istemal yahan kar sakte hain jaise ye yahin banaya
           gaya ho.
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
       import React from 'react';
       import ReactDOM from 'react-dom/client';
-      import Truck from './Truck.js';
+      import Meme from './Meme.jsx';
       
       const root = ReactDOM.createRoot(document.getElementById('root'));
-      root.render(<Truck />);
+      root.render(<Meme />);
       `}
-          </pre>
-        </p>
+        </pre>
         <br />
         <h2 id="react-props-hindi">React Props in Hindi</h2>
         <p>Props React components mein bheje jaane wale arguments hote hain.</p>
-        <p>Props components ko HTML attributes ke through bheje jaate hain.</p>
+        <p>
+          Props components mein HTML attributes ke through bheje jaate hain.
+        </p>
         <p className="bgYellow">
           <span className="clrRed">props</span> se matlab hai properties.
         </p>
         <h2>Props</h2>
         <p>
-          React Props vaise hi jaise JavaScript mein function arguments aur HTML
-          mein attributes hote hain.
+          React Props vaise hi hain jaise JavaScript mein function arguments aur
+          HTML mein attributes hote hain.
         </p>
         <p>
           Props ko ek component mein bhejne ke liye, HTML attributes ki tarah hi
@@ -1476,7 +1526,7 @@ root.render(<Garage />);`}
           <pre>
             {`
  function Truck(props) {
-  return <h2>I am a { props.brand }!</h2>;
+  return <h2>I am a { props.brand } Truck!</h2>;
 }`}
           </pre>
         </p>
@@ -1487,13 +1537,13 @@ root.render(<Garage />);`}
         </p>
         <h3>Example</h3>
         <p>
-          Garage component se 'brand' property Truck component mein bhejein:
+          Garage component se 'brand' property Truck component mein pass
+          karenge:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
  function Truck(props) {
-  return <h2>I am a { props.brand }!</h2>;
+  return <h2>I am a { props.brand } Truck!</h2>;
 }
 
 function Garage() {
@@ -1508,24 +1558,29 @@ function Garage() {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage />);
  `}{" "}
-          </pre>
-        </p>
+        </pre>
         <p>
-          Agar aapke pass bhejne ke liye ek variable hai, upar diye gaye example
-          ki tarah ek string nahi hai, toh aap bas variable name ko curly
-          brackets ke andar daal dein:
+          <b>Output on your screen will be:</b>
+        </p>
+        <div className="bgWhite">
+          <h1>Mere garage mein konsi gaadi hai?</h1>
+          <h2>I am a TATA Truck!</h2>
+        </div>
+        <p>
+          Agar aapke pass ek variable hai pass karne ke liye , upar diye gaye
+          example ki tarah ek string nahi hai, toh aap bas variable name ko
+          curly brackets ke andar daal dein:
         </p>
         <h3>Example</h3>
         <p>
-          <span className="clrRed">Truck</span> component ko bhejne ke liye ek
-          variable banayein jiska naam <span className="clrRed">truckName</span>{" "}
-          hai:
+          <span className="clrRed">Truck</span> component ko pass karne ke liye
+          ek variable banayein jiska naam{" "}
+          <span className="clrRed">truckName</span> hai:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
  function Truck(props) {
-  return <h2>I am a { props.brand }!</h2>;
+  return <h2>I am a { props.brand } Truck!</h2>;
 }
 
 function Garage() {
@@ -1540,24 +1595,29 @@ function Garage() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage />);`}
-          </pre>
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+        <div className="bgWhite">
+          <h1>Mere garage mein konsi gaadi hai?</h1>
+          <h2>I am a TATA Truck!</h2>
+        </div>
         <p>Ya agar yah ek object ho:</p>
         <h3>Example</h3>
         <p>
-          <span className="clrRed">Truck</span> component ko bhejne ke liye ek
-          object banayein jiska naam <span className="clrRed">truckInfo</span>{" "}
-          hai:
+          <span className="clrRed">Truck</span> component ko pass karne ke liye
+          ek object banayein jiska naam{" "}
+          <span className="clrRed">truckInfo</span> hai:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
  function Truck(props) {
-  return <h2>I am a { props.brand.model }!</h2>;
+  return <h2>I am a { props.brand.model } Truck!</h2>;
 }
 
 function Garage() {
-  const truckInfo = { name: "Tata", model: "Ashok Leyland" };
+  const truckInfo = { name: "Truck", model: "Ashok Leyland" };
   return (
     <>
       <h1>Who lives in my garage?</h1>
@@ -1568,8 +1628,15 @@ function Garage() {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage />);`}
-          </pre>
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+        <div className="bgWhite">
+          <h1>Who lives in my garage?</h1>
+          <h2>I am a Ashok Leyland Truck!</h2>
+        </div>
+        <hr />
         <br />
         <h2>React Events</h2>
         <p>
@@ -1610,9 +1677,8 @@ root.render(<Garage />);`}
           We'll use these two components (hum in dono components ka istemaal
           karenge)
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
  function MissedGoal() {
   return <h1>MISSED!</h1>;
 }
@@ -1620,16 +1686,14 @@ root.render(<Garage />);`}
 function MadeGoal() {
   return <h1>Goal!</h1>;
 }`}
-          </pre>
-        </p>
+        </pre>
         <h3>Example</h3>
         <p>
           Ab, hum ek aur component banayenge jo choose karega ke konsa component
           render karna hai based on a condition:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
   function Goal(props) {
     const isGoal = props.isGoal;
     if (isGoal) {
@@ -1640,8 +1704,7 @@ function MadeGoal() {
   
   const root = ReactDOM.createRoot(document.getElementById('root'));
   root.render(<Goal isGoal={false} />);`}
-          </pre>
-        </p>
+        </pre>
         <p>
           Koshish karein <span className="clrRed">isGoal</span> attribute ko{" "}
           <span className="clrRed">true</span> mein badalne ki:
@@ -1664,105 +1727,128 @@ function MadeGoal() {
           Hum JSX mein JavaScript expressions ko curly braces ka istemal karke
           shamil kar sakte hain:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
  function Garage(props) {
-  const cars = props.cars;
+  const bikes = props.bikes;
   return (
     <>
       <h1>Garage</h1>
       {cars.length > 0 &&
         <h2>
-          You have {cars.length} cars in your garage.
+          You have {bikes.length} bikes in your garage.
         </h2>
       }
     </>
   );
 }
 
-const cars = ['TATA', 'Mahindra', 'Maruti Suzuki'];
+const bikes = ['Hero', 'Honda', 'Yamaha', 'Bajaj'];
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage cars={cars} />);
+root.render(<Garage bikes={bikes} />);
  `}{" "}
-          </pre>
-        </p>
+        </pre>
         <p>
-          Agar <span className="clrRed">cars.length {`>`} 0</span> true ke
+          <b>Output on your screen will be:</b>
+        </p>
+        <div className="bgWhite">
+          <h1>Garage</h1>
+          <h2>You have 4 bikes in your garage.</h2>
+        </div>
+        <p>
+          Agar <span className="clrRed">bikes.length {`>`} 0</span> true ke
           barabar hai, to && ke baad ka expression render hoga.
         </p>
         <p>Koshish karein cars array ko empty karne ki:</p>
         <h3>Example</h3>
-        <p className="bgExample">
-          <p>
-            {`
- const cars = [];
+        <pre className="bgExample">
+          {`
+ const bikes = [];
  const root = ReactDOM.createRoot(document.getElementById('root'));
- root.render(<Garage cars={cars} />);`}
-          </p>
+ root.render(<Garage bikes={bikes} />);`}
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+        <div className="bgWhite">
+          <h1>Garage</h1>
+        </div>
 
         <h2>Ternary Operator</h2>
         <p>
           Ek aur tareeka elements ko conditionally render karne ka hai ternary
-          operator ka istemal karna
+          operator ka istemal karna.
         </p>
         <p className="bgExample">{`condition ? true : false`}</p>
-        <p>We will go back to the goal example.</p>
         <h3>Example</h3>
-        <p>
-          Agar <span className="clrRed">isGoal</span> true hai, to{" "}
-          <span className="clrRed">MadeGoal</span> component ko wapas karein,
-          warna <span className="clrRed">MissedGoal</span> component ko wapas
-          karein:
-        </p>
-        <p className="bgExample">
-          <pre>
-            {`
- function Goal(props) {
-  const isGoal = props.isGoal;
-  return (
-    <>
-      { isGoal ? <MadeGoal/> : <MissedGoal/> }
-    </>
-  );
-}
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Goal isGoal={false} />);`}{" "}
-          </pre>
+        <pre className="bgExample">
+          {`
+ // Define a function to check if a number is greater than 10 using the ternary operator
+ function checkNumber(number) {
+   // Use the ternary operator to check if the number is greater than 10
+   const result = number > 10 ? 'Number is greater than 10' : 'Number is not greater than 10';
+ 
+   // Return the result
+   return result;
+ }
+ 
+ // Call the function with different numbers
+ console.log(checkNumber(5));  // Output: Number is not greater than 10
+ console.log(checkNumber(15)); // Output: Number is greater than 10
+ 
+`}{" "}
+        </pre>
+        <p>
+          <b>Output</b>
+        </p>
+        <p className="clrBlack">
+          Number is not greater than 10 <br />
+          Number is greater than 10
         </p>
         <br />
         <h2 id="lists">React Lists</h2>
-        <p>
-          React mein aap ek tarah ke loop ke saath lists ko render karenge."
-        </p>
+        <p>React mein aap ek tarah ke loop ke saath lists ko render karenge.</p>
         <p>JavaScript map() array method generally preffered method hai.</p>
         <h3>Example</h3>
-        <p>chalo render kare all of the cars from our garage:</p>
-        <p className="bgExample">
-          <pre>
-            {`
- function Car(props) {
-  return <li>I am a { props.brand }</li>;
+        <p>
+          chalo render kare all of the <span className="clrRed">songs</span>{" "}
+          from our <span className="clrRed">Playlist</span>:
+        </p>
+        <pre className="bgExample">
+          {`
+ function Song(props) {
+  return <li>{ props.name }</li>;
 }
 
-function Garage() {
-  const cars = ['TATA', 'Mahindra', 'Maruti Suzuki'];
+function Playlist() {
+  const songs = ['Main Pal Do Pal Ka Shayar Hoon', 'Oh Oh Jane Jana', 'Jhalak Dikhla Ja', 'Tum Hi Ho', 'Tere Vaaste'];
   return (
     <>
-      <h1>Who lives in my garage?</h1>
+      <h1>Songs in my Playlist?</h1>
       <ul>
-        {cars.map((car) => <Car brand={car} />)}
+        {songs.map((song) => <Song name={song} />)}
       </ul>
     </>
   );
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Garage />);`}
-          </pre>
+root.render(<Playlist />);`}
+        </pre>
+        <p>
+          <b>Output on your screen will be:</b>
         </p>
+        <div className="bgWhite">
+          <h1>Songs in my Playlist?</h1>
+          <ul>
+            <li>Main Pal Do Pal Ka Shayar Hoon</li>
+            <li>Oh Oh Jane Jana</li>
+            <li>Jhalak Dikhla Ja</li>
+            <li>Tum Hi Ho</li>
+            <li>Tere Vaaste</li>
+          </ul>
+        </div>
         <p>
           Jab aap is code ko apne <span className="clrRed">React App</span> mein
           chalayenge, to yeh kaam karega lekin aapko ek warning milegi ki list
@@ -1770,17 +1856,17 @@ root.render(<Garage />);`}
         </p>
         <h2>Keys</h2>
         <p>
-          Keys React ko elements ke track mein rakhne mein help karti hain. Is
-          tarah, agar koi item update ya remove hota hai, to sirf woh item
-          dubara render hoga poori ki poori list nahi.
+          <span className="clrRed">Keys</span> React ko elements ka track rakhne
+          mein help karti hain. Is tarah, agar koi item update ya remove hota
+          hai, to sirf woh item dubara render hoga poori ki poori list nahi.
         </p>
         <p>
-          Keys ko har sibling ke liye unique hona chahiye. Lekin globally
-          duplicate ho sakte hain.
+          <span className="clrRed">Keys</span> ko har sibling ke liye unique
+          hona chahiye. Lekin globally duplicate ho sakte hain.
         </p>
         <p className="bgYellow">
           Aam taur par, key ek unique ID honi chahiye jo har item ko assign ki
-          gayi ho. Ant mein, aap array index ko bhi ek key ke roop mein istemal
+          gayi ho. End mein, aap array index ko bhi ek key ke roop mein istemal
           kar sakte hain.
         </p>
         <h3>Example</h3>
@@ -1788,33 +1874,27 @@ root.render(<Garage />);`}
           Chaliye hamara previous example ko keys shamil karne ke liye refactor
           karte hain:
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
- function Car(props) {
-  return <li>I am a { props.brand }</li>;
-}
-
-function Garage() {
-  const cars = [
-    {id: 1, brand: 'TATA'},
-    {id: 2, brand: 'Mahindra'},
-    {id: 3, brand: 'Maruti Suzuki'}
-  ];
-  return (
-    <>
-      <h1>Who lives in my garage?</h1>
-      <ul>
-        {cars.map((car) => <Car key={car.id} brand={car.brand} />)}
-      </ul>
-    </>
-  );
-}
+        <pre className="bgExample">
+          {`
+  function Song(props) {
+    return <li>{ props.name }</li>;
+  }
+  
+  function Playlist() {
+    const songs = ['Main Pal Do Pal Ka Shayar Hoon', 'Oh Oh Jane Jana', 'Jhalak Dikhla Ja', 'Tum Hi Ho', 'Tere Vaaste'];
+    return (
+      <>
+        <h1>Songs in my Playlist?</h1>
+        <ul>
+          {songs.map((song) => <Song key={song} name={song} />)}
+        </ul>
+      </>
+    );
+  }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<Garage />);`}{" "}
-          </pre>
-        </p>
+        </pre>
         <br />
         <h2 id="forms">React Forms</h2>
         <p>
@@ -1833,7 +1913,7 @@ root.render(<Garage />);`}{" "}
  function MyForm() {
   return (
     <form>
-      <label>Enter your name:
+      <label>What is your name:
         <input type="text" />
       </label>
     </form>
@@ -1868,13 +1948,13 @@ root.render(<MyForm />);`}
           add kar sakte hain.
         </p>
         <p>
-          Ham useState Hook ka istemal har input ke value ko track karne ke liye
-          kar sakte hain aur poora application ke liye 'single source of truth'
-          provide kar sakte hain."
+          Hum <b>useState</b> Hook ka istemal har input ke value ko track karne
+          ke liye kar sakte hain aur poora application ke liye 'single source of
+          truth' provide kar sakte hain."
         </p>
         <h3>Example</h3>
         <p>
-          <span className="clrRed">useState</span>hook ka istemaal karo input
+          <span className="clrRed">useState</span> hook ka istemaal karo input
           manage karne ke liye
         </p>
         <p className="bgExample">
@@ -1888,7 +1968,7 @@ root.render(<MyForm />);`}
   
     return (
       <form>
-        <label>Enter your name:
+        <label>What is your name:
           <input
             type="text" 
             value={name}
@@ -1950,7 +2030,7 @@ root.render(<MyForm />);`}
         <h2>Multiple input fields</h2>
         <p>
           {" "}
-          each element mein <span className="clrRed">name</span> attribute add
+          har ek element mein <span className="clrRed">name</span> attribute add
           karke aap ek se jada input fields ka value control kar sakte hain
         </p>
         <p>Ham apne state ko ek empty object se initialize karenge.</p>
@@ -2488,7 +2568,7 @@ root.render(<App />);`}
         <p>hooks react mein version 16.8 mein add hue the</p>
         <p>
           Hooks function components ko state aur dusre React features ka access
-          dene mein madad karte hain. Is wajah se, generally class components ki
+          dene mein help karte hain. Is wajah se, generally class components ki
           zarurat nahi hoti hai.
         </p>
         <p className="bgYellow">
@@ -2576,45 +2656,61 @@ root.render(<App />);`}
           <h2>Real Life Example of useState Hook</h2>
           <p>
             State ek concept hai jo batata hai ki ek component ke andar kuch
-            data hai jo badal sakta hai. Agar hum ise simple shabdon mein
-            samjhein, toh state component ke "mood" ya "halat" ko darust rakhne
-            ka tareeka hai. <br />
+            data hai jo change ho sakta hai. Agar hum ise simple shabdon mein
+            samjhein, toh state component ke "mood" ya "situation" ko updated
+            rakhne ka tareeka hai. <br />
             <br />
             Imagine karo ki ek React component ek insan ki tarah hai. Is insan
             ke mood ko hum state kehte hain. Kabhi khush, kabhi gussa, aur kabhi
-            udas. useState ka istemal is mood ya state ko badalne ke liye hota
-            hai. Jab aap apne component ke andar useState ka istemal karte hain,
-            toh aap ek variable ko state banate hain. Jab aap us variable ki
-            value badalte hain, toh React component re-render hota hai aur naya
-            mood ya state dikhta hai. Udaharan ke taur par, ek button ke click
-            se message badalna:
+            udas. useState ka istemal is mood ya state ko change karne ke liye
+            hota hai. Jab aap apne component ke andar useState ka istemal karte
+            hain, toh aap ek variable ko state banate hain. Jab aap us variable
+            ki value badalte hain, toh React component re-render hota hai aur
+            naya mood ya state dikhta hai. Udaharan ke taur par, ek button ke
+            click se message badalna:
           </p>
-          <p className="bgExample">
-            <pre>
-              {`
+          <pre className="bgExample">
+            {`
         import React, { useState } from 'react';
 
         const StateExample = () => {
           // message variable ko state banaya gaya hai
-          const [message, setMessage] = useState('Hello, React!');
+          
+          const [message, setMessage] = useState(false);
         
-          // Jab button par click hota hai, message ki value badal jati hai
+          // Jab button par click hota hai, message ka text badal jata hai
+
           const handleClick = () => {
-            setMessage('Welcome to the world of React!');
+            setMessage(!message);
           };
         
           return (
             <div>
-              <h2>{message}</h2>
-              <button onClick={handleClick}>Change Message</button>
-            </div>
+            <h2 className="bgWhite">{message?"Hello ! React Learner" :"Aajao React Seekhte Hain.."}</h2>
+
+            <button 
+            style={{fontSize: '1rem',cursor: 'pointer', backgroundColor:'rgb(144, 234, 245)' }} 
+            onClick={handleClick}> Click me! to Change Message</button>
+
+          </div>
           );
         };
         
         export default StateExample;
         `}{" "}
-            </pre>
+          </pre>
+          <p>
+            <b>Output on your screen will be:</b>
           </p>
+
+          <div className="bgWhite">
+            <h2>
+              {message ? "Hello ! React Learner " : "Aajao React Seekhte Hain.."}
+            </h2>
+            <button className="reactExampleBtn" onClick={handleClick}>
+              Click me! to Change Message
+            </button>
+          </div>
           <p>
             Is example mein message variable state hai. Jab button par click
             hota hai, setMessage ke madhyam se message ki value badli jati hai
@@ -2982,9 +3078,8 @@ useEffect(() => {
         </p>
         <h3>Example</h3>
         <p>only run the effect on first render</p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
  import { useState, useEffect } from "react";
  import ReactDOM from "react-dom/client";
  
@@ -3002,17 +3097,15 @@ useEffect(() => {
  
  const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(<Timer />);`}{" "}
-          </pre>
-        </p>
+        </pre>
         <h3>Example</h3>
         <p>
           Yahaan ek <span className="clrRed">useEffect</span> Hook ka ek example
           hai jo ek variable par dependent hai. Agar count variable update hota
           hai, toh effect phir se run hoga.
         </p>
-        <p className="bgExample">
-          <pre>
-            {`
+        <pre className="bgExample">
+          {`
  import { useState, useEffect } from "react";
  import ReactDOM from "react-dom/client";
  
@@ -3035,8 +3128,7 @@ useEffect(() => {
  
  const root = ReactDOM.createRoot(document.getElementById('root'));
  root.render(<Counter />);`}
-          </pre>
-        </p>
+        </pre>
         <p>
           Agar multiple dependencies hain, toh unko useEffect ki dependency
           array mein include kiya jaana chahiye.

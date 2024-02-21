@@ -1,4 +1,5 @@
 import React from "react";
+import Playlist from "./CodeOutPutPage";
 
 export default function ContactUs() {
   return (
@@ -9,6 +10,7 @@ export default function ContactUs() {
         If you have any complaint, suggestion or feedback please feel free to
         reach us at <a href="mailto:services.physitask@gmail.com">services.physitask@gmail.com</a>
       </p>
+    <Playlist/>
     </div>
   );
 }

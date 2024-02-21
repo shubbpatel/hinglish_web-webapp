@@ -35,6 +35,7 @@ body {
 .bgWhite {
   background-color: white;
   border: 1px solid black;
+  padding: 5px;
 }
 .bgBlue {
   background-color: rgb(135, 197, 245);
@@ -42,7 +43,7 @@ body {
   border-radius: 5px;
 }
 .bgExample {
-  background-color: rgb(167, 223, 181);
+  background-color: rgb(167, 218, 180);
   padding: 10px;
   border-radius: 5px;
   overflow: auto;
@@ -82,4 +83,9 @@ code {
 }
 .widHund {
   width: 100%;
+}
+.reactExampleBtn{
+  background-color: rgb(144, 234, 245);
+  font-weight: bold;
+  cursor: pointer;
 }
