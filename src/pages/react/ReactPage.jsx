@@ -4,6 +4,8 @@ import "../style/react.css";
 export default function Home() {
   // message variable ko state banaya gaya hai
   const [message, setMessage] = useState(false);
+  const [color, setColor] = useState("blue");
+
 
   // Jab button par click hota hai, message ki value badal jati hai
   const handleClick = () => {
@@ -2686,7 +2688,7 @@ root.render(<App />);`}
         
           return (
             <div>
-            <h2 className="bgWhite">{message?"Hello ! React Learner" :"Aajao React Seekhte Hain.."}</h2>
+            <h2 className="bgWhite">{message?"Hello ! React Learner" :"Aajao React Hooks Seekhte Hain.."}</h2>
 
             <button 
             style={{fontSize: '1rem',cursor: 'pointer', backgroundColor:'rgb(144, 234, 245)' }} 
@@ -2705,7 +2707,7 @@ root.render(<App />);`}
 
           <div className="bgWhite">
             <h2>
-              {message ? "Hello ! React Learner " : "Aajao React Seekhte Hain.."}
+              {message ? "Hello ! React Learner " : "Aajao React Hooks Seekhte Hain.."}
             </h2>
             <button className="reactExampleBtn" onClick={handleClick}>
               Click me! to Change Message
@@ -2781,22 +2783,25 @@ root.render(<App />);`}
         </p>
         <h3>Example</h3>
         <p>Render kiye gaye component mein state variable ka istemal karen.</p>
-        <p className="bgExample">
-          <pre>
+          <pre className="bgExample">
             {`
        import { useState } from "react";
        import ReactDOM from "react-dom/client";
        
        function FavoriteColor() {
-         const [color, setColor] = useState("red");
+         const [color, setColor] = useState("Blue");
        
-         return <h1>My favorite color is {color}!</h1>
+         return <h1>Mera favourite color hai {color}!</h1>
        }
        
        const root = ReactDOM.createRoot(document.getElementById('root'));
        root.render(<FavoriteColor />);`}{" "}
           </pre>
-        </p>
+          <p><b>Output on your screen will be:</b></p>
+          <div className="bgWhite">
+          <h1>Mera favourite color hai Blue!</h1>
+
+          </div>
         <h2>Update State</h2>
         <p>
           Apne state ko update karne ke liye hum apne state updater function ka
@@ -2808,22 +2813,32 @@ root.render(<App />);`}
         </p>
         <h3>Example</h3>
         <p>Use a button to update the state:</p>
-        <p className="bgExample">
-          <pre>
+          <pre className="bgExample">
             {`
      import { useState } from "react";
      import ReactDOM from "react-dom/client";
      
      function FavoriteColor() {
-       const [color, setColor] = useState("red");
+       const [color, setColor] = useState("Blue");
      
        return (
          <>
-           <h1>My favorite color is {color}!</h1>
+           <h1>Mera favourite color hai {color}!</h1>
+
            <button
              type="button"
-             onClick={() => setColor("blue")}
+             onClick={() => setColor("Grey")}
            >Blue</button>
+
+           <button
+             type="button"
+             onClick={() => setColor("Green")}
+           >Green</button>
+
+           <button
+             type="button"
+             onClick={() => setColor("Yellow")}
+           >Yellow</button>
          </>
        )
      }
@@ -2831,7 +2846,23 @@ root.render(<App />);`}
      const root = ReactDOM.createRoot(document.getElementById('root'));
      root.render(<FavoriteColor />);`}
           </pre>
-        </p>
+        <p><b>Output on your screen will be:</b></p>
+
+        <div className="bgWhite">
+        <h1>Mera favourite color hai {color}!</h1>
+           <button
+             type="button"
+             onClick={() => setColor("Grey")}
+           >Grey</button>
+           <button
+             type="button"
+             onClick={() => setColor("Green")}
+           >Green</button>
+           <button
+             type="button"
+             onClick={() => setColor("Yellow")}
+           >Yellow</button>
+        </div>
         <h2>What Can State Hold</h2>
         <p>
           <span className="clrRed">useState</span> Hook ka istemal strings,
@@ -2875,8 +2906,7 @@ root.render(<App />);`}
         </p>
         <h3>Example</h3>
         <p> ek Hook create karo jo ek object hold karta hai:</p>
-        <p className="bgExample">
-          <pre>
+          <pre className="bgExample">
             {`
        import { useState } from "react";
        import ReactDOM from "react-dom/client";
@@ -2902,7 +2932,6 @@ root.render(<App />);`}
        const root = ReactDOM.createRoot(document.getElementById('root'));
        root.render(<Car />);`}{" "}
           </pre>
-        </p>
         <p>
           Jab hum ab ek object ko track kar rahe hain, hamein ab us object ko
           reference karna hoga, phir us object ke property ko render karte waqt.
