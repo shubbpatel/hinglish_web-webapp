@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function UseReducerHook() {
   return (
-    <div>
+    <div className='bContainer container'>
          <h2>
           React <span className="bgRed">useReducer</span> Hook
         </h2>

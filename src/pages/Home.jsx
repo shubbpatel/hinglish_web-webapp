@@ -1,52 +1,34 @@
 import React from "react";
 import "./style/Home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div className="homeContainer">
       {/* <h1>
-        India's Best Website <br /> to Learn Programming for Indian Students{" "}
+        India's Best Website <br/> to Learn Programming for Indian Students{" "}
         <br />& in Indian Language
       </h1> */}
       <div className="homeBtnBox">
-        <button
-          onClick={() => {
-            window.location = "/javascript-hindi";
-          }}
-          className="jsBtn homeBtn"
-        >
+        <Link className="jsBtn homeBtn" to="/javascript-hindi">
           JavaScript
-        </button>
-        <button
-          onClick={() => {
-            window.location = "/react-hindi";
-          }}
-          className="reactBtn homeBtn"
-        >
+        </Link>{" "}
+        <Link className="reactBtn homeBtn" to="/react-hindi">
           React
-        </button>
-
-        <button
-          onClick={() => {
-            window.location = "/html-hindi";
-          }}
-          className="htmlBtn homeBtn"
-        >
+        </Link>{" "}
+        <Link className="htmlBtn homeBtn" to="/html-hindi">
           HTML
-        </button>
-
+        </Link>{" "}
         {/* {/* <button className="cssBtn homeBtn">CSS</button> */}
         {/* <button className="pythonBtn homeBtn">Python</button> */}
         {/* <button className="cBtn homeBtn">C</button> */}
         {/* <button className="cppBtn homeBtn">C++</button>  */}
-        <button
-          onClick={() => {
-            window.location = "/personality-development-tutorial";
-          }}
+        <Link
           className="highValueBtn homeBtn"
+          to="/personality-development-tutorial"
         >
           High Value Room
-        </button>
+        </Link>{" "}
       </div>
       <div className="homeTable">
         <h2>Productivity Hack</h2>

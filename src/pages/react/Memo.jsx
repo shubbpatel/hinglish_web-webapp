@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Memo() {
   return (
-    <div>
+    <div className='bContainer container'>
           <h2>React Memo</h2>
 
 <p>

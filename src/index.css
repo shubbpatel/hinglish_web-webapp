@@ -11,12 +11,24 @@ body {
   width: 100vw;
   max-width: 70vw;
   margin: auto;
-  /* background-color: #e7f7fc; */
   color: black;
   background-color: rgb(230, 235, 239);
-  /* color: rgb(231, 239, 241); */
+}
+.bContainer {
+  /* border: 1px solid rgb(123, 211, 245); */
+  /* border-radius: 7px; */
+  background-color: #fff;
+  padding-top: 1rem;
+
+  margin: auto;
+  min-height: 100vh;
 }
 
+.container {
+  text-align: left;
+  font-size: larger;
+  padding: 5px;
+}
 /* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Operators() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Operators in Hindi</h2>
       <p>
         The <b>Addition Operator </b>+ adds numbers:

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Hooks() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2 id="react-Hooks-hindi">React Hooks in Hindi</h2>
         <p>hooks react mein version 16.8 mein add hue the</p>
         <p>

@@ -17,7 +17,7 @@ export default function Arrays() {
   }
 
   return (
-    <div>
+    <div className="bContainer container">
       <h2>Arrays in Javascript in Hindi</h2>
       <p>
         avaScript mein, ek array ek ordered collection hoti hai jisme multiple

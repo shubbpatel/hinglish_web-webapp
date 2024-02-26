@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function UseContextHook() {
   return (
-    <div>
+    <div className='bContainer container'>
          <h2>
           <span className="bgRed">useContext</span> Hook
         </h2>

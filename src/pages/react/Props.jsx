@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Props() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2 id="react-props-hindi">React Props in Hindi</h2>
         <p>Props React components mein bheje jaane wale arguments hote hain.</p>
         <p>

@@ -1,66 +1,67 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "./style/footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-left">
         {/* <img src="/logo.png" alt="Website Logo" className="logo" /> */}
-        <a className="logotxt" href="/">
+        <Link className="logotxt" to="/">
           Hinglish Web
-        </a>
+        </Link>
         {/* <p className="description">Your brief description here</p> */}
       </div>
       <div className="footer-links">
         <ul className="social-links">
           {/* <li>
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+            <Link to="https://www.facebook.com" target="_blank" rel="noreferrer">
               <FaFacebook />
-            </a>
+            </Link>
           </li> */}
           {/* <li>
-            <a href="https://www.twitter.com" target="_blank" rel="noreferrer">
+            <Link to="https://www.twitter.com" target="_blank" rel="noreferrer">
               <FaTwitter />
-            </a>
+            </Link>
           </li> */}
           <li>
-            <a
-              href="https://www.instagram.com/hinglishweb/"
+            <Link
+              to="https://www.instagram.com/hinglishweb/"
               target="_blank"
               rel="noreferrer"
             >
               <FaInstagram />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+            <Link to="https://www.linkedin.com" target="_blank" rel="noreferrer">
               <FaLinkedin />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
       <div className="footer-right">
         <ul className="footer-menu">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/services">Services</a>
+            <Link to="/services">Services</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         <ul className="legal-links">
           <li>
-            <a href="/privacy-policy">Privacy Policy</a>
+            <Link to="/privacy-policy">Privacy Policy</Link>
           </li>
           <li>
-            <a href="/terms-of-service">Terms of Service</a>
+            <Link to="/terms-of-service">Terms of Service</Link>
           </li>
         </ul>
       </div>

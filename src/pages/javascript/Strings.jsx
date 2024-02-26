@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Strings() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Strings in Hindi</h2>
       <p>
         javascript mein <span className="clrRed">Strings</span> <b>text</b>{" "}

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ConditionalRendering() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2 id="conditionals">React.JS Conditional Rendering</h2>
         <p>
           React mein, aap conditionally components ko render kar sakte hain.

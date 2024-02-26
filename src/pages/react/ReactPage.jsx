@@ -2932,6 +2932,11 @@ root.render(<App />);`}
        const root = ReactDOM.createRoot(document.getElementById('root'));
        root.render(<Car />);`}{" "}
           </pre>
+          <p><b>Output on your screen will be:</b></p>
+          <div className="bgWhite">
+            
+          </div>
+
         <p>
           Jab hum ab ek object ko track kar rahe hain, hamein ab us object ko
           reference karna hoga, phir us object ke property ko render karte waqt.
@@ -4070,10 +4075,6 @@ root.render(<Component1 />);`}
           Ab Todos component tabhi re-render hoga jab todos prop change hoga.
         </p>
         <br />
-        {/* <h2>useMemo Hook</h2>
-        <p>React useMemo Hook ek memoized value return karta hai.</p>
-        <p className="bgYellow">Memoization ko ek value ko cache karna samjho jise dobara calculate na karna pade.</p>
-        <p>useMemo Hook tabhi chalta hai jab uske kisi dependency me koi update hota hai.</p> */}
       </div>
     </div>
   );

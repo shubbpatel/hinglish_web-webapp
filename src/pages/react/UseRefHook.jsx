@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function UseRefHook() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2>
           React <span className="bgRed">useRef</span> Hook
         </h2>

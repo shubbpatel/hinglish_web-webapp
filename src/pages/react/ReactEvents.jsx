@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Events() {
+export default function ReactEvents() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2>React Events</h2>
         <p>
           Bilkul HTML DOM events ki tarah, React bhi actions perform kar sakta

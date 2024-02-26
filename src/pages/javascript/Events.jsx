@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Events() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Events in hindi</h2>
       <p>
         JavaScript events ko samajhne ke liye, yeh jaanna zaroori hai ki jab

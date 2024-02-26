@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Components() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2 id="react-components-hindi">React Components in Hindi</h2>
         <p>
           Components functions jaise hote hain jo HTML elements return karte

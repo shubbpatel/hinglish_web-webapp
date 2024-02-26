@@ -35,18 +35,19 @@ export default function BasicExamples() {
         </html>
         `}
       </pre>
-      <h2>
-      Declaration of {`<!DOCTYPE>`} 
-
-      </h2>
-      <p>{`<!DOCTYPE>`} declaration document type ko represent karta hai, aur browser ko web pages ko sahi se show mein help karta hai. <br />
-      Yah sirf ek baar hi use hona chahiye, page ke start mein (kisi bhi HTML tag se pahle).
-<br /> 
-{`<!DOCTYPE>`} declaration case sensitive nahi hota hai."
-<br />
-The {`<!DOCTYPE>`} declaration for HTML5 is this : <span className="clrRed">{`<!DOCTYPE html>`}</span>
-
-</p>
+      <h2>Declaration of {`<!DOCTYPE>`}</h2>
+      <p>
+        {`<!DOCTYPE>`} declaration document type ko represent karta hai, aur
+        browser ko web pages ko sahi se show mein help karta hai. <br />
+        Yah sirf ek baar hi use hona chahiye, page ke start mein (kisi bhi HTML
+        tag se pahle).
+        <br />
+        {`<!DOCTYPE>`} declaration case sensitive nahi hota hai."
+        <br />
+        The {`<!DOCTYPE>`} declaration for HTML5 is this :{" "}
+        <span className="clrRed">{`<!DOCTYPE html>`}</span>
+      </p>
+      
     </div>
   );
 }

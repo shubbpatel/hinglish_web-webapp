@@ -6,7 +6,7 @@ export default function ContactUs() {
       <h1>Contact Info </h1>
       
       <p>
-        If you have any complaint, suggestion or feedback please feel free to
+        If you have any question, complaint, suggestion or feedback please feel free to
         reach us at <a href="mailto:services.physitask@gmail.com">services.physitask@gmail.com</a>
       </p>
     </div>

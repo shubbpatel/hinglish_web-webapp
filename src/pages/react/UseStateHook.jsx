@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export default function useStateHook() {
+export default function UseStateHook() {
     const [message, setMessage] = useState(false);
     const [color, setColor] = useState("blue");
 
@@ -8,7 +8,7 @@ export default function useStateHook() {
         setMessage(!message);
       };
   return (
-    <div>
+    <div className='bContainer container'>
          <h2>
           React <span className="bgRed">useState</span> Hook
         </h2>
@@ -299,9 +299,9 @@ export default function useStateHook() {
        root.render(<Car />);`}{" "}
           </pre>
           <p><b>Output on your screen will be:</b></p>
-          <div className="bgWhite">
+          {/* <div className="bgWhite">
             
-          </div>
+          </div> */}
 
         <p>
           Jab hum ab ek object ko track kar rahe hain, hamein ab us object ko

@@ -4,8 +4,8 @@
   align-items: center;
   /* max-width: 70vw; */
   background-color: #fff;
-  border-radius: 8px;
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .homeContainer h1{
   background: rgb(63,94,251);
@@ -13,6 +13,9 @@
   color: white;
   padding: 1rem;
   border-radius: 7px;
+}
+.homeContainer a {
+  text-decoration: none;
 }
 
 .homeBtnBox {

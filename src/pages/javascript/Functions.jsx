@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Functions() {
   return (
-    <div>
+    <div className="bContainer container">
       <h1>Javascript Functions in hindi</h1>
       <p>
         JavaScript mein, ek function ek set of statements hota hai jo specific

@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function UseEffectHook() {
   return (
-    <div>
+    <div className='bContainer container'>
          <h2>
           React <span className="bgRed">useEffect</span> Hook
         </h2>

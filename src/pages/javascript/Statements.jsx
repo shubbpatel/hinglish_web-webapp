@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Statements() {
   return (
-    <div>
+    <div className="bContainer container">
         <h2>
 JavaScript Statements
 

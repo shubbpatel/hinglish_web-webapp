@@ -4,7 +4,7 @@ export default function Attributes() {
   const [showImage, setShowImage] = useState(false);
 
   return (
-    <div>
+    <div className="bContainer container">
       <h2>Attributes in HTML</h2>
       <p>Sab HTML elements ke mein attributes ho sakte hain.</p>
       <p>Attributes additional information provide karte hain about elements</p>
@@ -202,7 +202,6 @@ hey...
         {`<p title="John 'ShotGun' Nelson">
 `}
       </pre>
-
     </div>
   );
 }

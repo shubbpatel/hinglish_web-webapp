@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Comments() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>Comments</h2>
       <p>
         JavaScript comments ka istemal JavaScript code ko explain karne aur usse

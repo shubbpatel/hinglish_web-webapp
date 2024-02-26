@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Arithmetic() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Arithmetic Operators</h2>
       <p>
         Arithmetic operators numbers (literals ya variables) par arithmetic

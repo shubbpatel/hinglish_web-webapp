@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function DataTypes() {
   return (
-    <div>
+    <div className="bContainer container">
         <h2>JavaScript Data Types in Hindi
 </h2>
 <h3>JavaScript has many Datatypes

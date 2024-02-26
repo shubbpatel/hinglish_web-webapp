@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Lists() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2 id="lists">React Lists</h2>
         <p>React mein aap ek tarah ke loop ke saath lists ko render karenge.</p>
         <p>JavaScript map() array method generally preffered method hai.</p>

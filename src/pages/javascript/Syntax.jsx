@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Syntax() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Syntax in Hindi</h2>
       <p>
         JavaScript syntax wo set of rules hai, jisme define kiya gaya hai ki

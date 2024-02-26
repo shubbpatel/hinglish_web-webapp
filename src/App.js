@@ -1,7 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import JavaScript from './pages/javascript/JavaScript';
-import ReactPage from './pages/react/ReactPage'
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Footer from './components/Footer';
@@ -11,17 +9,24 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsOfService from './pages/TermsOfService';
 import ContactUs from './pages/ContactUs';
 import LawsOfHighValueMan from './pages/Personality Development/LawsOfHighValueMan';
-import Html from './pages/html/Html';
+import Html from './pages/html/HtmlHome';
+import ReactIntro from './pages/react/ReactIntro';
+import ReactRoutes from './routes/ReactRoutes';
+import JsHome from './pages/javascript/JsHome';
+import JavaScriptRoutes from './routes/JavaScriptRoutes';
+import HtmlHome from './pages/html/HtmlHome';
+import HtmlRoutes from './routes/HtmlRoutes';
 
 function App() {
   return (
     <BrowserRouter>
     <Navbar/>
+      <ReactRoutes/>
+      <JavaScriptRoutes/>
+      <HtmlRoutes/>
     <Routes>
       <Route path='/' element={<Home/>}/>
-      <Route path="/react-hindi" element={<ReactPage/>} />
-      <Route path="/html-hindi" element={<Html/>} />
-      <Route path="/javascript-hindi" element={<JavaScript/>} />
+      {/* <Route path="/react-hindi/*" element={<ReactIntro/>} /> */}
       <Route path="/personality-development-tutorial" element={<LawsOfHighValueMan/>} />
       <Route path="/about" element={<AboutUs/>} />
       <Route path="/services" element={<Services/>} />

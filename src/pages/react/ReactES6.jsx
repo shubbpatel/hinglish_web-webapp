@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ReactES6() {
   return (
-    <div>
-      <h2 id="javascript-ES6-hindi">What is ES6 in Hindi ? (ES 6 kya hai ?)</h2>
+    <div className='bContainer container'>
+    <h2 id="javascript-ES6-hindi">What is ES6 in Hindi ? (ES 6 kya hai ?)</h2>
       <p>
         ES6 ka matlab hai ECMAScript 6. ECMAScript ko JavaScript ko standardize
         karne ke liye banaya gaya tha, aur ES6 ECMAScript ka 6th version hai, jo

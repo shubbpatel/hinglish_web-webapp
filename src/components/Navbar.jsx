@@ -1,6 +1,6 @@
 import React from "react";
 import "./style/nav.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Button, DropdownButton } from "react-bootstrap";
 
@@ -12,9 +12,9 @@ export default function Navbar() {
         {/* <button className="logobnt">Hinglish.Web</button> */}
         <div>
 
-        <a className="logotxt" href="/" >
+        <Link className="logotxt" to="/" >
           Hinglish Web
-        </a>
+        </Link>
         </div>
         {/* <div>
           {" "}
@@ -33,13 +33,13 @@ export default function Navbar() {
 
       <div className="topics">
        
-        <Link to="/html-hindi" style={{backgroundColor:'rgb(71, 196, 71)', color:'black'}}>HTML</Link>
-        {/* <Link to="/css" style={{backgroundColor:'purple'}}>CSS</Link> */}
-        <Link to="/react-hindi" style={{backgroundColor:'rgb(122, 245, 245)',color:'black'}}>React</Link>
-        <Link to="/javascript-hindi" style={{backgroundColor:'rgb(250, 234, 22)',color:'black'}}>JavaScript</Link>
-        {/* <Link to="/python" style={{backgroundColor:'grey',padding:'0px 5px'}}>C</Link> */}
-        {/* <Link to="/python" style={{backgroundColor:'red'}}>C++</Link> */}
-        {/* <Link to="/python" style={{backgroundColor:'blue'}}>Python</Link> */}
+        <NavLink to="/html-hindi" style={{backgroundColor:'rgb(71, 196, 71)', color:'black'}}>HTML</NavLink>
+        {/* <NavLink to="/css" style={{backgroundColor:'purple'}}>CSS</NavLink> */}
+        <NavLink to="/react-hindi" style={{backgroundColor:'rgb(122, 245, 245)',color:'black'}}>React</NavLink>
+        <NavLink to="/javascript-hindi" style={{backgroundColor:'rgb(250, 234, 22)',color:'black'}}>JavaScript</NavLink>
+        {/* <NavLink to="/python" style={{backgroundColor:'grey',padding:'0px 5px'}}>C</NavLink> */}
+        {/* <NavLink to="/python" style={{backgroundColor:'red'}}>C++</NavLink> */}
+        {/* <NavLink to="/python" style={{backgroundColor:'blue'}}>Python</NavLink> */}
       </div>
     </div>
   );

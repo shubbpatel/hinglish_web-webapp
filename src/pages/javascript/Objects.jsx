@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Objects() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Objects in Hindi</h2>
       <p className="bgYellow">
         <b>

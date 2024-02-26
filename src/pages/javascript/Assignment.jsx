@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Assignment() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Assignment Operators in Hindi</h2>
       <p>
         Assignment operators JavaScript variables ko values assign karte hain.

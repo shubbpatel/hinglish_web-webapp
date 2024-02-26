@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function UseCallbackHok() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2>
           <span className="bgRed">useCallback</span> Hook
         </h2>

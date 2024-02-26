@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Forms() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2 id="forms">React Forms</h2>
         <p>
           Jaise ki HTML mein hota hai, waise hi React bhi forms ka istemal karta

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Let() {
   return (
-    <div>
+    <div className="bContainer container">
       <h2>JavaScript Let</h2>
       <p>
         <span className="clrRed">"let"</span> keyword ko ES6 (2015) mein

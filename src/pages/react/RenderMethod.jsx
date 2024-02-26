@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function RenderMethod() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2>React Render HTML</h2>
         <p>
           React ka goal hai in many ways ke ek web page mein HTML ko render

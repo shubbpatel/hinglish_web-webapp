@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Router() {
   return (
-    <div>
+    <div className='bContainer container'>
         <h2 id="router">React Router</h2>
         <p>Create React App mein page routing included nahi rehta hai.</p>
         <p>iske liye React Router most popular solution hai.</p>

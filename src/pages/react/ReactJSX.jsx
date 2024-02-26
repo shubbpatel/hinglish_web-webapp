@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function ReactJSX() {
   return (
-    <div>
-        <h2 id="jsx">React JSX</h2>
+    <div className='bContainer container'>
+    <h2 id="jsx">React JSX</h2>
         <h3>What is JSX (JSX kya hai)?</h3>
         <p>JSX ka matlab hai JavaScript XML.</p>
         <p>JSX humein React mein HTML likhne me help karta hai.</p>
